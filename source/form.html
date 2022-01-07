@@ -6,6 +6,7 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
+<!-- Header block -->
     <header class="top-menu">
       <div class="container top-menu__container">
         <nav class="main-nav">
@@ -78,28 +79,34 @@
         </nav>
       </div>
     </header>
+<!-- Main block -->
     <main class="page-form">
+<!-- Page title -->
       <div class="page-title__container">
         <h1 class="page-title">Направления</h1>
       </div>
+<!-- Profile block -->
       <section class="profile">
         <h2 class="visually-hidden">Профиль</h2>
         <div class="level-mark profile__level-mark">
           <span class="underscore">80</span>level
         </div>
         <div class="profile__image-container">
+<!-- Profile photo -->
           <picture>
             <img class="card__image profile__image" src="" alt="Автарка попутчика.">
           </picture>
           <p class="profile__image-description">Фото</p>
         </div>
         <button class="button profile__button" type="button">Сменить фото</button>
+<!-- Profile hashtags -->
         <fieldset class="info-group info-group--hastags">
           <legend class="info-group__legend">Тэги</legend>
           <textarea class="info-group__textarea" name="hashtags" cols="30" rows="10">
             #бургер #бар #футбол #концерт #крафт
           </textarea>
         </fieldset>
+<!-- Profile avaliable transport methods -->
         <fieldset class="info-group info-group--transport">
           <legend class="info-group__legend">Транспорт</legend>
           <ul class="info-group__list">
@@ -134,6 +141,7 @@
           </ul>
         </fieldset>
       </section>
+<!-- Plans block -->
       <section class="plans">
         <h2 class="heading">Мои планы</h2>
         <ul class="plans__list">
@@ -159,6 +167,7 @@
           </li>
         </ul>
       </section>
+<!-- Form block -->
       <section class="form">
         <h2 class="heading">Добавить план:</h2>
         <ul class="form__pagination">
@@ -178,7 +187,9 @@
             </a>
           </li>
         </ul>
+<!-- Form -->
         <form class="add-plan" action="https://echo.htmlacademy.ru" method="post">
+<!-- Step 1 -->
           <section class="add-plan__step-one">
             <h3 class="add-plan__heading">Шаг 1. <br> Даты пребывания</h3>
             <p class="add-plan__description">Укажите предпочтительное количество попутчиков,которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
@@ -218,6 +229,7 @@
               <span class="add-plan__label add-plan__label--checkbox"></span>
               Можно с детьми
             </label>
+<!-- Calendar slider block -->
             <div class="slider">
               <button class="slider__button slider__button--prev" type="button">
                 <span class="visually-hidden">Предидущий слайд</span>
@@ -469,6 +481,7 @@
             </div>
             <a class="link-button" href="#">Следующий шаг</a>
           </section>
+<!-- Step 2 -->
           <section class="add-plan__step-two country">
             <h3 class="add-plan__heading">Шаг 2. <br> Маршрут</h3>
             <p class="add-plan__description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
@@ -555,6 +568,7 @@
             <a class="link-button" href="#">Следующий шаг</a>
             <a class="link-button" href="#">На шаг назад</a>
           </section>
+<!-- Step 3 -->
           <section class="add-plan__step-three entertainment">
             <h3 class="add-plan__heading">Шаг 3. <br> Развлечения</h3>
             <p class="add-plan__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
@@ -585,8 +599,10 @@
         </form>
       </section>
     </main>
+<!-- Footer block -->
     <footer class="page-footer">
       <div class="container footer__container">
+<!-- Footer logo -->
         <div class="footer__logo logo">
           <a class="logo__link footer__icon--interactive">
             <svg width="96" height="15" viewBox="0 0 96 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -596,6 +612,7 @@
             </svg>
           </a>
         </div>
+<!-- Footer social link list -->
         <ul class=" main-nav__list social-list">
           <li class="social-list__item main-nav__item">
             <a class="social-list__link" href="">
@@ -613,6 +630,7 @@
             </a>
           </li>
         </ul>
+<!-- Developer info -->
         <div class="developer-info">
           <p class="developer-info__text">Разработано</p>
           <a class="developer-info__link footer__icon--interactive" href="#">

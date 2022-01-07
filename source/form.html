@@ -96,13 +96,9 @@
         <button class="button profile__button" type="button">Сменить фото</button>
         <fieldset class="info-group info-group--hastags">
           <legend class="info-group__legend">Тэги</legend>
-          <ul class="info-group__list">
-            <li class="info-group__item">#бургер</li>
-            <li class="info-group__item">#бар</li>
-            <li class="info-group__item">#футбол</li>
-            <li class="info-group__item">#концерт</li>
-            <li class="info-group__item">#крафт</li>
-          </ul>
+          <textarea class="info-group__textarea" name="hashtags" cols="30" rows="10">
+            #бургер #бар #футбол #концерт #крафт
+          </textarea>
         </fieldset>
         <fieldset class="info-group info-group--transport">
           <legend class="info-group__legend">Транспорт</legend>
@@ -182,7 +178,7 @@
             </a>
           </li>
         </ul>
-        <form action="" class="add-plan">
+        <form class="add-plan" action="https://echo.htmlacademy.ru" method="post">
           <section class="add-plan__step-one">
             <h3 class="add-plan__heading">Шаг 1. <br> Даты пребывания</h3>
             <p class="add-plan__description">Укажите предпочтительное количество попутчиков,которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>

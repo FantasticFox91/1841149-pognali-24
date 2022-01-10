@@ -91,189 +91,213 @@
       </div>
     </header>
 <!-- Main block -->
-    <main class="page-main container">
+    <main class="page-main">
 <!-- Promo block -->
       <section class="promo">
-        <h2 class="promo__heading">В путешествие с крутыми попутчиками!</h2>
-        <ul class="promo__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link" href="tel:88005558628">
-              tel
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link" href="mailto:mail@htmlacademy.ru">
-              mail
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="link-button" href="">Авторизация</a>
-          </li>
-        </ul>
-        <blockquote class="promo__review">«Лучшее приложение, что я видел в жизни!»</blockquote>
-        <cite class="promo__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-        <ul class="promo__list list">
-          <li class="pormo__item">
-            Выберите направление
-          </li>
-          <li class="pormo__item">
-            Изучите идеи путешественников
-          </li>
-          <li class="pormo__item">
-            Находите тех, кто похож на вас
-          </li>
-          <li class="pormo__item">
-            Путешествуйте вместе!
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="promo__heading">В путешествие с крутыми попутчиками!</h2>
+          <ul class="promo__list user-list list">
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--tel" href="tel:88005558628">
+                <span class="visually-hidden">Номер телефон</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--email" href="mailto:mail@htmlacademy.ru">
+                <span class="visually-hidden">Электронная почта</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="link-button" href="">Авторизация</a>
+            </li>
+          </ul>
+          <div class="promo__quote">
+            <blockquote class="promo__review">«Лучшее приложение, что я видел в жизни!»</blockquote>
+            <cite class="promo__author">Мурат Эльтазин</cite>
+            <cite class="promo__description">главный редактор <br> газеты «гаджетлайф»</cite>
+          </div>
+          <ul class="promo__list list">
+            <li class="pormo__item pormo__item--step-one">
+              Выберите направление
+            </li>
+            <li class="pormo__item pormo__item--step-two">
+              Изучите идеи путешественников
+            </li>
+            <li class="pormo__item pormo__item--step-three">
+              Находите тех, кто похож на вас
+            </li>
+            <li class="pormo__item pormo__item--step-four">
+              Путешествуйте вместе!
+            </li>
+          </ul>
+        </div>
       </section>
 <!-- About block -->
       <section class="about">
-        <h2 class="about__heading heading">О сервисе</h2>
-        <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p class="about__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-        <a class="link-button" href="">Подрбрнее</a>
+        <div class="container">
+          <h2 class="about__heading heading">О сервисе</h2>
+          <div class="text-wrapper">
+            <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+            <p class="about__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          </div>
+          <a class="link-button about__button" href="">Подрбрнее</a>
+        </div>
       </section>
 <!-- Directions block -->
       <section class="directions">
-        <h2 class="heading">Направления</h2>
-        <p class="directions__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-        <ul class="directions__list">
-          <li class="directions__items">
-            <div class="card">
-              <div class="card__image">
-                <picture>
-                  <img src="" alt="Тайланд">
-                </picture>
+        <div class="container">
+          <h2 class="heading">Направления</h2>
+          <div class="text-wrapper">
+            <p class="directions__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          </div>
+          <ul class="directions__list list">
+            <li class="directions__items">
+              <div class="card">
+                <div class="card__image">
+                  <picture>
+                    <img src="img/thailand-mobile.jpg" srcset="img/thailand-mobile@2x.jpg" alt="Тайланд" width="270" height="110">
+                  </picture>
+                </div>
+                <div class="card__description text-wrapper">
+                  <h3 class="card__heading">Таиланд</h3>
+                  <p class="card__subheading">Джунгли зовут!</p>
+                  <span class="card__people-counter">18321</span>
+                </div>
+
               </div>
-              <h3 class="card__heading">Таиланд</h3>
-              <p class="subheading">Джунгли зовут!</p>
-              <span class="people-counter">18321</span>
-            </div>
-          </li>
-          <li class="directions__items">
-            <div class="card">
-              <div class="card__image">
-                <picture>
-                  <img src="" alt="Франция">
-                </picture>
+            </li>
+            <li class="directions__items">
+              <div class="card">
+                <div class="card__image">
+                  <picture>
+                    <img src="img/france-mobile.jpg" srcset="img/france-mobile@2x.jpg" alt="Франция" width="270" height="110">
+                  </picture>
+                </div>
+                <div class="card__description text-wrapper">
+                  <h3 class="card__heading">Франция</h3>
+                  <p class="card__subheading">Трэ бьен, манифик!</p>
+                  <span class="card__people-counter">12518</span>
+                </div>
               </div>
-              <h3 class="card__heading">Франция</h3>
-              <p class="subheading">Трэ бьен, манифик!</p>
-              <span class="people-counter">12518</span>
-            </div>
-          </li>
-          <li class="directions__items">
-            <div class="card">
-              <div class="card__image">
-                <picture>
-                  <img src="" alt="Чехия">
-                </picture>
+            </li>
+            <li class="directions__items">
+              <div class="card">
+                <div class="card__image">
+                  <picture>
+                    <img src="img/czech-mobile.jpg" srcset="img/czech-mobile@2x.jpg" alt="Чехия" width="270" height="110">
+                  </picture>
+                </div>
+                <div class="card__description text-wrapper">
+                  <h3 class="card__heading">Чехия</h3>
+                  <p class="card__subheading">Закоулки старой Европы</p>
+                  <span class="card__people-counter">5326</span>
+                </div>
               </div>
-              <h3 class="card__heading">Чехия</h3>
-              <p class="subheading">Закоулки старой Европы</p>
-              <span class="people-counter">5326</span>
-            </div>
-          </li>
-        </ul>
-        <a class="link-button" href="">Показать все</a>
+            </li>
+          </ul>
+          <a class="link-button directions__button" href="">Показать все</a>
+        </div>
       </section>
 <!-- Companions block -->
       <section class="companions">
-        <h2 class="heading">Попутчики</h2>
-        <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="companions__text--bold">Теперь можно легко найти единомышленников!</p>
-        <ul class="companions__list">
-          <li class="companions__item">
-            <div class="card">
-              <div class="card__image">
-                <picture>
-                  <img class="card__image" src="" alt="Автарка попутчика.">
-                </picture>
+        <div class="container">
+          <h2 class="heading">Попутчики</h2>
+          <div class="text-wrapper">
+            <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="companions__text--bold">Теперь можно легко найти единомышленников!</p>
+          </div>
+          <ul class="companions__list list">
+            <li class="companions__item">
+              <div class="companions-card">
+                <div class="companions-card__image">
+                  <picture>
+                    <img class="companions-card__image" src="img/firsova.jpg" srcset="img/firsova@2x.jpg" alt="Автарка попутчика." width="270" height="270">
+                  </picture>
+                  <div class="level-mark">
+                    <span class="underscore">99</span>level
+                  </div>
+                </div>
+                <div class="companions-card__description">
+                  <h3 class="companions-card__name companions-card__name--offline">Таня Фирсова</h3>
+                  <ul class="companions-card__flags">
+                    <li class="companions-card__flag">
+                      <img class="companions-card__flag-image" src="" alt="Sri Lanka" width="35" height="25">
+                    </li>
+                    <li class="companions-card__flag">
+                      <img class="card__flag-image" src="" alt="Thailand" width="35" height="25">
+                    </li>
+                    <li class="companions-card__flag">
+                      <img class="card__flag-image" src="" alt="Seychells" width="35" height="25">
+                    </li>
+                  </ul>
+                  <ul class="companions-card__list">
+                    <li class="companions-card__item">#ЗОЖ</li>
+                    <li class="companions-card__item">#ПП</li>
+                    <li class="companions-card__item">#Фитнес</li>
+                    <li class="companions-card__item">#пляж</li>
+                    <li class="companions-card__item">#авакадо</li>
+                    <li class="companions-card__item">#смузи</li>
+                  </ul>
+                  <ul class="companions-card__list">
+                    <li class="companions-card__item card__item--active">
+                      <img src="img/icon_plane.svg" alt="Авиаперелет">
+                    </li>
+                    <li class="companions-card__item">
+                      <img src="img/icon_bus.svg" alt="Автотранспорт">
+                    </li>
+                    <li class="companions-card__item">
+                      <img src="img/icon_bicycle.svg" alt="Велосипед">
+                    </li>
+                    <li class="companions-card__item">
+                      <img src="img/icon_run.svg" alt="Пешком">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="companions__item">
+              <div class="companions-card">
+                <img class="companions-card__image" src="img/demin.jpg" srcset="img/demin@2x.jpg" alt="Автарка попутчика." width="270" height="270">
                 <div class="level-mark">
                   <span class="underscore">99</span>level
                 </div>
+                <div class="companions-card__description">
+                  <h3 class="companions-card__name card__name--online">Петя Демин</h3>
+                  <ul class="companions-card__flags">
+                    <li class="companions-card__flag">
+                      <img class="card__flag-image" src="" srcset="" alt="Belgium" width="35" height="25">
+                    </li>
+                    <li class="companions-card__flag">
+                      <img class="card__flag-image" src="" alt="Chech" width="35" height="25">
+                    </li>
+                  </ul>
+                  <ul class="companions-card__list">
+                    <li class="companions-card__item">#бургер</li>
+                    <li class="companions-card__item">#бар</li>
+                    <li class="companions-card__item">#футбол</li>
+                    <li class="companions-card__item">#концерт</li>
+                    <li class="companions-card__item">#крафт</li>
+                  </ul>
+                  <ul class="companions-card__list">
+                    <li class="companions-card__item companions-card__item--active">
+                      <img src="img/icon_plane.svg" alt="Авиаперелет">
+                    </li>
+                    <li class="companions-card__item companions-card__item--active">
+                      <img src="img/icon_bus.svg" alt="Автотранспорт">
+                    </li>
+                    <li class="companions-card__item">
+                      <img src="img/icon_bicycle.svg" alt="Велосипед">
+                    </li>
+                    <li class="companions-card__item companions-card__item--active">
+                      <img src="img/icon_run.svg" alt="Пешком">
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="card__description">
-                <h3 class="card__name card__name--offline">Таня Фирсова</h3>
-                <ul class="card__flags">
-                  <li class="card__flag">
-                    <img class="card__flag-image" src="" alt="Sri Lanka" width="35" height="25">
-                  </li>
-                  <li class="card__flag">
-                    <img class="card__flag-image" src="" alt="Thailand" width="35" height="25">
-                  </li>
-                  <li class="card__flag">
-                    <img class="card__flag-image" src="" alt="Seychells" width="35" height="25">
-                  </li>
-                </ul>
-                <ul class="card__list">
-                  <li class="card__item">#ЗОЖ</li>
-                  <li class="card__item">#ПП</li>
-                  <li class="card__item">#Фитнес</li>
-                  <li class="card__item">#пляж</li>
-                  <li class="card__item">#авакадо</li>
-                  <li class="card__item">#смузи</li>
-                </ul>
-                <ul class="card__list">
-                  <li class="card__item card__item--active">
-                    <img src="img/icon_plane.svg" alt="Авиаперелет">
-                  </li>
-                  <li class="card__item">
-                    <img src="img/icon_bus.svg" alt="Автотранспорт">
-                  </li>
-                  <li class="card__item">
-                    <img src="img/icon_bicycle.svg" alt="Велосипед">
-                  </li>
-                  <li class="card__item">
-                    <img src="img/icon_run.svg" alt="Пешком">
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="companions__item">
-            <div class="card">
-              <img class="card__image" src="" alt="Автарка попутчика.">
-              <div class="level-mark">
-                <span class="underscore">99</span>level
-              </div>
-              <div class="card__description">
-                <h3 class="card__name card__name--online">Петя Демин</h3>
-                <ul class="card__flags">
-                  <li class="card__flag">
-                    <img class="card__flag-image" src="" alt="Belgium" width="35" height="25">
-                  </li>
-                  <li class="card__flag">
-                    <img class="card__flag-image" src="" alt="Chech" width="35" height="25">
-                  </li>
-                </ul>
-                <ul class="card__list">
-                  <li class="card__item">#бургер</li>
-                  <li class="card__item">#бар</li>
-                  <li class="card__item">#футбол</li>
-                  <li class="card__item">#концерт</li>
-                  <li class="card__item">#крафт</li>
-                </ul>
-                <ul class="card__list">
-                  <li class="card__item card__item--active">
-                    <img src="img/icon_plane.svg" alt="Авиаперелет">
-                  </li>
-                  <li class="card__item card__item--active">
-                    <img src="img/icon_bus.svg" alt="Автотранспорт">
-                  </li>
-                  <li class="card__item">
-                    <img src="img/icon_bicycle.svg" alt="Велосипед">
-                  </li>
-                  <li class="card__item card__item--active">
-                    <img src="img/icon_run.svg" alt="Пешком">
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <a class="link-button" href="">Показать всех</a>
+            </li>
+          </ul>
+          <a class="link-button" href="">Показать всех</a>
+        </div>
       </section>
 <!-- Add profile block -->
       <section class="add-profile">

@@ -1,0 +1,69 @@
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.calendar__weekday {
+  font-size: 14px;
+}
+
+.calendar__workdays {
+  padding: 8px 6px;
+}
+
+.calendar__button {
+  padding: 6px 4px;
+  font-size: 14px;
+  font-family: $main-font;
+  border: none;
+  background-color: transparent;
+}
+
+.calendar__tablet-text {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.calendar__month {
+  display: none;
+}
+
+.calendar__check-in {
+  display: none;
+}
+
+.calendar__check-out {
+  display: none;
+}
+
+.calendar__body {
+  border: 1px solid $border-color;
+}
+
+.calendar__days:not(:last-child) {
+  border-bottom: 1px solid $border-color;
+}
+
+.calendar__days .calendar__day {
+  border-left: 1px solid $border-color;
+}
+
+.calendar__day--active {
+  background-color: $basic-blue-dark;
+
+  .calendar__button {
+    color: $white-color;
+    font-weight: 500;
+  }
+}
+
+.calendar__day--avaliable {
+  background-color: $basic-blue-light;
+
+  .calendar__button {
+    color: $basic-blue-dark;
+    font-weight: 500;
+  }
+}

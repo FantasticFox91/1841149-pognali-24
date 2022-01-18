@@ -1,0 +1,143 @@
+.top-menu__container {
+  background-color: $basic-blue;
+  color: $white-color;
+}
+
+.top-menu {
+  .top-menu__container {
+    background-color: $white-color;
+  }
+
+  .main-nav__logo path {
+    fill: $black-color;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-nav__wrapper {
+    display: block;
+    position: static;
+  }
+
+  .contacts-list {
+    margin-bottom: 41px;
+  }
+
+  .contacts-list__link {
+    text-align: left;
+    color: $special-blue;
+  }
+
+  .link-button {
+    margin-bottom: 51px;
+  }
+}
+
+.top-menu--scroll {
+  position: fixed;
+  z-index: 20;
+
+  .top-menu__container {
+    background-color: $white-color;
+  }
+
+  .main-nav__logo path {
+    fill: $black-color;
+  }
+
+  .main-nav__toggle {
+    &::after {
+      top: 8px;
+      transform: rotate(45deg);
+      background-color: $border-color;
+    }
+
+    &::before {
+      top: 8px;
+      transform: rotate(-45deg);
+      background-color: $border-color;
+    }
+  }
+}
+
+.top-menu--open {
+  background-color: $white-color;
+
+  .main-nav {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .main-nav__wrapper {
+    top: 72px;
+    display: flex;
+    position: absolute;
+  }
+
+  .main-nav__toggle {
+    display: block;
+
+    &::after {
+      top: 2px;
+      transform: rotate(45deg);
+      background-color: $border-color;
+    }
+
+    &::before {
+      top: 2px;
+      transform: rotate(-45deg);
+      background-color: $border-color;
+    }
+  }
+}
+
+.top-menu--close {
+  .top-menu__container {
+    background-color: $basic-blue;
+  }
+
+  .main-nav__logo path {
+    fill: $white-color;
+  }
+
+  .main-nav {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .main-nav__wrapper {
+    top: -500px;
+    display: flex;
+    position: absolute;
+  }
+
+  .main-nav__toggle {
+    display: block;
+
+    &::after {
+      display: block;
+      top: 2px;
+      width: 25px;
+      height: 3px;
+      content: "";
+    }
+
+    &::before {
+      display: block;
+      top: 9px;
+      width: 25px;
+      height: 3px;
+      content: "";
+    }
+  }
+}

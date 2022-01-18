@@ -1,0 +1,107 @@
+.promo {
+  padding-top: 21px;
+  padding-bottom: 39px;
+  background-color: $basic-blue;
+}
+
+.promo__container {
+  padding: 0;
+  background-image: url("../img/globe-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: content-box;
+  background-position-y: 180px;
+}
+
+.promo__heading {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $white-color;
+}
+
+.promo__quote {
+  margin-left: 25px;
+}
+
+.promo__review {
+  margin: 0;
+  margin-bottom: 18px;
+  max-width: 153px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.promo__author {
+  display: block;
+  max-width: 161px;
+}
+
+.promo__description {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.promo__list {
+  counter-reset: numbers;
+}
+
+.promo__item {
+  position: relative;
+  padding: 22px 140px 25px 24px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: $special-orange;
+  color: $basic-blue;
+
+  &::after {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: $white-color;
+    counter-increment: numbers;
+    content: counter(numbers);
+  }
+
+  &--step-two {
+    background-color: #ffa530;
+    padding-right: 96px;
+  }
+
+  &--step-three {
+    background-color: $special-yellow-dark;
+    padding-right: 108px;
+  }
+
+  &--step-four {
+    background-color: $basic-yellow;
+    padding-right: 121px;
+  }
+}
+
+.promo__item:not(:first-child) {
+  margin-top: -12px;
+}
+
+.promo__item:last-child {
+  border-radius: 15px;
+  padding-bottom: 14px;
+}
+
+.promo__list--user {
+  position: relative;
+  padding-top: 245px;
+  z-index: 0;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 192px;
+    height: 255px;
+    background: url("../../img/promo-list-pseudo.png");
+    content: "";
+  }
+}

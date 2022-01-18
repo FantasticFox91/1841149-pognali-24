@@ -1,0 +1,74 @@
+.alphabet__list {
+  display: none;
+  grid-template-columns: repeat(5, 44px);
+  grid-template-rows: repeat(5, 41px);
+  background-color: $white-color;
+  border-left: 1px solid $range-input-border-color;
+
+  &--active {
+    display: grid;
+  }
+}
+
+.alphabet__sublist {
+  display: none;
+  position: absolute;
+  background-color: $white-color;
+  width: 100%;
+  top: 205px;
+  left: 0;
+  padding: 20px;
+  padding-top: 20px;
+  padding-left: 19px;
+  border: 1px solid $range-input-border-color;
+  border-top: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 0 0 5px 5px;
+}
+
+.alphabet__button {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: $white-color;
+  color: $basic-blue-dark;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+
+  &--active {
+    background-color: $basic-blue-light;
+
+    & + .alphabet__sublist {
+      display: block;
+    }
+  }
+}
+
+.alphabet__item {
+  border-right: 1px solid $range-input-border-color;
+  border-bottom: 1px solid $range-input-border-color;
+}
+
+.alphabet__list--letters {
+  max-width: 220px;
+  border-top: 1px solid $range-input-border-color;
+
+  .alphabet__button--active {
+    background-color: $basic-blue-dark;
+    color: $white-color;
+
+    & + .alphabet__sublist {
+      top: 599px;
+      padding-right: 50px;
+      padding-left: 50px;
+      background-color: $country-filter-color;
+      z-index: 1;
+    }
+  }
+}

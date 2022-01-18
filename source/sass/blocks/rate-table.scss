@@ -1,0 +1,75 @@
+.rate-table {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  counter-reset: numbers;
+
+  &::after {
+    position: absolute;
+    top: calc(-100px - 30px);
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: url("../img/rates.png");
+    content: "";
+  }
+}
+
+.rate-table__row {
+  position: relative;
+  display: flex;
+  min-width: 245px;
+  padding: 14px 0 15px;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+
+  &::after {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    background-color: $special-orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white-color;
+    counter-increment: numbers;
+    content: counter(numbers);
+  }
+
+  &--second::after {
+    background-color: $special-yellow-dark;
+  }
+
+  &--third::after {
+    background-color: $basic-yellow;
+  }
+}
+
+.rate-table--modal {
+  margin-bottom: 32px;
+  padding: 0 25px;
+  border-collapse: collapse;
+  border-top: 1px solid $modal-border-color;
+  border-bottom: 1px solid $modal-border-color;
+
+  &::after {
+    display: none;
+  }
+
+  .rate-table__row {
+    min-width: 220px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $modal-border-color;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

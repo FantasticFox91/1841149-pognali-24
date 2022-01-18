@@ -1,0 +1,55 @@
+.counter__input {
+  width: 100%;
+  padding: 13px 40px;
+  text-align: center;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+}
+
+.counter__sign {
+  position: absolute;
+  padding: 0;
+  width: 24px;
+  height: 43px;
+  border: none;
+  background-color: transparent;
+
+  &--plus {
+    top: 0;
+    right: 7px;
+
+    &::after {
+      position: absolute;
+      top: calc(50% - 7px);
+      width: 2px;
+      height: 14px;
+      background-color: $border-color;
+      content: "";
+    }
+
+    &::before {
+      position: absolute;
+      top: calc(50% - 7px);
+      width: 2px;
+      height: 14px;
+      background-color: $border-color;
+      transform: rotate(90deg);
+      content: "";
+    }
+  }
+
+  &--minus {
+    top: 0;
+    left: 7px;
+
+    &::after {
+      position: absolute;
+      top: calc(50% - 7px);
+      width: 2px;
+      height: 14px;
+      background-color: $border-color;
+      transform: rotate(90deg);
+      content: "";
+    }
+  }
+}

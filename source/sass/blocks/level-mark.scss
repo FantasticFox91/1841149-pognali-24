@@ -1,0 +1,48 @@
+.level-mark {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+
+.level-mark__underscore {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.level-mark__ring {
+  position: absolute;
+}
+
+//Признаюсь что не знаю как это работает
+.level-mark__circle {
+  stroke-dashoffset: 4;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.level-mark--catalog {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+
+  .level-mark__ring {
+    stroke-linecap: round;
+  }
+}

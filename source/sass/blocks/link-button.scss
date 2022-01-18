@@ -1,0 +1,31 @@
+.link-button {
+  display: block;
+  padding: 9px 40px;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-blue-dark;
+  background-color: $basic-yellow;
+  border-radius: 25px;
+}
+
+.link-button--showall {
+  position: relative;
+  max-width: 270px;
+  margin: 0 auto;
+  padding: 20px 36px 20px 23px;
+  text-align: left;
+  border-radius: 10px;
+  text-transform: none;
+
+  &::after {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 13px;
+    height: 13px;
+    background: url("../img/arrow-right.svg") no-repeat center;
+    content: "";
+  }
+}

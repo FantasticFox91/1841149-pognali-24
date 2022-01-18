@@ -1,0 +1,22 @@
+.directions {
+  margin-top: -20px;
+  padding-top: 70px;
+  padding-bottom: 34px;
+  background-color: $background-color;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.directions__text {
+  font-weight: 300;
+  color: $special-grey;
+  margin-bottom: 60px;
+}
+
+.directions__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 27px;
+}

@@ -1,0 +1,27 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  min-width: 135px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 26px;
+}
+
+.social-list__link {
+  display: block;
+  width: 23px;
+  height: 21px;
+
+  &--fb {
+    background: url("../img/icon_facebook.svg") 50% 50% no-repeat;
+  }
+
+  &--vk {
+    background: url("../img/icon_vkontakte.svg") 50% 50% no-repeat;
+  }
+
+  &--ig {
+    background: url("../../img/icon_instagram.svg") 50% 50% no-repeat;
+  }
+}

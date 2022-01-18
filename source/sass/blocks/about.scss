@@ -1,0 +1,19 @@
+.about {
+  position: relative;
+  padding-top: 33px;
+  padding-bottom: 82px;
+  margin-top: -1px;
+  background-color: $basic-blue;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.about__container {
+  background-image: url("../img/about-mobile.png");
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+}
+
+.about__button {
+  display: none;
+}

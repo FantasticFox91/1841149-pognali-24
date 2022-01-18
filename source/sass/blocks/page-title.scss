@@ -1,0 +1,36 @@
+.page-title {
+  position: relative;
+  padding: 0 25px;
+  padding-top: 22px;
+  padding-bottom: 15px;
+  background-color: $basic-blue;
+  border-radius: 0 0 15px 15px;
+
+  @media (min-resolution: 2dppx) {
+    margin-top: -1px;
+  }
+}
+
+.page-title__heading {
+  position: relative;
+  margin: 0;
+  font-size: 36px;
+  color: $white-color;
+
+  &::after {
+    position: absolute;
+    width: 214px;
+    height: 5px;
+    bottom: -17px;
+    left: 0;
+    background-color: $special-orange;
+    border-radius: 4px;
+    content: "";
+  }
+}
+
+.page-title__link {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

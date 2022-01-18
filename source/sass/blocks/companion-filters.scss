@@ -1,0 +1,190 @@
+.companion-filters {
+  margin-bottom: 28px;
+  padding: 26px 0 22px 0;
+  background-color: $basic-yellow;
+  border-radius: 20px;
+}
+
+.companion-filters__heading {
+  padding: 0;
+  font-size: 22px;
+  line-height: inherit;
+  color: inherit;
+}
+
+.companion-filters__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.companion-filters__legend {
+  width: 100%;
+  padding: 13px 0;
+  border-top: 1px solid $special-border-color;
+}
+
+.companion-filters__button {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  padding-right: 10px;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top-color: $special-blue;
+    border-right-color: transparent;
+    border-width: 5px 5px 0;
+    border-left-color: transparent;
+    content: "";
+    transition: $basic-animation;
+  }
+}
+
+.companion-filters__colon {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.companion-filters__legend + .companion-filters__input-containers {
+  display: none;
+}
+
+.companion-filters__legend--opened {
+  .companion-filters__button::after {
+    transform: rotate(180deg);
+  }
+
+  & + .companion-filters__input-containers {
+    display: block;
+  }
+}
+
+.companion-filters__label {
+  position: relative;
+  padding-left: 27px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: $white-color;
+    border-radius: 4px;
+    content: "";
+  }
+}
+
+.companion-filters__checkbox:checked + .companion-filters__label::before {
+  background-image: url("../img/icon_check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.companion-filters__input-containers {
+  margin-bottom: 21px;
+}
+
+.companion-filters__icon {
+  opacity: 0.3;
+}
+
+.companion-filters__list--transport {
+  display: flex;
+
+  .companion-filters__label--checkbox {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: $white-color;
+    border-radius: 50%;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .companion-filters__item:not(:last-child) {
+    margin-right: 2px;
+  }
+
+  // Знаю что нельзя, ищу способ исправить
+  .companion-filters__input:checked + .companion-filters__label--checkbox .companion-filters__icon {
+    opacity: 1;
+  }
+}
+
+.companion-filters__fieldset--range {
+  .companion-filters__label {
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.companion-filters__range-container {
+  display: flex;
+  margin-bottom: 21px;
+}
+
+.companion-filters__range-input {
+  max-width: 110px;
+  padding: 8px 10px 9px;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 13px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: 1px solid $range-input-border-color;
+
+  &--min {
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+  }
+
+  &--max {
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+.companion-filters__label--min {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 10px;
+    top: 12px;
+    right: -8px;
+    background: linear-gradient(to bottom, $white-color 4px, $range-input-border-color 4px, $range-input-border-color 6px, $white-color 6px);
+    z-index: 2;
+    content: "";
+  }
+}
+
+.companion-filters__submit-button {
+  background-color: $white-color;
+}

@@ -1,0 +1,250 @@
+.catalog-card {
+  display: grid;
+  max-width: 270px;
+  margin: 0 auto;
+  grid-template-columns: 25px 70px 90px 60px 25px;
+  grid-template-rows: 15px 40px 30px 63px 110px 90px 40px 23px;
+  background-color: $white-color;
+  border-radius: 20px;
+}
+
+.catalog-card__link {
+  display: block;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.catalog-card__avatar {
+  display: block;
+  border-radius: 50%;
+}
+
+.catalog-card__fullname {
+  position: relative;
+  margin: 0;
+  padding-left: 16px;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-blue-dark;
+  grid-row: 2/3;
+  grid-column: 3/4;
+
+  &--offline::before {
+    position: absolute;
+    top: 15px;
+    right: -70px;
+    width: 6px;
+    height: 6px;
+    background-color: $special-red;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.catalog-card__interactive-elements {
+  padding-top: 10px;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-blue;
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+
+.catalog-card__hashtags {
+  display: flex;
+  align-items: center;
+  grid-row: 4/5;
+  grid-column: 2/5;
+}
+
+.catalog-card__hashtags-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-grey;
+}
+
+.catalog-card__hashtags-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.catalog-card__fieldset--visit {
+  grid-row: 5/6;
+  grid-column: 2/5;
+
+  .catalog-card__legend {
+    width: 117px;
+    margin-left: -11px;
+    padding-left: 11px;
+  }
+}
+
+.catalog-card__fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &::after {
+    position: absolute;
+    top: -26px;
+    left: -25px;
+    width: 270px;
+    height: 1px;
+    background-color: $basic-blue-light;
+    content: "";
+  }
+}
+
+.catalog-card__legend {
+  position: relative;
+  width: 50px;
+  margin-bottom: 19px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $special-grey;
+  background-color: $white-color;
+  z-index: 1;
+}
+
+.catalog-card__list {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.catalog-card__item {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 40px;
+
+  &::after {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 26px;
+    height: 18px;
+    background-size: 26px 18px;
+    content: "";
+  }
+
+  &--srilanka {
+    &::after {
+      background-image: url("../img/sri\ Lanka.svg");
+    }
+  }
+
+  &--tailand {
+    &::after {
+      background-image: url("../img/thailand.svg");
+    }
+  }
+
+  &--seychelles {
+    &::after {
+      background-image: url("../img/seychelles.svg");
+    }
+  }
+
+  &--belgium {
+    &::after {
+      background-image: url("../img/belgium.svg");
+    }
+  }
+
+  &--chech {
+    &::after {
+      background-image: url("../img/chech.svg");
+    }
+  }
+
+  &--usa {
+    &::after {
+      background-image: url("../img/usa.svg");
+    }
+  }
+
+  &--australia {
+    &::after {
+      background-image: url("../img/australia.svg");
+    }
+  }
+
+  &--dominican {
+    &::after {
+      background-image: url("../img/dominica.svg");
+    }
+  }
+
+  &--uk {
+    &::after {
+      background-image: url("../img/uk.svg");
+    }
+  }
+
+  &--germany {
+    &::after {
+      background-image: url("../img/germany.svg");
+    }
+  }
+}
+
+.catalog-card__fieldset--transport {
+  .catalog-card__legend {
+    margin-left: -12px;
+    padding-left: 12px;
+    width: 87px;
+  }
+
+  .catalog-card__list {
+    display: flex;
+  }
+
+  .catalog-card__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background-color: $basic-blue-light;
+    border-radius: 50%;
+  }
+
+  .catalog-card__item:not(:last-child) {
+    margin-right: 1px;
+  }
+}
+
+.catalog-card__icon {
+  opacity: 0.3;
+}
+
+.catalog-card__icon--active {
+  opacity: 1;
+}
+
+.catalog-card__columns {
+  display: flex;
+  min-width: 220px;
+  justify-content: space-between;
+  padding-top: 12px;
+  grid-row: 6/7;
+  grid-column: 2/5;
+}
+
+.catalog-card__link-button {
+  grid-row: 7/8;
+  grid-column: 2/5;
+}
+
+.catalog-card__fieldset--level {
+  &::after {
+    display: none;
+  }
+}

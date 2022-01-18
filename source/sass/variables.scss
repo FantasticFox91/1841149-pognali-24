@@ -1,0 +1,39 @@
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+// Colors
+
+$black-color: #000000;
+$background-color: #edeff6;
+$white-color: #ffffff;
+$basic-blue: #161c35;
+$basic-blue-light: #edeff6;
+$basic-blue-dark: #1d2e5b;
+$show-rate-color: #132576;
+$basic-blue-darkest: #121936;
+$basic-yellow: #ffd74b;
+$special-yellow-dark: #ffbd30;
+$special-blue-light: #dfe3f0;
+$special-grey: #444444;
+$special-red: #f47e7e;
+$special-orange: #ff8d30;
+$special-green: #81e31e;
+$special-blue: #192144;
+$form-bg-color: #d4d9eb;
+$border-color: #cccccc;
+$close-button-color: #afb0b5;
+$country-filter-color: #e2e5f2;
+$special-border-color: #f3c72b;
+$range-input-border-color: #cbced9;
+$modal-border-color: #f2f2f2;
+$modal-button-color: #f3f4f8;
+$basic-animation: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+
+// Fonts
+
+$main-font: "Blogger Sans", "Arial", sans-serif;
+$main-mobile-font-size: 16px;
+$main-mobile-line-height: 22px;
+
+$main-tablet-font-size: 28px;
+$main-tablet-line-height: 24px;

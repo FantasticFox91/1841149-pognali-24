@@ -1,0 +1,14 @@
+.map {
+  position: relative;
+  margin-top: -20px;
+  z-index: -2;
+}
+
+.map__container {
+  width: 100%;
+}
+
+.map__container iframe {
+  display: block;
+  width: 100%;
+}

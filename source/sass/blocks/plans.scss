@@ -1,0 +1,43 @@
+.plans {
+  padding: 28px 20px 59px 20px;
+  background-color: $special-blue-light;
+  border-radius: 20px 20px 0 0;
+}
+
+.plans__list {
+  counter-reset: numbers;
+  color: $basic-blue-dark;
+}
+
+.plans__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.plans__country {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 20px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    counter-increment: numbers;
+    content: counter(numbers) ".";
+  }
+}
+
+.plans__info {
+  margin-bottom: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.plans__compainions-number {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.plans__dates {
+  margin: 0;
+}

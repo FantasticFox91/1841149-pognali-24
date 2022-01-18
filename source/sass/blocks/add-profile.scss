@@ -1,0 +1,23 @@
+.add-profile {
+  position: relative;
+  margin-top: -20px;
+  padding-top: 70px;
+  padding-bottom: 34px;
+  background-color: $background-color;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: $special-grey;
+}
+
+.add-profile__heading {
+  min-height: 62px;
+  margin: 0 100px 43px 0;
+}
+
+.add-profile__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $show-rate-color;
+}

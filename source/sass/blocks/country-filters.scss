@@ -1,0 +1,136 @@
+.country-filters {
+  margin-top: 3px;
+  margin-bottom: 21px;
+  padding-top: 23px;
+  padding-bottom: 15px;
+  background-color: $country-filter-color;
+  color: $special-blue;
+  border-radius: 0 0 15px 15px;
+}
+
+.country-filters__container {
+  display: flex;
+  align-items: center;
+
+  .country-filters__button {
+    display: none;
+    transition: $basic-animation;
+  }
+}
+
+.country-filters__heading {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: inherit;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: inherit;
+  flex-grow: 1;
+
+  &::after {
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    top: calc(50% - 5px);
+    left: 0;
+    background: url("../img/icon_filter.svg");
+    content: "";
+  }
+}
+
+.country-filters__dropdown {
+  position: static;
+  display: block;
+}
+
+.country-filters__button {
+  position: relative;
+  border: none;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+
+  &::after {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    left: 5px;
+    background-color: $special-blue;
+    border-radius: 50%;
+    box-shadow: 7px 0 0 0 $special-blue, -7px 0 0 0 $special-blue;
+    content: "";
+    transition: $basic-animation;
+  }
+}
+
+.country-filters__info {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.country-filters--open {
+  position: relative;
+
+  .country-filters__container {
+    align-items: flex-start;
+  }
+
+  .country-filters__button {
+    display: block;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+
+    &::after {
+      top: 50%;
+      left: 0;
+      width: 18px;
+      height: 2px;
+      transform: rotate(45deg);
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 18px;
+      height: 2px;
+      background-color: $basic-blue-dark;
+      transform: rotate(-45deg);
+      content: "";
+      transition: $basic-animation;
+    }
+  }
+
+  .country-filters__dropdown {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    z-index: 3;
+    background-color: $country-filter-color;
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+.country-filters--close {
+  .country-filters__container {
+    align-items: flex-start;
+  }
+
+  .country-filters__button {
+    display: block;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+  }
+
+  .country-filters__dropdown {
+    display: none;
+  }
+}

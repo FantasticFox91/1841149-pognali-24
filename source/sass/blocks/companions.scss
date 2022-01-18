@@ -1,0 +1,63 @@
+.companions {
+  position: relative;
+  padding-top: 68px;
+  padding-bottom: 31px;
+  background-color: $basic-blue;
+  border-radius: 0 0 15px 15px;
+}
+
+.companions__heading {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    top: -34px;
+    left: -24px;
+    width: 113px;
+    height: 132px;
+    background-color: $basic-blue-darkest;
+    border-radius: 20px;
+    z-index: -1;
+    content: "";
+  }
+
+  &::before {
+    position: absolute;
+    top: -34px;
+    right: 0;
+    width: 143px;
+    height: 143px;
+    background: url("../img/companions-text-back.jpg");
+    border-radius: 20px;
+    z-index: -1;
+    content: "";
+  }
+}
+
+.companions__description {
+  margin-bottom: 58px;
+  position: relative;
+  z-index: 1;
+}
+
+.companions__list {
+  position: relative;
+  max-width: 270px;
+  margin: 0 auto 20px auto;
+
+  &::before {
+    position: absolute;
+    top: -34px;
+    left: -25px;
+    width: 64px;
+    height: 71px;
+    background: url("../img/companions-card-back.png");
+    border-radius: 20px;
+    content: "";
+  }
+}
+
+.companions__item:not(:last-child) {
+  margin-bottom: 9px;
+}

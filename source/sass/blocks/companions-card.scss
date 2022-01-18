@@ -1,0 +1,70 @@
+.companions-card {
+  max-width: 270px;
+}
+
+.companions-card picture {
+  display: block;
+}
+
+.companions-card__image {
+  position: relative;
+  display: block;
+  border-radius: 10px;
+}
+
+.companions-card__description {
+  position: relative;
+  display: flex;
+  margin-top: -10px;
+  padding: 27px 40px;
+  flex-direction: column;
+  text-align: center;
+  background-color: $white-color;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.companions-card__list {
+  display: flex;
+  margin-bottom: 14px;
+  max-width: 188px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-grey;
+}
+
+.companions-card__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.companions-card__name {
+  position: relative;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $basic-blue;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: $special-green;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--offline::before {
+    background-color: $special-red;
+  }
+}
+
+.companions-card__item:not(.companions-card__item--active) svg {
+  opacity: 0.15;
+}

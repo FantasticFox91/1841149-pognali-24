@@ -1,0 +1,18 @@
+.continents__list {
+  margin-bottom: 25px;
+}
+
+.continents__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.continents__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.3;
+
+  &--active {
+    opacity: 1;
+  }
+}

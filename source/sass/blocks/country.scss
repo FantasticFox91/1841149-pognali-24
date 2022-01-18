@@ -184,33 +184,3 @@
     background-size: 35px 24px;
   }
 }
-
-.slider {
-  position: relative;
-  display: grid;
-  grid-template-columns: 280px;
-  justify-content: center;
-  background-color: $color-grey-100;
-  overflow: hidden;
-  gap: 15px;
-}
-
-.slider__wrapper {
-  padding: 40px 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .slider__wrapper {
-    padding: 0 100px;
-    padding-bottom: 55px;
-    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider__wrapper {
-    padding: 0 200px;
-    padding-bottom: 65px;
-    background-color: $color-white;
-  }
-}

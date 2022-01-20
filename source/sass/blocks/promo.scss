@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 44px;
+    background-color: #182044;
   }
 }
 
@@ -13,6 +14,10 @@
   background-image: url("../img/promo-bg.jpg");
   background-repeat: no-repeat;
   background-position-y: 138px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/promo-bg-tablet.png");
+  }
 }
 
 .promo__heading {

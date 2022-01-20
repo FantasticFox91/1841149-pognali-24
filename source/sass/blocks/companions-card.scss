@@ -1,5 +1,9 @@
 .companions-card {
   max-width: 270px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 285px;
+  }
 }
 
 .companions-card picture {
@@ -10,6 +14,12 @@
   position: relative;
   display: block;
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .companions-card__description {
@@ -18,8 +28,13 @@
   padding: 26px 40px 20px;
   flex-direction: column;
   background-color: $white-color;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 0 0 10px 10px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding: 30px 30px 28px;
+    border-radius: 0 0 20px 20px;
+  }
 }
 
 .companions-card__list {
@@ -61,6 +76,10 @@
   &--offline::before {
     background-color: $special-red;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .companions-card__hashtags {
@@ -71,4 +90,10 @@
   font-weight: 400;
   color: $special-grey;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 23px;
+  }
 }

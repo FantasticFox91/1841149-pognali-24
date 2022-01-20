@@ -47,6 +47,10 @@
     position: absolute;
   }
 
+  .logo__icon path {
+    fill: $black-color;
+  }
+
   .main-nav__toggle {
     display: block;
 
@@ -111,15 +115,6 @@
     display: none;
   }
 }
-
-// .main-nav__wrapper {
-//   display: block;
-//   @media (min-width: $tablet-width) {
-//     .link-button--header {
-//       display: block;
-//     }
-//   }
-// }
 
 .link-button--tablet-show {
   @media (max-width: 767px) {

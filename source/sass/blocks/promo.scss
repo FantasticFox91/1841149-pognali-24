@@ -2,6 +2,10 @@
   padding-top: 27px;
   padding-bottom: 39px;
   background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+  }
 }
 
 .promo__container {
@@ -20,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 120px;
-    margin-bottom: 86px;
+    margin-bottom: 88px;
     font-size: 60px;
     line-height: 70px;
   }
@@ -32,7 +36,8 @@
 
   @media (min-width: $tablet-width) {
     max-width: 264px;
-    margin-bottom: 211px;
+    margin-bottom: 212px;
+    margin-left: 32px;
   }
 }
 
@@ -42,6 +47,7 @@
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
     font-size: 28px;
     line-height: 33px;
   }
@@ -81,7 +87,7 @@
       &::after {
         position: absolute;
         top: -451px;
-        right: 0;
+        right: 71px;
         width: 372px;
         height: 451px;
         background: url("../../img/traveller-illustration-tablet.png");
@@ -127,28 +133,33 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 31px 100px 37px 33px;
+    padding: 29px 150px 37px 33px;
     font-size: 24px;
     line-height: 24px;
+    border-radius: 20px 20px 0 0;
 
     &::after {
-      left: 33px;
+      left: 35px;
       top: 88px;
+    }
+
+    &--step-one {
+      border-top-right-radius: 0;
     }
 
     &--step-two {
       width: 344px;
-      margin-left: -20px;
+      margin-left: -25px;
     }
 
     &--step-three{
-      border-radius: 0 0 0 15px;
+      border-radius: 0 0 0 20px;
     }
 
     &--step-four {
       width: 344px;
-      margin-left: -20px;
-      border-radius: 0 0 15px 15px;
+      margin-left: -25px;
+      border-radius: 0 0 20px 20px;
     }
   }
 }

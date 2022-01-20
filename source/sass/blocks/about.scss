@@ -5,13 +5,12 @@
   margin-top: -1px;
   background-color: $basic-blue;
   border-radius: 0 0 30px 30px;
-}
-
-.about__container {
   background-image: url("../img/about-mobile.png");
   background-repeat: no-repeat;
   background-position-x: 20px;
+}
 
+.about__container {
   @media (min-width: $tablet-width) {
     position: relative;
     background: none;

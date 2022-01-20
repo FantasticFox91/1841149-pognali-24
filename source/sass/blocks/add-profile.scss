@@ -6,11 +6,25 @@
   background-color: $background-color;
   border-radius: 0 0 30px 30px;
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
+    padding-top: 125px;
+    padding-bottom: 87px;
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .add-profile__heading {
   min-height: 62px;
   margin: 0 100px 43px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 56px;
+    text-align: center;
+  }
 }
 
 .add-profile__link {
@@ -20,4 +34,24 @@
   font-weight: 700;
   text-decoration: none;
   color: $show-rate-color;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 22px;
+    padding-bottom: 23px;
+    padding-left: 89px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 68px;
+      height: 68px;
+      background: $country-filter-color url("../../img/icon_businessman.svg") no-repeat 50% 50%;
+      border-radius: 50%;
+      content: "";
+    }
+  }
 }

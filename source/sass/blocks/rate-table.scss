@@ -8,11 +8,34 @@
   &::after {
     position: absolute;
     top: -129px;
-    right: 0px;
+    right: 0;
     width: 100px;
     height: 100px;
     background: url("../img/rates.png");
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
+    padding-right: 32px;
+    margin-bottom: 49px;
+
+    &::before {
+      position: absolute;
+      bottom: -41px;
+      right: 0;
+      width: 198px;
+      height: 285px;
+      background-color: $country-filter-color;
+      border-radius: 20px;
+      content: "";
+    }
+
+    &::after {
+      top: auto;
+      bottom: -115px;
+      right: 45px;
+    }
   }
 }
 
@@ -59,12 +82,33 @@
     line-height: 20px;
     padding: 10px 0;
   }
+
+  @media(min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-bottom: 19px;
+    font-size: 28px;
+    line-height: 28px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &::after {
+      top: 0;
+      right: 0;
+      left: -89px;
+      width: 68px;
+      height: 68px;
+    }
+  }
 }
 
 .rate-table__name {
   margin-bottom: 4px;
 
   &--modal {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }

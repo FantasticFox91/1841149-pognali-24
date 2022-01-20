@@ -41,3 +41,10 @@
 .link-button--auth {
   font-size: 17px;
 }
+
+.link-button--tablet-show {
+  @media (min-width: $tablet-width) {
+    padding: 12px 28px 14px 29px;
+    font-size: 20px;
+  }
+}

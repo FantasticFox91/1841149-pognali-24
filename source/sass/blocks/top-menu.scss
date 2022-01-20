@@ -79,6 +79,10 @@
     flex-direction: row;
     padding-top: 18px;
     padding-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 40px;
+    }
   }
 
   .main-nav__wrapper {

@@ -1,3 +1,7 @@
+.contacts-list {
+  margin-bottom: 41px;
+}
+
 .contacts-list__link {
   position: relative;
   display: block;
@@ -10,6 +14,11 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-yellow;
+
+  &--header {
+    text-align: left;
+    color: $special-blue;
+  }
 
   &::after {
     position: absolute;

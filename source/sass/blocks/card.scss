@@ -1,6 +1,16 @@
 .card {
   font-weight: 500;
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.card__container {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .card__image {
@@ -9,6 +19,12 @@
   display: block;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 186px;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+  }
 }
 
 .card__description {
@@ -21,13 +37,59 @@
   background-color: $white-color;
   border-radius: 15px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 0;
+    padding: 30px 35px 20px 26px;
+    border-radius: 15px 0 0 15px;
+  }
 }
 
 .card__heading {
+  position: relative;
   margin: 0;
   font-size: 21px;
   line-height: 21px;
   color: $black-color;
+
+  &::after {
+    position: absolute;
+    width: 35px;
+    height: 24px;
+    top: -35px;
+    left: 0;
+    content: "";
+  }
+
+  &--thailand::after {
+    background: url("../img/thailand.svg") no-repeat;
+    background-size: 35px 24px;
+  }
+
+  &--france::after {
+    background: url("../img/france.svg") no-repeat;
+    background-size: 35px 24px;
+  }
+
+  &--chech::after {
+    background: url("../img/chech.svg") no-repeat;
+    background-size: 35px 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+
+    &::after {
+      width: 70px;
+      height: 47px;
+      background-size: 70px 47px;
+      top: calc(50% - 10px);
+      left: 100%;
+    }
+  }
 }
 
 .card__subheading {
@@ -35,6 +97,11 @@
   margin: 0;
   line-height: 18px;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 17px;
+  }
 }
 
 .card__people-counter {
@@ -53,5 +120,9 @@
     height: 14px;
     background: url("../img/icon-user.svg");
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }

@@ -6,9 +6,21 @@
   margin: 0;
   margin-bottom: 20px;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    max-width: 290px;
+    line-height: 33px;
+    margin-bottom: 31px;
+  }
 }
 
 .section-description__text--bold {
   margin-bottom: 0;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 52px;
+  }
 }

@@ -1,5 +1,5 @@
 .promo {
-  padding-top: 21px;
+  padding-top: 27px;
   padding-bottom: 39px;
   background-color: $basic-blue;
 }
@@ -19,46 +19,93 @@
   line-height: 40px;
   text-align: center;
   color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 120px;
+    margin-bottom: 86px;
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
 
 .promo__quote {
   margin-left: 25px;
+  max-width: 156px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 264px;
+    margin-bottom: 211px;
+  }
 }
 
 .promo__review {
   margin: 0;
-  margin-bottom: 18px;
-  max-width: 153px;
-  font-style: italic;
+  margin-bottom: 17px;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .promo__author {
   display: block;
-  max-width: 161px;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 .promo__description {
   display: block;
   margin-bottom: 30px;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 .promo__list {
   counter-reset: numbers;
+
+  &--steps {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(369px, 1fr) 344px;
+      grid-template-rows: repeat(2, 140px);
+
+      &::after {
+        position: absolute;
+        top: -451px;
+        right: 0;
+        width: 372px;
+        height: 451px;
+        background: url("../../img/traveller-illustration-tablet.png");
+        content: "";
+      }
+    }
+  }
 }
 
 .promo__item {
   position: relative;
-  padding: 22px 140px 25px 24px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  background-color: $special-orange;
+  padding: 22px 140px 34px 24px;
+  font-size: 18px;
+  line-height: 18px;
   color: $basic-blue;
+  background-color: $special-orange;
+  border-radius: 10px 10px 0 0;
 
   &::after {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 21px;
+    top: 20px;
     color: $white-color;
     counter-increment: numbers;
     content: counter(numbers);
@@ -77,31 +124,58 @@
   &--step-four {
     background-color: $basic-yellow;
     padding-right: 121px;
+    padding-bottom: 22px;
+    border-radius: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 100px 37px 33px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::after {
+      left: 33px;
+      top: 88px;
+    }
+
+    &--step-two {
+      width: 344px;
+      margin-left: -20px;
+    }
+
+    &--step-three{
+      border-radius: 0 0 0 15px;
+    }
+
+    &--step-four {
+      width: 344px;
+      margin-left: -20px;
+      border-radius: 0 0 15px 15px;
+    }
   }
 }
 
 .promo__item:not(:first-child) {
   margin-top: -12px;
-}
 
-.promo__item:last-child {
-  border-radius: 15px;
-  padding-bottom: 14px;
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .promo__list--user {
   position: relative;
-  padding-top: 245px;
+  padding-top: 246px;
   z-index: 0;
 
   &::after {
     position: absolute;
     z-index: -1;
-    top: 0;
-    right: 0;
+    top: 11px;
+    right: 23px;
     width: 192px;
     height: 255px;
-    background: url("../../img/promo-list-pseudo.png");
+    background: url("../img/promo-list-pseudo.png");
     content: "";
   }
 }

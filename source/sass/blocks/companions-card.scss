@@ -47,7 +47,7 @@
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  color: $basic-blue;
+  color: $basic-blue-dark;
 
   &::before {
     position: absolute;
@@ -63,8 +63,4 @@
   &--offline::before {
     background-color: $special-red;
   }
-}
-
-.companions-card__item:not(.companions-card__item--active) svg {
-  opacity: 0.15;
 }

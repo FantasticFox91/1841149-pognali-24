@@ -22,6 +22,14 @@
   }
 
   &--ig {
-    background: url("../../img/icon_instagram.svg") 50% 50% no-repeat;
+    background: url("../img/icon_instagram.svg") 50% 50% no-repeat;
+  }
+
+  &--footer {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 37px;
+    background-color: $basic-yellow;
+    border-radius: 50%;
   }
 }

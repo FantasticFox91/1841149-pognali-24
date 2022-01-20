@@ -24,6 +24,7 @@
   font-size: 38px;
   line-height: 38px;
   font-weight: 700;
+  color: $basic-blue-dark;
   border-bottom: 1px solid $special-grey;
 }
 
@@ -39,6 +40,10 @@
   width: 100%;
   padding: 9px 0;
   grid-column: span 2;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $basic-blue;
   text-align: center;
   text-transform: uppercase;
   background-color: $special-blue-light;
@@ -112,12 +117,4 @@
 
 .profile__input:not(:checked) + .profile__label--checkbox {
   opacity: 0.15;
-}
-
-.plans__change {
-  font-size: 14px;
-  line-height: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.3);
 }

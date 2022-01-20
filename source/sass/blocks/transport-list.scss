@@ -2,6 +2,10 @@
   margin-bottom: 0;
 }
 
-.transport-list .companions-card__item:not(:last-child) {
+.transport-list__item:not(:last-child) {
   margin-right: 13px;
+}
+
+.transport-list__item:not(.transport-list__item--active) svg {
+  opacity: 0.15;
 }

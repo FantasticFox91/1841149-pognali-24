@@ -3,3 +3,10 @@
   margin-top: -20px;
   background-color: $basic-blue-light;
 }
+
+.add-plan__container {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1320px;
+  }
+}

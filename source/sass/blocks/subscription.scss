@@ -33,8 +33,13 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+  color: $special-grey;
   border: none;
   border-radius: 15px 0 0 15px;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 }
 
 .subscription__heading {

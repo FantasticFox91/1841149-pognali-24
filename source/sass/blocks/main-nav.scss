@@ -1,15 +1,16 @@
 .main-nav {
   display: flex;
-  justify-content: space-between;
-  padding: 26px 0 25px 0;
+  padding: 17px 0 25px 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .main-nav__wrapper {
-  position: absolute;
+  position: static;
   left: 0;
   top: -400px;
   display: flex;
-  padding: 0 20px;
   padding-bottom: 41px;
   text-align: center;
   flex-direction: column;
@@ -20,6 +21,7 @@
 }
 
 .main-nav__toggle {
+  display: none;
   position: relative;
   width: 25px;
   height: 11px;
@@ -50,3 +52,7 @@
     transition: $basic-animation;
   }
 }
+
+// .main-nav__logo path {
+//   fill: $black-color;
+// }

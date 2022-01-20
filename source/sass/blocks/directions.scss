@@ -19,4 +19,14 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.directions__items {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+  }
 }

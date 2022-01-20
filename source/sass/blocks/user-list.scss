@@ -1,7 +1,11 @@
 .user-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .user-list__link {

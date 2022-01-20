@@ -12,8 +12,46 @@
   background-image: url("../img/about-mobile.png");
   background-repeat: no-repeat;
   background-position-x: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background: none;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      width: 376px;
+      height: 548px;
+      background: url("../img/about-tablet.png");
+      content: "";
+    }
+
+    &::before {
+      position: absolute;
+      top: -20px;
+      right: 30px;
+      width: 688px;
+      height: 212px;
+      background-color: #141B3B;
+      content: "";
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
 }
 
 .about__button {
-  display: none;
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  margin-left: 25px;
+}
+
+.about__description {
+  @media (min-width: $tablet-width) {
+    max-width: 327px;
+  }
 }

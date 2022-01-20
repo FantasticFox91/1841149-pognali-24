@@ -10,6 +10,12 @@
 
 .calendar__workdays {
   padding: 8px 6px;
+  font-weight: 400;
+}
+
+.calendar__weekend {
+  font-weight: 400;
+  color: $special-red
 }
 
 .calendar__button {

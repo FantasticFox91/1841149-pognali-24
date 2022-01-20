@@ -2,28 +2,34 @@
   position: absolute;
   display: none;
   flex-direction: column;
-  top: -5px;
+  top: 16px;
   left: calc(50% - 134px);
   padding: 0;
-  padding-top: 34px;
+  padding-top: 33px;
   background-color: $white-color;
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  z-index: 1;
 
   &--open {
     display: flex;
   }
 }
 
+.modal__container {
+  padding-left: 23px;
+}
+
 .modal__heading {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 30px;
   color: $special-orange;
   text-align: center;
 }
 
 .modal__button {
   padding: 21px 0;
+  padding-bottom: 14px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 24px;

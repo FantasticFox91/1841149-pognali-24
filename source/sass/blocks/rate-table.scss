@@ -54,10 +54,19 @@
   &--third::after {
     background-color: $basic-yellow;
   }
+
+  &--modal {
+    line-height: 20px;
+    padding: 10px 0;
+  }
 }
 
 .rate-table__name {
   margin-bottom: 4px;
+
+  &--modal {
+    margin-bottom: 0;
+  }
 }
 
 .rate-table--modal {

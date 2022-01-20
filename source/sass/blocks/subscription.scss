@@ -1,13 +1,17 @@
 .subscription {
   position: relative;
-  padding-top: 72px;
+  padding-top: 70px;
   padding-bottom: 29px;
   background-color: $basic-blue;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
+}
+
+.subscription__container {
+  padding-top: 39px;
 }
 
 .subscription__description {
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .subscription__text {
@@ -15,8 +19,16 @@
   text-align: center;
 }
 
+.subscription__description--questions {
+  margin-bottom: 17px;
+}
+
 .subscription__link {
   color: $basic-yellow;
+}
+
+.subscription__list {
+  margin-bottom: 0;
 }
 
 .subscription__form {
@@ -35,7 +47,7 @@
   font-weight: 700;
   color: $special-grey;
   border: none;
-  border-radius: 15px 0 0 15px;
+  border-radius: 10px 0 0 10px;
 
   &::placeholder {
     opacity: 0.3;
@@ -49,8 +61,7 @@
 .subscription__button {
   position: absolute;
   top: 0;
-  right: 6px;
-  margin-left: -65px;
+  right: 0;
   width: 60px;
   height: 62px;
   background-color: $basic-yellow;
@@ -58,7 +69,7 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 
   @media (min-resolution: 2dppx) {
     top: 2px;

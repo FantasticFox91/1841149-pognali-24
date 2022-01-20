@@ -1,6 +1,6 @@
 .main-nav {
   display: flex;
-  padding: 17px 0 25px 0;
+  padding: 25px 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -11,7 +11,7 @@
   left: 0;
   top: -400px;
   display: flex;
-  padding-bottom: 41px;
+  padding-bottom: 37px;
   text-align: center;
   flex-direction: column;
   width: 100%;
@@ -51,6 +51,14 @@
     content: "";
     transition: $basic-animation;
   }
+}
+
+.main-nav__item {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 // .main-nav__logo path {

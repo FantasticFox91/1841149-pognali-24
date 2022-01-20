@@ -34,13 +34,15 @@
   }
 
   .main-nav {
+    padding-top: 25px;
+    padding-bottom: 17px;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
 
   .main-nav__wrapper {
-    top: 72px;
+    top: 64px;
     display: flex;
     position: absolute;
   }
@@ -71,10 +73,12 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding-top: 18px;
+    padding-bottom: 24px;
   }
 
   .main-nav__wrapper {
-    top: -500px;
+    top: -508px;
     display: flex;
     position: absolute;
   }

@@ -1,11 +1,10 @@
 .about {
   position: relative;
   padding-top: 33px;
-  padding-bottom: 82px;
+  padding-bottom: 83px;
   margin-top: -1px;
   background-color: $basic-blue;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-radius: 0 0 30px 30px;
 }
 
 .about__container {

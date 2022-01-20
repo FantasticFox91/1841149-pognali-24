@@ -8,6 +8,13 @@
   background-image: url("../img/about-mobile.png");
   background-repeat: no-repeat;
   background-position-x: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 89px;
+    background-image: none;
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .about__container {
@@ -18,8 +25,8 @@
 
     &::after {
       position: absolute;
-      top: 20px;
-      right: 0;
+      top: 11px;
+      right: 8px;
       width: 376px;
       height: 548px;
       background: url("../img/about-tablet.png");
@@ -45,11 +52,15 @@
     display: none;
   }
 
-  margin-left: 25px;
+  max-width: 276px;
+  margin-left: 34px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-radius: 20px;
 }
 
 .about__description {
   @media (min-width: $tablet-width) {
-    max-width: 327px;
+    max-width: 360px;
   }
 }

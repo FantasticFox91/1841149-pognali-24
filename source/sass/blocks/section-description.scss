@@ -1,5 +1,9 @@
 .section-description {
   padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+  }
 }
 
 .section-description__text {
@@ -8,7 +12,6 @@
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
-    max-width: 290px;
     line-height: 33px;
     margin-bottom: 31px;
   }
@@ -20,7 +23,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    line-height: 24px;
-    margin-bottom: 52px;
+    line-height: 25px;
+    margin-bottom: 54px;
   }
 }

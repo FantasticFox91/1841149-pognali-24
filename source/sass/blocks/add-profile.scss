@@ -1,11 +1,10 @@
 .add-profile {
   position: relative;
-  margin-top: -20px;
-  padding-top: 70px;
-  padding-bottom: 34px;
+  margin-top: -27px;
+  padding-top: 78px;
+  padding-bottom: 36px;
   background-color: $background-color;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 0 0 30px 30px;
   color: $special-grey;
 }
 
@@ -15,6 +14,7 @@
 }
 
 .add-profile__link {
+  padding-left: 25px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;

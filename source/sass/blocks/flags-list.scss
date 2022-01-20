@@ -1,8 +1,10 @@
 .flags-list {
   position: absolute;
-  top: -10px;
-  display: flex;
+  top: -11px;
   width: 142px;
   left: calc(50% - 71px);
-  justify-content: space-evenly;
+}
+
+.flags-list__item:not(:last-child) {
+  margin-right: 18px;
 }

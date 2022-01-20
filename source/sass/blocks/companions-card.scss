@@ -9,16 +9,14 @@
 .companions-card__image {
   position: relative;
   display: block;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 .companions-card__description {
   position: relative;
   display: flex;
-  margin-top: -10px;
-  padding: 27px 40px;
+  padding: 26px 40px 20px;
   flex-direction: column;
-  text-align: center;
   background-color: $white-color;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -42,7 +40,7 @@
 
 .companions-card__name {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 15px;
   font-size: 21px;
   line-height: 21px;
@@ -52,7 +50,7 @@
   &::before {
     position: absolute;
     top: calc(50% - 3px);
-    left: 10px;
+    left: -16px;
     width: 6px;
     height: 6px;
     background-color: $special-green;
@@ -63,4 +61,14 @@
   &--offline::before {
     background-color: $special-red;
   }
+}
+
+.companions-card__hashtags {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-grey;
+  text-align: center;
 }

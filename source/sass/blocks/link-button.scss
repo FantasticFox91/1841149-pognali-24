@@ -46,6 +46,10 @@
       right: 33px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 275px;
+  }
 }
 
 .link-button--header {

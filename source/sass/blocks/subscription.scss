@@ -11,6 +11,11 @@
     padding-bottom: 58px;
     border-radius: 0 0 60px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 105px;
+    padding-bottom: 103px;
+  }
 }
 
 .subscription__container {
@@ -22,6 +27,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
   }
 }
 
@@ -44,6 +53,20 @@
     &--questions {
       margin-right: 0;
       margin-left: 8px;
+      margin-bottom: 55px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 70px;
+
+    &--auth {
+      margin-right: 50px;
+    }
+
+    &--questions {
+      margin-left: 70px;
+      margin-bottom: 44px;
     }
   }
 }
@@ -66,6 +89,11 @@
 
 .subscription__list {
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .subscription__form {
@@ -77,6 +105,11 @@
     max-width: 616px;
     margin: 0 auto;
     margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1174px;
+    margin-bottom: 68px;
   }
 }
 
@@ -111,6 +144,10 @@
     margin-bottom: 60px;
     margin-right: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 42px;
+  }
 }
 
 .subscription__button {
@@ -135,8 +172,22 @@
     height: 80px;
     border-radius: 0 20px 20px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
+    background-position: 279px 50%;
+  }
 }
 
 .subscription__text--desktop {
-  display: none;
+  margin-left: -44px;
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basic-blue-dark;
+
+  @media (max-width: 1139px) {
+    display: none;
+  }
 }

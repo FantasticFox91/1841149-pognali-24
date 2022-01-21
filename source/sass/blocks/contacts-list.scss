@@ -46,18 +46,18 @@
 
   &--tel::after {
     background-image: url("../img/icon-telephone.svg");
+    background-position: 50% 50%;
   }
 
   &--mail::after {
     background-image: url("../img/icon-mail.svg");
+    background-position: 50% 50%;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 28px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 86px;
+    padding: 20px 0 20px 86px;
 
     &::after {
       width: 68px;
@@ -73,5 +73,31 @@
     &--mail::after {
       background-size: 28px 19px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 31px 0 31px 121px;
+    padding-left: 121px;
+
+    &::after {
+      top: -1px;
+      left: 0;
+      width: 90px;
+      height: 90px;
+    }
+
+    &--tel::after {
+      background-size: 38px 34px;
+    }
+
+    &--mail::after {
+      background-size: 37px 25px;
+    }
+  }
+}
+
+.contacts-list__item:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    margin-right: 110px;
   }
 }

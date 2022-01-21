@@ -6,6 +6,10 @@
     margin-bottom: 111px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+
   &--header {
     @media (min-width: $desktop-width) {
       display: none;

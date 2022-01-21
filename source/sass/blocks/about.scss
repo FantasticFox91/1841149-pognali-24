@@ -16,6 +16,12 @@
     background-color: #182044;
     border-radius: 0 0 60px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 128px;
+    padding-bottom: 163px;
+    border-radius: 0 0 56px 56px;
+  }
 }
 
 .about__container {
@@ -46,22 +52,47 @@
       border-radius: 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: -43px;
+      right: 5px;
+      width: 630px;
+      height: 665px;
+      background: url("../img/about-desktop.png");
+    }
+
+    &::before {
+      width: 212px;
+      height: 212px;
+      top: -57px;
+      left: 4px;
+    }
+  }
 }
 
 .about__button {
-  @media (max-width: 767px) {
-    display: none;
-  }
-
   max-width: 276px;
   margin-left: 34px;
   padding-top: 28px;
   padding-bottom: 28px;
   border-radius: 20px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 71px;
+  }
 }
 
 .about__description {
   @media (min-width: $tablet-width) {
     max-width: 360px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 690px;
   }
 }

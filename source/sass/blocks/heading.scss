@@ -20,4 +20,9 @@
     font-size: 45px;
     line-height: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    margin-bottom: 59px;
+  }
 }

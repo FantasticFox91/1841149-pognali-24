@@ -4,6 +4,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 0;
+  }
 }
 
 .section-description__text {
@@ -15,6 +20,10 @@
     line-height: 33px;
     margin-bottom: 31px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .section-description__text--bold {
@@ -25,5 +34,10 @@
     font-size: 21px;
     line-height: 25px;
     margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 470px;
+    margin-bottom: 86px;
   }
 }

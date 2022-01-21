@@ -6,7 +6,12 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40x;
+    padding-top: 40px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 48px;
   }
 }
 
@@ -75,5 +80,11 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 62px;
+  }
+}
+
+.main-nav__logo {
+  @media (min-width: $tablet-width) {
+    margin-right: 39px;
   }
 }

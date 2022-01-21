@@ -61,11 +61,21 @@
 
 .link-button--auth {
   font-size: 17px;
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 28px 14px 29px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .link-button--tablet-show {
   @media (min-width: $tablet-width) {
     padding: 12px 28px 14px 29px;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

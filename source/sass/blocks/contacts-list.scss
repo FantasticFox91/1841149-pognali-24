@@ -5,6 +5,12 @@
     padding-left: 62px;
     margin-bottom: 111px;
   }
+
+  &--header {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .contacts-list__link {

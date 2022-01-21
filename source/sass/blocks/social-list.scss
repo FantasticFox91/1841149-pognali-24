@@ -7,6 +7,10 @@
     padding-left: 59px;
     justify-content: start;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .social-list__item:not(:last-child) {

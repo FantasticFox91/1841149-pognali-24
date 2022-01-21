@@ -4,12 +4,17 @@
   min-width: 135px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 59px;
     justify-content: start;
   }
 }
 
 .social-list__item:not(:last-child) {
   margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .social-list__link {
@@ -38,6 +43,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 62px;
+
     &--footer {
       width: 62px;
       height: 62px;

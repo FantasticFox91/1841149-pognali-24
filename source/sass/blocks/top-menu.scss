@@ -39,12 +39,20 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 40px;
+    }
   }
 
   .main-nav__wrapper {
     top: 64px;
     display: flex;
     position: absolute;
+
+    @media (min-width: $tablet-width) {
+      top: 107px;
+    }
   }
 
   .logo__icon path {
@@ -90,7 +98,7 @@
   }
 
   .main-nav__wrapper {
-    top: -560px;
+    top: -805px;
     display: flex;
     position: absolute;
   }

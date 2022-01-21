@@ -1,6 +1,11 @@
 .links-list {
   padding-top: 51px;
   padding-bottom: 54px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding: 73px 0 135px 57px;
+  }
 }
 
 .links-list__link {
@@ -10,4 +15,9 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $special-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+  }
 }

@@ -6,7 +6,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding-top: 44px;
+    padding-top: 40x;
   }
 }
 
@@ -22,6 +22,10 @@
   background-color: $white-color;
   z-index: 5;
   transition: $basic-animation;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 73px;
+  }
 }
 
 .main-nav__toggle {
@@ -67,8 +71,9 @@
   height: 30px;
   justify-content: center;
   align-items: center;
-}
 
-// .main-nav__logo path {
-//   fill: $black-color;
-// }
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 62px;
+  }
+}

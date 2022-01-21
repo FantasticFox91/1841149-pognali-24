@@ -53,6 +53,10 @@
   padding-top: 14px;
   padding-bottom: 14px;
   font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .link-button--auth {

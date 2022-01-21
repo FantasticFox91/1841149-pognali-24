@@ -40,4 +40,27 @@
   &--mail::after {
     background-image: url("../img/icon-mail.svg");
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 86px;
+
+    &::after {
+      width: 68px;
+      height: 68px;
+      top: -2px;
+      left: -5px;
+    }
+
+    &--tel::after {
+      background-size: 27px 26px;
+    }
+
+    &--mail::after {
+      background-size: 28px 19px;
+    }
+  }
 }

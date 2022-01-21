@@ -17,6 +17,7 @@
 .companions__heading {
   position: relative;
   z-index: 1;
+  transition: $basic-animation;
 
   &::after {
     position: absolute;
@@ -28,6 +29,7 @@
     border-radius: 20px;
     z-index: -1;
     content: "";
+    transition: $basic-animation;
   }
 
   &::before {
@@ -40,6 +42,7 @@
     border-radius: 10px;
     z-index: -1;
     content: "";
+    transition: $basic-animation;
   }
 
   @media (min-width: $tablet-width) {
@@ -97,6 +100,7 @@
   position: relative;
   max-width: 270px;
   margin: 0 auto 20px auto;
+  transition: $basic-animation;
 
   &::before {
     position: absolute;
@@ -107,6 +111,7 @@
     background: url("../img/companions-card-back.png");
     border-radius: 10px;
     content: "";
+    transition: $basic-animation;
   }
 
   @media (min-width: $tablet-width) {

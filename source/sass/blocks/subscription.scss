@@ -2,9 +2,15 @@
   position: relative;
   padding-top: 70px;
   padding-bottom: 29px;
-  background-color: $basic-blue;
+  background-color: $special-blue;
   border-radius: 0 0 30px 30px;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 72px;
+    padding-bottom: 58px;
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .subscription__container {
@@ -13,15 +19,45 @@
 
 .subscription__description {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
 }
 
 .subscription__text {
   margin: 0;
+  margin-right: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    line-height: 32px;
+
+    br {
+      display: none;
+    }
+
+    &--auth {
+      margin-right: 9px;
+    }
+
+    &--questions {
+      margin-right: 0;
+      margin-left: 8px;
+    }
+  }
 }
 
 .subscription__description--questions {
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-bottom: 43px;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 0.01em;
+  }
 }
 
 .subscription__link {
@@ -36,6 +72,12 @@
   position: relative;
   display: flex;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 616px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+  }
 }
 
 .subscription__input {
@@ -53,10 +95,22 @@
   &::placeholder {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 80px 27px 36px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px 0 0 20px;
+  }
 }
 
 .subscription__heading {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    margin-right: 10px;
+  }
 }
 
 .subscription__button {
@@ -74,6 +128,12 @@
 
   @media (min-resolution: 2dppx) {
     top: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    border-radius: 0 20px 20px 0;
   }
 }
 

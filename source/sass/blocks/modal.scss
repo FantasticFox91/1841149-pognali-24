@@ -14,10 +14,21 @@
   &--open {
     display: flex;
   }
+
+  @media (min-width: $tablet-width) {
+    top: 55px;
+    left: 40px;
+    padding-top: 50px;
+  }
 }
 
 .modal__container {
   padding-left: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 89px;
+    padding-right: 94px;
+  }
 }
 
 .modal__heading {
@@ -25,6 +36,12 @@
   margin-bottom: 30px;
   color: $special-orange;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .modal__button {
@@ -39,4 +56,10 @@
   background-color: $modal-button-color;
   border: none;
   border-radius: 0 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 43px;
+    font-size: 24px;
+    text-transform: none;
+  }
 }

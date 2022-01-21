@@ -98,6 +98,10 @@
       width: 68px;
       height: 68px;
     }
+
+    &--modal {
+      font-size: 22px;
+    }
   }
 }
 
@@ -134,5 +138,20 @@
     &::after {
       display: none;
     }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 12px;
+      padding-bottom: 11px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 505px;
+    margin-bottom: 53px;
+
+    &::before {
+      display: none;
+    }
+
   }
 }

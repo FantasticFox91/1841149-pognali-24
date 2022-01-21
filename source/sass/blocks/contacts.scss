@@ -7,6 +7,13 @@
   background-color: $basic-yellow;
   border-radius: 0 0 30px 30px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
+    padding-top: 95px;
+    padding-bottom: 84px;
+    border-radius: 0 0 55px 55px;
+  }
 }
 
 .contacts__adress {
@@ -29,6 +36,26 @@
     background: $basic-blue-darkest url("../img/icon-location.svg") 50% 50% no-repeat;
     content: "";
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+    margin-bottom: 64px;
+    padding-left: 95px;
+    font-size: 28px;
+    line-height: 28px;
+
+    br {
+      display: none;
+    }
+
+    &::before {
+      top: -20px;
+      left: 1px;
+      width: 68px;
+      height: 68px;
+      background-size: 24px 31px;
+    }
+  }
 }
 
 .contacts__button {
@@ -38,5 +65,14 @@
   &::after {
     top: 21px;
     right: 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 36px 26px 34px;
+
+    &::after {
+      top: calc(50% - 6px);
+      right: 32px;
+    }
   }
 }

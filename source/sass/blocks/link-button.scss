@@ -39,9 +39,7 @@
   @media (min-width: $tablet-width) {
     max-width: none;
     margin: 0 35px;
-    padding-left: 32px;
-    padding-top: 29px;
-    padding-bottom: 29px;
+    padding: 29px 36px 29px 32px;
     border-radius: 20px;
 
     &::after {

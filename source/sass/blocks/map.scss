@@ -1,7 +1,11 @@
 .map {
   position: relative;
   margin-top: -20px;
-}
+
+  @media (min-width: $tablet-width){
+    margin-top: -47px;
+  }
+ }
 
 .map__container {
   width: 100%;

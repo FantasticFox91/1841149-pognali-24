@@ -13,6 +13,11 @@
     padding-bottom: 87px;
     border-radius: 0 0 60px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 158px;
+    padding-bottom: 189px;
+  }
 }
 
 .add-profile__heading {
@@ -24,6 +29,11 @@
     margin-right: 10px;
     margin-bottom: 56px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 42px;
+    margin-bottom: 116px;
   }
 }
 
@@ -53,5 +63,9 @@
       border-radius: 50%;
       content: "";
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 71px;
   }
 }

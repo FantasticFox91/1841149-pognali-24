@@ -37,6 +37,26 @@
       right: 45px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 158px;
+    padding-right: 342px;
+
+    &::before {
+      bottom: -47px;
+      right: 183px;
+      width: 446px;
+      height: 300px;
+    }
+
+    &::after {
+      bottom: 3px;
+      right: 73px;
+      width: 198px;
+      height: 198px;
+      background-size: 198px 198px;
+    }
+  }
 }
 
 .rate-table__row {

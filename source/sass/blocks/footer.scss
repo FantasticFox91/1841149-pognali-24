@@ -10,6 +10,12 @@
     padding-top: 25px;
     border-radius: 55px 55px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -144px;
+    padding-top: 36px;
+    padding-bottom: 43px;
+  }
 }
 
 .footer__container {
@@ -25,6 +31,14 @@
     padding-bottom: 32px;
     padding-top: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 51px;
+    margin-right: 61px;
+    padding: 0;
+    padding-top: 11px;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
@@ -34,11 +48,22 @@
     margin-bottom: 0;
     margin-right: 86px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .footer__list {
   @media (min-width:$tablet-width) {
     margin-right: 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: -36px;
   }
 }
 

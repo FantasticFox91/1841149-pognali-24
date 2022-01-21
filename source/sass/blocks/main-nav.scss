@@ -55,6 +55,10 @@
     content: "";
     transition: $basic-animation;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+  }
 }
 
 .main-nav__item {

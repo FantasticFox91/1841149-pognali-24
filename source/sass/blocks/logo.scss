@@ -1,0 +1,27 @@
+.logo__link {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 166px;
+    height: 42px;
+  }
+}
+
+.logo__icon {
+  position: absolute;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 12px;
+    right: 0;
+    width: 107px;
+    height: 17px;
+  }
+}
+
+.logo__icon--showtablet {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

@@ -15,10 +15,11 @@
 }
 
 .logo__icon {
-  position: absolute;
-  z-index: 1;
+
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: 1;
     top: 12px;
     right: 0;
     width: 107px;

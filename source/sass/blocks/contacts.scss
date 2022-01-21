@@ -111,3 +111,9 @@
     padding-bottom: 27px;
   }
 }
+
+.contacts__tablet-show {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

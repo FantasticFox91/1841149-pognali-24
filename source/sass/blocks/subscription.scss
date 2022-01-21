@@ -36,10 +36,15 @@
 
 .subscription__text {
   margin: 0;
-  margin-right: 30px;
+  margin-right: 5px;
   text-align: center;
 
+  &--questions {
+    margin-right: 0;
+  }
+
   @media (min-width: $tablet-width) {
+    margin-right: 30px;
     line-height: 32px;
 
     br {
@@ -53,7 +58,7 @@
     &--questions {
       margin-right: 0;
       margin-left: 8px;
-      margin-bottom: 55px;
+      margin-bottom: 43px;
     }
   }
 

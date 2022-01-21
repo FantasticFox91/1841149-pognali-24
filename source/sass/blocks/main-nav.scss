@@ -84,7 +84,8 @@
 }
 
 .main-nav__logo {
-  @media (min-width: $tablet-width) {
-    margin-right: 39px;
+  @media (min-width: $desktop-width) {
+    margin-left: -6px;
+    margin-right: 45px;
   }
 }

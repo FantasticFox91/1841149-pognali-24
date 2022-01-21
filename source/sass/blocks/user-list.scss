@@ -9,6 +9,8 @@
 }
 
 .user-list--header {
+  display: none;
+
   @media (min-width: $desktop-width) {
     display: flex;
     margin-bottom: 0;

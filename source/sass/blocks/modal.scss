@@ -20,6 +20,13 @@
     left: 40px;
     padding-top: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 154px;
+    left: calc(50% - 357px);
+    border-radius: 30px;
+    box-shadow: 0 4px 22px rgba(29, 46, 91, 0.18);
+  }
 }
 
 .modal__container {
@@ -28,6 +35,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 89px;
     padding-right: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 58px;
+    padding-right: 60px;
   }
 }
 
@@ -61,5 +73,9 @@
     padding: 40px 0 43px;
     font-size: 24px;
     text-transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0 0 30px 30px;
   }
 }

@@ -172,6 +172,9 @@
     &::before {
       display: none;
     }
+  }
 
+  @media (min-width: $desktop-width) {
+    min-width: 632px;
   }
 }

@@ -7,6 +7,13 @@
     padding-top: 44px;
     background-color: #182044;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 83px;
+    padding-bottom: 124px;
+    background-image: url("../img/promo-bg-desktop.png");
+    background-position-y: -122px;
+  }
 }
 
 .promo__container {
@@ -17,6 +24,10 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/promo-bg-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
   }
 }
 
@@ -33,6 +44,13 @@
     font-size: 60px;
     line-height: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 418px;
+    margin-left: 72px;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .promo__quote {
@@ -43,6 +61,10 @@
     max-width: 264px;
     margin-bottom: 212px;
     margin-left: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -287px 27px 0 auto;
   }
 }
 
@@ -77,6 +99,10 @@
     font-size: 21px;
     line-height: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 117px;
+  }
 }
 
 .promo__list {
@@ -95,8 +121,25 @@
         right: 71px;
         width: 372px;
         height: 451px;
-        background: url("../../img/traveller-illustration-tablet.png");
+        background: url("../img/traveller-illustration-tablet.png");
         content: "";
+      }
+
+      @media (min-width: $desktop-width) {
+        margin: 0 5px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+
+      &::after {
+        top: -410px;
+        right: 345px;
+        width: 431px;
+        height: 640px;
+        background: url("../img/traveller-illustration-desktop.png");
+        z-index: 0;
       }
     }
   }
@@ -167,6 +210,17 @@
       border-radius: 0 0 20px 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px;
+    padding-bottom: 30px;
+    z-index: 2;
+
+    &::after {
+      top: 25px;
+      left: 70%;
+    }
+  }
 }
 
 .promo__item:not(:first-child) {
@@ -174,6 +228,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -50px;
   }
 }
 

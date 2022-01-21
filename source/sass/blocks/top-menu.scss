@@ -78,6 +78,9 @@
 }
 
 .top-menu--close {
+  @media (min-width: $desktop-width) {
+    background-color: $basic-blue;
+  }
   .top-menu__container {
     background-color: $basic-blue;
 
@@ -100,6 +103,7 @@
     @media (min-width: $desktop-width) {
       justify-content: flex-start;
       padding-top: 48px;
+      background-color: $basic-blue;
     }
   }
 

@@ -36,7 +36,7 @@
     padding-bottom: 73px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     position: static;
     padding: 0;
     width: auto;
@@ -80,7 +80,7 @@
     margin-left: 24px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -106,7 +106,7 @@
 }
 
 .main-nav_container {
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
   }

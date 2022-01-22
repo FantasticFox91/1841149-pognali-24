@@ -1,5 +1,5 @@
 .top-menu__container {
-  background-color: $white-color;;
+  background-color: $white-color;
   color: $white-color;
 }
 
@@ -55,7 +55,7 @@
       top: 107px;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       position: static;
       padding: 0;
       width: auto;
@@ -66,7 +66,7 @@
   .logo__icon path {
     fill: $special-blue;
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       fill: $white-color;
     }
   }
@@ -86,13 +86,13 @@
       background-color: $border-color;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       display: none;
     }
   }
 
   .top-menu__container {
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       background-color: #182044;
       padding: 0;
     }
@@ -107,14 +107,15 @@
   @media (min-width: $desktop-width) {
     background-color: $basic-blue;
   }
+
   .top-menu__container {
     background-color: $basic-blue;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       background-color: #182044;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       padding: 0;
     }
   }
@@ -144,7 +145,7 @@
     display: flex;
     position: absolute;
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       position: static;
       padding: 0;
       width: auto;
@@ -153,7 +154,7 @@
   }
 
   .main-nav_container {
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       margin: 0;
       padding: 0;
     }
@@ -180,7 +181,7 @@
       content: "";
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       display: none;
     }
   }

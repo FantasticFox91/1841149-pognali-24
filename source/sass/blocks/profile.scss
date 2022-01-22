@@ -11,6 +11,7 @@
 
 .profile__level-mark {
   position: static;
+  margin-right: 1px;
   width: 100px;
   height: 100px;
   font-size: 18px;
@@ -21,15 +22,33 @@
 }
 
 .profile__underscore {
+  position: relative;
+  margin-bottom: 6px;
   font-size: 38px;
   line-height: 38px;
   font-weight: 700;
   color: $basic-blue-dark;
-  border-bottom: 1px solid $special-grey;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 51px;
+    height: 1px;
+    background-color: #babcc1;
+    content: "";
+  }
 }
 
 .profile__image {
+  display: block;
   border-radius: 50%;
+}
+
+.profile__image-container {
+  width: 100px;
+  height: 100px;
+  margin-right: 1px;
 }
 
 .profile__image-description {
@@ -38,7 +57,7 @@
 
 .profile__label {
   width: 100%;
-  padding: 9px 0;
+  padding: 9px 0 13px;
   grid-column: span 2;
   font-size: 20px;
   line-height: 18px;
@@ -57,11 +76,15 @@
   padding: 0;
   justify-content: center;
   grid-column: span 2;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 1px solid $range-input-border-color;
 
   &--hashtags {
-    margin-top: 7px;
+    margin-top: 6px;
+  }
+
+  &--transport {
+    margin-top: -2px;
   }
 }
 
@@ -100,7 +123,7 @@
 
   &--transport {
     padding-top: 8px;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
   }
 }
 

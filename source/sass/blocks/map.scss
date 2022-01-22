@@ -2,14 +2,14 @@
   position: relative;
   margin-top: -52px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-top: -47px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     margin-top: -122px;
   }
- }
+}
 
 .map__container {
   width: 100%;

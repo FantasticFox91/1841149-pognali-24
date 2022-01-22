@@ -9,6 +9,10 @@
 }
 
 .add-plan__container {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     max-width: 1320px;

@@ -20,6 +20,13 @@
     padding-left: 34px;
     font-size: 45px;
     line-height: 45px;
+
+    &--inner {
+      padding-left: 0;
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 51px;
+    }
   }
 
   @media (min-width: $desktop-width) {

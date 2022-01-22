@@ -20,6 +20,8 @@
 }
 
 .directions__heading {
+  transition: $basic-animation;
+
   @media (min-width: $tablet-width) {
     position: relative;
     margin-bottom: 59px;
@@ -50,6 +52,8 @@
 }
 
 .directions__description {
+  transition: $basic-animation;
+
   @media (min-width: $tablet-width) {
     max-width: 400px;
   }
@@ -79,6 +83,7 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 27px;
+  transition: $basic-animation;
 
   @media (min-width: $tablet-width) {
     position: relative;

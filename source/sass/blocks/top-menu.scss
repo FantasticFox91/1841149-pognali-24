@@ -54,10 +54,21 @@
     @media (min-width: $tablet-width) {
       top: 107px;
     }
+
+    @media (min-width:$desktop-width) {
+      position: static;
+      padding: 0;
+      width: auto;
+      background-color: transparent;
+    }
   }
 
   .logo__icon path {
-    fill: $black-color;
+    fill: $special-blue;
+
+    @media (min-width:$desktop-width) {
+      fill: $white-color;
+    }
   }
 
   .main-nav__toggle {
@@ -74,6 +85,21 @@
       transform: rotate(-45deg);
       background-color: $border-color;
     }
+
+    @media (min-width:$desktop-width) {
+      display: none;
+    }
+  }
+
+  .top-menu__container {
+    @media (min-width:$desktop-width) {
+      background-color: #182044;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-blue;
   }
 }
 

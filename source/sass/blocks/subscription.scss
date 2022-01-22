@@ -94,6 +94,7 @@
 
 .subscription__list {
   margin-bottom: 0;
+  transition: $basic-animation;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -119,7 +120,7 @@
 }
 
 .subscription__input {
-  width: 90%;
+  width: 95%;
   padding: 21px 65px 20px 25px;
   background-color: $white-color;
   font-family: $main-font;
@@ -167,10 +168,7 @@
   background-repeat: no-repeat;
   border: none;
   border-radius: 10px;
-
-  @media (min-resolution: 2dppx) {
-    top: 2px;
-  }
+  transition: $basic-animation;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -191,8 +189,9 @@
   line-height: 24px;
   font-weight: 700;
   color: $basic-blue-dark;
+  transition: $basic-animation;
 
-  @media (max-width: 1139px) {
+  @media (max-width: 1439px) {
     display: none;
   }
 }

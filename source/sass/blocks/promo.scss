@@ -2,6 +2,7 @@
   padding-top: 27px;
   padding-bottom: 39px;
   background-color: $basic-blue;
+  transition: $basic-animation;
 
   @media (min-width: $tablet-width) {
     padding-top: 44px;
@@ -22,10 +23,12 @@
   padding: 0;
   background-image: url("../img/promo-bg.jpg");
   background-repeat: no-repeat;
-  background-position-y: 223px;
+  background-position-y: 138px;
+  transition: $basic-animation;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/promo-bg-tablet.png");
+    background-position-y: 223px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,12 +112,13 @@
 
 .promo__list {
   counter-reset: numbers;
+  transition: $basic-animation;
 
   &--steps {
     @media (min-width: $tablet-width) {
       position: relative;
       display: grid;
-      grid-template-columns: minmax(369px, 1fr) 344px;
+      grid-template-columns: 369px 344px;
       grid-template-rows: repeat(2, 140px);
 
       &::after {
@@ -124,6 +128,7 @@
         width: 372px;
         height: 451px;
         background: url("../img/traveller-illustration-tablet.png");
+        transition: $basic-animation;
         content: "";
       }
 
@@ -134,6 +139,7 @@
 
     @media (min-width: $desktop-width) {
       display: flex;
+      max-width: 1320px;
 
       &::after {
         top: -410px;
@@ -155,6 +161,7 @@
   color: $basic-blue;
   background-color: $special-orange;
   border-radius: 10px 10px 0 0;
+  margin-top: -12px;
 
   &::after {
     position: absolute;
@@ -165,17 +172,21 @@
     content: counter(numbers);
   }
 
-  &--step-two {
+  &:nth-child(4n + 1) {
+    margin-top: 0;
+  }
+
+  &:nth-child(4n + 2) {
     background-color: #ffa530;
     padding-right: 96px;
   }
 
-  &--step-three {
+  &:nth-child(4n + 3) {
     background-color: $special-yellow-dark;
     padding-right: 108px;
   }
 
-  &--step-four {
+  &:nth-child(4n) {
     background-color: $basic-yellow;
     padding-right: 121px;
     padding-bottom: 23px;
@@ -183,32 +194,32 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     padding: 29px 150px 37px 33px;
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px 20px 0 0;
+    min-width: 369px;
 
     &::after {
       left: 35px;
       top: 88px;
     }
 
-    &--step-one {
+    &:nth-child(2n) {
+      min-width: 344px;
+      margin-left: -25px;
+    }
+
+    &:nth-child(4n + 1) {
       border-top-right-radius: 0;
     }
 
-    &--step-two {
-      width: 344px;
-      margin-left: -25px;
-    }
-
-    &--step-three{
+    &:nth-child(4n + 3) {
       border-radius: 0 0 0 20px;
     }
 
-    &--step-four {
-      width: 344px;
-      margin-left: -25px;
+    &:nth-child(4n) {
       border-radius: 0 0 20px 20px;
     }
   }
@@ -222,16 +233,29 @@
       top: 25px;
       left: 70%;
     }
+
+    &:nth-child(4n + 1) {
+      width: 345px;
+    }
+
+    &:nth-child(2n) {
+      width: 375px;
+      flex-grow: 1;
+    }
+
+    &:nth-child(4n + 3) {
+      border-radius: 20px 0 0 20px;
+      flex-grow: 1;
+    }
+
+    &:nth-child(4n) {
+      width: 315px;
+      border-radius: 20px;
+    }
   }
 }
 
 .promo__item:not(:first-child) {
-  margin-top: -12px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
-  }
-
   @media (min-width: $desktop-width) {
     margin-left: -50px;
   }

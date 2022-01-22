@@ -3,6 +3,12 @@
   padding: 35px 25px 22px;
   background-color: $basic-blue;
   border-radius: 0 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 106px;
+    padding-bottom: 70px;
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .page-title__heading {
@@ -20,6 +26,19 @@
     background-color: $special-orange;
     border-radius: 4px;
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    font-size: 60px;
+    line-height: 60px;
+
+    &::after {
+      left: 50px;
+      bottom: -74px;
+      width: 358px;
+      height: 8px;
+    }
   }
 }
 

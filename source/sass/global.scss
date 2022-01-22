@@ -27,4 +27,8 @@ body {
 
 .page-form {
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-blue-light;
+  }
 }

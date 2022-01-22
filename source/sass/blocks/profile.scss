@@ -7,6 +7,16 @@
   grid-template-columns: repeat(2, minmax(135px, 1fr));
   row-gap: 18px;
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    max-width: 618px;
+    padding: 0;
+    padding-bottom: 51px;
+    margin: 0 auto;
+    grid-template-columns: 94px 1fr 94px;
+    grid-template-rows: 1fr 60px 105px;
+    row-gap: 49px;
+  }
 }
 
 .profile__level-mark {
@@ -19,6 +29,23 @@
   line-height: 17px;
   background-color: transparent;
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+
+    .level-mark__ring {
+      width: 94px;
+      height: 94px;
+    }
+
+    .level-mark__circle {
+      r: 45;
+      cx: 48px;
+      cy: 47px;
+      stroke-dasharray: 240px;
+    }
+  }
 }
 
 .profile__underscore {
@@ -43,12 +70,25 @@
 .profile__image {
   display: block;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    border-radius: 7px;
+  }
 }
 
 .profile__image-container {
   width: 100px;
   height: 100px;
   margin-right: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    margin-top: -2px;
+    grid-column: 3/4;
+  }
 }
 
 .profile__image-description {
@@ -67,6 +107,13 @@
   text-transform: uppercase;
   background-color: $special-blue-light;
   border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    grid-column: span 3;
+    letter-spacing: 0.09em;
+    border-radius: 10px;
+  }
 }
 
 .profile__group {
@@ -86,6 +133,22 @@
   &--transport {
     margin-top: -2px;
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &--transport {
+      max-width: 308px;
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    &--hashtags {
+      height: 94px;
+      margin-top: 3px;
+      grid-column: span 3;
+    }
+  }
 }
 
 .profile__legend {
@@ -95,6 +158,16 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-blue-dark;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -10px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    background-color: $basic-blue-light;
+  }
 }
 
 .profile__textarea {
@@ -106,6 +179,13 @@
   border: none;
   color: $special-grey;
   opacity: 0.6;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 33px 39px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .profile__control {
@@ -116,6 +196,18 @@
   height: 32px;
   background-color: $white-color;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+.profile__icon {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 22px;
+  }
 }
 
 .profile__list {
@@ -124,6 +216,12 @@
   &--transport {
     padding-top: 8px;
     padding-bottom: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--transport {
+      padding-top: 26px;
+    }
   }
 }
 

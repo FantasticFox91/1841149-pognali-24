@@ -2,6 +2,10 @@
   padding-top: 44px;
   margin-top: -20px;
   background-color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 88px;
+  }
 }
 
 .add-plan__container {

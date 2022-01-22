@@ -1,7 +1,7 @@
 .plans {
-  padding: 28px 25px 59px 25px;
+  padding: 26px 25px 40px 25px;
   background-color: $special-blue-light;
-  border-radius: 20px 20px 0 0;
+  border-radius: 30px 30px 0 0;
 }
 
 .plans__heading {
@@ -22,7 +22,7 @@
 .plans__country {
   position: relative;
   padding-left: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   &::after {
     position: absolute;
@@ -34,9 +34,13 @@
 }
 
 .plans__info {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  margin-left: 2px;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: 500;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .plans__compainions-number {
@@ -49,6 +53,7 @@
 }
 
 .plans__change {
+  margin-left: 2px;
   font-size: 14px;
   line-height: 14px;
   text-decoration: none;

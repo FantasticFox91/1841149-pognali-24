@@ -1,3 +1,7 @@
+.entertainment {
+  padding-bottom: 6px;
+}
+
 .entertainment__heaading-wrapper {
   display: flex;
   justify-content: space-between;
@@ -6,7 +10,7 @@
 .entertainment__heading {
   position: relative;
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   padding-left: 14px;
   font-size: 18px;
   font-weight: 500;
@@ -47,9 +51,9 @@
   &::after {
     position: absolute;
     width: 12px;
-    height: 312px;
-    left: -11px;
-    top: 10px;
+    height: 283px;
+    left: -12px;
+    top: 11px;
     border: 2px solid $basic-blue-dark;
     border-right: none;
     content: "";
@@ -61,7 +65,7 @@
 }
 
 .entertainment__item:not(:last-child) {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .entertainment__textarea {

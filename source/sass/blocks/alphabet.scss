@@ -1,6 +1,6 @@
 .alphabet__list {
   display: none;
-  grid-template-columns: repeat(5, 44px);
+  grid-template-columns: repeat(4, 44px) 43px;
   grid-template-rows: repeat(5, 41px);
   background-color: $white-color;
   border-left: 1px solid $range-input-border-color;
@@ -17,9 +17,7 @@
   width: 100%;
   top: 205px;
   left: 0;
-  padding: 20px;
-  padding-top: 20px;
-  padding-left: 19px;
+  padding: 20px 20px 15px 19px;
   border: 1px solid $range-input-border-color;
   border-top: none;
   font-weight: 400;
@@ -71,4 +69,8 @@
       z-index: 1;
     }
   }
+}
+
+.alphabet__subitem:not(:last-child) {
+  margin-bottom: 4px;
 }

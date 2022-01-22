@@ -230,7 +230,7 @@
               </li>
               <li class="plans__item">
                 <div class="list-card">
-                  <div class="plans__country">Франция, Италия</div>
+                  <div class="plans__country">Таиланд, Индонезия</div>
                   <div class="plans__info">
                     <p class="plans__compainions-number">1 попутчик</p>
                     <p class="plans__dates">1&nbsp;июл&nbsp;&mdash; 15&nbsp;июл</p>
@@ -265,9 +265,9 @@
             <ul class="form__list list">
 <!-- Step 1 -->
               <li class="form__item">
-                <div class="list-card" id="step1">
-                  <h3 class="heading heading--inner">Шаг 1. <br> Даты пребывания</h3>
-                  <p class="form__description">Укажите предпочтительное количество попутчиков,которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+                <div class="list-card form__card" id="step1">
+                  <h3 class="heading heading--inner list-card__heading">Шаг 1. <br> Даты пребывания</h3>
+                  <p class="form__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
                   <div class="form__numbers form__numbers--companions">
                     <label class="form__label" for="companions-number">Ищу попутчиков:
                       <span class="form__unit">чел.</span>
@@ -479,7 +479,7 @@
 <!-- Step 2 -->
               <li class="form__item">
                 <div class="list-card country" id="step2">
-                  <h3 class="heading heading--inner">Шаг 2. <br> Маршрут</h3>
+                  <h3 class="heading heading--inner list-card__heading">Шаг 2. <br> Маршрут</h3>
                   <p class="form__description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
                   <ul class="country__list list">
                     <li class="country__item">
@@ -508,11 +508,11 @@
                       </div>
                       <div class="country__dropdown dropdown-list">
                         <div class="dropdown-list__alphabet alphabet">
-  <!-- Для показа определенного списка стран задайте кнопке модификатор alphabet__button--active -->
+  <!-- Для показа определенного списка стран задайте кнопке модификатор alphabet__list--active alphabet__button--active -->
                           <ul class="alphabet__list list">
                             <li class="alphabet__item">
-                              <button class="alphabet__button" type="button">А</button>
-                              <ul class="alphabet__sublist list">
+                              <button class="alphabet__button alphabet__button--active" type="button">А</button>
+                              <ul class="alphabet__sublist alphabet__sublist--active list">
                                 <li class="alphabet__subitem">Австралия</li>
                                 <li class="alphabet__subitem">Австрия</li>
                                 <li class="alphabet__subitem">Азербайджан</li>
@@ -813,7 +813,7 @@
 <!-- Step 3 -->
               <li class="form__item">
                 <div class="list-card entertainment" id="step3">
-                  <h3 class="heading heading--inner">Шаг 3. <br> Развлечения</h3>
+                  <h3 class="heading heading--inner list-card__heading">Шаг 3. <br> Развлечения</h3>
                   <p class="form__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   <ul class="entertainment__list list">
                     <li class="entertainment__item">
@@ -823,7 +823,7 @@
                           <img src="img/bah.svg" alt="Флаг Боснии и Герцоговины" width="35" height="24">
                         </div>
                     </div>
-                      <textarea class="entertainment__textarea" name="entertainment-country1" id="country1" cols="20" rows="10" placeholder="План действий"></textarea>
+                      <textarea class="entertainment__textarea" name="entertainment-country1" id="country1" cols="20" rows="8" placeholder="План действий"></textarea>
                     </li>
                     <li class="entertainment__item">
                       <div class="entertainment__heaading-wrapper">
@@ -832,7 +832,7 @@
                           <img src="img/chech.svg" alt="Флаг Боснии и Герцоговины" width="35" height="24">
                         </div>
                       </div>
-                      <textarea class="entertainment__textarea" name="entertainment-country2" id="country2" cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                      <textarea class="entertainment__textarea" name="entertainment-country2" id="country2" cols="30" rows="8">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                     </li>
                   </ul>
                   <button class="submit-button" type="submit">Отправить</button>

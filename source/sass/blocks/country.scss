@@ -1,3 +1,7 @@
+.country {
+  padding-bottom: 6px;
+}
+
 .country__item {
   position: relative;
   align-items: center;
@@ -19,7 +23,7 @@
   position: relative;
   flex-grow: 1;
   max-width: 220px;
-  padding: 11px 6px 11px 11px;
+  padding: 11px 6px 11px 12px;
   background-color: transparent;
   background-repeat: no-repeat;
   font-family: $main-font;
@@ -44,9 +48,11 @@
   }
 
   &--active {
+    padding-left: 17px;
     color: $white-color;
     background: $basic-blue-dark url("../../img/icon_close--white.svg") no-repeat 195px center;
     border-radius: 5px 5px 0 0;
+    letter-spacing: 0.02em;
 
     &::after {
       display: none;

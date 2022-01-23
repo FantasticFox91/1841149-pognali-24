@@ -2,10 +2,11 @@
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-}
-
-.calendar__weekday {
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .calendar__workdays {
@@ -20,10 +21,15 @@
 
 .calendar__button {
   padding: 6px 4px;
-  font-size: 14px;
   font-family: $main-font;
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 72px;
+    height: 65px;
+  }
 }
 
 .calendar__tablet-text {

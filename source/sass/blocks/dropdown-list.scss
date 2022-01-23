@@ -3,6 +3,10 @@
   top: 41px;
   left: 0;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 70px;
+  }
 }
 
 .dropdown-list__button--close {

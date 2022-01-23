@@ -10,4 +10,18 @@
   background-color: $basic-yellow;
   border: none;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    max-width: 286px;
+    padding: 27px 51px 29px 37px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: none;
+    text-align: left;
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 242px 50%;
+  }
 }

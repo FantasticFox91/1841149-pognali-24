@@ -1,3 +1,14 @@
+.alphabet {
+  @media (min-width: $tablet-width) {
+    display: none;
+    padding: 35px 73px 33px 27px;
+    border-right: 1px solid $form-bg-color;
+    background-color: $white-color;
+    box-shadow: 0px 8px 16px rgba(54, 80, 148, 0.18);
+    border-bottom-left-radius: 5px;
+  }
+}
+
 .alphabet__list {
   display: none;
   grid-template-columns: repeat(4, 44px) 43px;
@@ -7,6 +18,12 @@
 
   &--active {
     display: grid;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $range-input-border-color;
+    grid-template-columns: repeat(4, 53px) 54px;
+    grid-template-rows: repeat(5, 70px);
   }
 }
 
@@ -23,7 +40,22 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  color: $basic-blue-dark;
   border-radius: 0 0 5px 5px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 100%;
+    width: 210px;
+    min-height: 100%;
+    padding-top: 35px;
+    font-size: 20px;
+    line-height: 20px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 5px 8px 16px rgba(54, 80, 148, 0.18);
+    z-index: 3;
+  }
 }
 
 .alphabet__button {
@@ -44,6 +76,16 @@
 
     & + .alphabet__sublist {
       display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--active {
+      background-color: $basic-blue-dark;
+      color: $white-color;
     }
   }
 }
@@ -73,4 +115,8 @@
 
 .alphabet__subitem:not(:last-child) {
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }

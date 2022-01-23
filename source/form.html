@@ -245,7 +245,7 @@
 <!-- Form block -->
         <section class="form">
           <div class="add-plan__container">
-            <h2 class="heading heading--inner">Добавить план:</h2>
+            <h2 class="heading heading--inner form__heading">Добавить план:</h2>
             <ul class="form__pagination list">
               <li class="form__dot form__dot--active">
                 <a class="form__link" href="#step1">
@@ -297,7 +297,7 @@
                     </button>
                   </div>
                   </div>
-                  <label class="form__control form__control"> Можно с детьми
+                  <label class="form__control form__control--checkbox"> Можно с детьми
                     <input class="form__input visually-hidden" type="checkbox" value="Yes" name="Allowed with childrens" checked>
                     <span class="form__label form__label--checkbox"></span>
                   </label>
@@ -478,10 +478,10 @@
                 </div>
               </li>
 <!-- Step 2 -->
-              <li class="form__item">
+              <li class="form__item form__item--country">
                 <div class="list-card country" id="step2">
                   <h3 class="heading heading--inner list-card__heading">Шаг 2. <br> Маршрут</h3>
-                  <p class="form__description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+                  <p class="form__description country__description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
                   <ul class="country__list list">
                     <li class="country__item">
                       <button class="country__button country__button--choosed" type="button">Босния и Герцеговина</button>
@@ -513,7 +513,7 @@
                           <ul class="alphabet__list list">
                             <li class="alphabet__item">
                               <button class="alphabet__button alphabet__button--active" type="button">А</button>
-                              <ul class="alphabet__sublist alphabet__sublist--active list">
+                              <ul class="alphabet__sublist list">
                                 <li class="alphabet__subitem">Австралия</li>
                                 <li class="alphabet__subitem">Австрия</li>
                                 <li class="alphabet__subitem">Азербайджан</li>
@@ -815,25 +815,25 @@
               <li class="form__item">
                 <div class="list-card entertainment" id="step3">
                   <h3 class="heading heading--inner list-card__heading">Шаг 3. <br> Развлечения</h3>
-                  <p class="form__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                  <p class="form__description entertainment__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   <ul class="entertainment__list list">
                     <li class="entertainment__item">
                       <div class="entertainment__heaading-wrapper">
                         <label class="entertainment__heading entertainment__heading--bih" for="country1">Босния и Герцеговина</label>
                         <div class="entertainment__flag entertainment__flag--bah">
-                          <img src="img/bah.svg" alt="Флаг Боснии и Герцоговины" width="35" height="24">
+                          <img class="entertainment__icon" src="img/bah.svg" alt="Флаг Боснии и Герцоговины" width="35" height="24">
                         </div>
                     </div>
-                      <textarea class="entertainment__textarea" name="entertainment-country1" id="country1" cols="20" rows="8" placeholder="План действий"></textarea>
+                      <textarea class="entertainment__textarea" name="entertainment-country1" id="country1" placeholder="План действий"></textarea>
                     </li>
                     <li class="entertainment__item">
                       <div class="entertainment__heaading-wrapper">
                         <label class="entertainment__heading entertainment__heading--chech" for="country2">Чехия</label>
                         <div class="entertainment__flag entertainment__flag--chech">
-                          <img src="img/chech.svg" alt="Флаг Боснии и Герцоговины" width="35" height="24">
+                          <img class="entertainment__icon" src="img/chech.svg" alt="Флаг Боснии и Герцоговины" width="35" height="24">
                         </div>
                       </div>
-                      <textarea class="entertainment__textarea" name="entertainment-country2" id="country2" cols="30" rows="8">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                      <textarea class="entertainment__textarea" name="entertainment-country2" id="country2">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                     </li>
                   </ul>
                   <button class="submit-button" type="submit">Отправить</button>

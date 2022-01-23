@@ -32,10 +32,10 @@
   @media (min-width: $tablet-width) {
     position: relative;
 
-    &::after{
+    &::after {
       position: absolute;
-      top: 0px;
-      right: 0px;
+      top: 0;
+      right: 0;
       width: 1px;
       height: 396px;
       background-color: $table-border-color;

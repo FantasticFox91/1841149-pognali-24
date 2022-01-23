@@ -31,6 +31,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .form__item--country {
@@ -46,7 +50,7 @@
 
   @media (min-width: $tablet-width) {
     order: 6;
-    min-width: 286px;
+    max-width: 286px;
     padding: 29px 0 27px 34px;
     font-size: 24px;
     line-height: 24px;
@@ -59,6 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 286px;
     align-self: start;
   }
 }

@@ -2,10 +2,14 @@
   @media (min-width: $tablet-width) {
     display: none;
     padding: 35px 73px 33px 27px;
-    border-right: 1px solid $form-bg-color;
+    border-right: 1px solid #d6d9e6;
     background-color: $white-color;
     box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
     border-bottom-left-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 37px;
   }
 }
 
@@ -24,6 +28,13 @@
     border-top: 1px solid $range-input-border-color;
     grid-template-columns: repeat(4, 53px) 54px;
     grid-template-rows: repeat(5, 70px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 28px;
+    grid-template-columns: repeat(5, 60px);
+    gap: 14px 15px;
+    border: none;
   }
 }
 
@@ -55,6 +66,12 @@
     border-radius: 0;
     box-shadow: 5px 8px 16px rgba(54, 80, 148, 0.18);
     z-index: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 241px;
+    padding-left: 26px;
+    box-shadow: 15px 8px 16px rgba(54, 80, 148, 0.18);
   }
 }
 
@@ -88,11 +105,20 @@
       color: $white-color;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    border: 1px solid $range-input-border-color;
+    border-radius: 4px;
+  }
 }
 
 .alphabet__item {
   border-right: 1px solid $range-input-border-color;
   border-bottom: 1px solid $range-input-border-color;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .alphabet__list--letters {

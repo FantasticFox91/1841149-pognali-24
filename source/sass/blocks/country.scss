@@ -4,12 +4,20 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .country__description {
   @media (min-width: $tablet-width) {
     max-width: 440px;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 95px;
   }
 }
 
@@ -25,6 +33,10 @@
       background-color: $table-border-color;
       content: "";
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
   }
 }
 
@@ -112,6 +124,11 @@
       background-size: 18px 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 730px;
+    padding: 24px 6px 24px 25px;
+  }
 }
 
 .country__button--active {
@@ -136,6 +153,13 @@
   @media (min-width: $tablet-width) {
     background-size: 17px 21px;
     background-position: 95% 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 21px 6px 28px 23px;
+    letter-spacing: 0.1em;
+    background-size: 22px 24px;
+    background-position-x: 96%;
   }
 }
 
@@ -234,6 +258,15 @@
       content: "";
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 36px;
+    min-width: 167px;
+
+    &::before {
+      right: 151px;
+    }
+  }
 }
 
 .country__flag--choosed {
@@ -309,6 +342,14 @@
       background-size: 21px 21px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+
+    &::before {
+      right: -54px;
+    }
+  }
 }
 
 .country__button--choosed {
@@ -341,6 +382,10 @@
     min-width: 139px;
     border: none;
     height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 167px;
   }
 }
 

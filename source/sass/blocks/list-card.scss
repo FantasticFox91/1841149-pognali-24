@@ -9,6 +9,16 @@
     padding: 38px 40px 12px;
     border-radius: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1258px;
+    display: flex;
+    padding-top: 36px;
+    padding-bottom: 37px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 9px;
+  }
 }
 
 .list-card__heading {

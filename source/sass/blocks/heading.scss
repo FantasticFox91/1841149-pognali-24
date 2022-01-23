@@ -32,5 +32,10 @@
   @media (min-width: $desktop-width) {
     padding-left: 70px;
     margin-bottom: 59px;
+
+    &--inner {
+      padding-left: 7px;
+      margin-bottom: 52px;
+    }
   }
 }

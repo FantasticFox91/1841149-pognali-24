@@ -27,6 +27,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1256px;
+    padding-bottom: 54px;
     grid-template-columns: 732px 139px 190px 202px;
     grid-template-rows: 188px 74px 105px;
     row-gap: 0;

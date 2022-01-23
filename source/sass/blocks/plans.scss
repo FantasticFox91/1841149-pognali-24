@@ -7,6 +7,12 @@
     padding-top: 54px;
     padding-bottom: 85px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+    padding-bottom: 75px;
+    border-radius: 56px 56px 0 0;
+  }
 }
 
 .plans__list {
@@ -28,10 +34,20 @@
       content: "";
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .plans__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .plans__country {
@@ -58,6 +74,15 @@
       font-size: 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-left: 52px;
+
+    &::after {
+      left: 0;
+    }
+  }
 }
 
 .plans__info {
@@ -82,6 +107,11 @@
 .plans__compainions-number {
   margin: 0;
   margin-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 37px;
+  }
 }
 
 .plans__dates {
@@ -89,6 +119,10 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 121px;
   }
 }
 

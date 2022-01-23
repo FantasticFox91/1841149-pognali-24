@@ -17,4 +17,9 @@
     margin: 0 auto;
     max-width: 1320px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 64px;
+  }
 }

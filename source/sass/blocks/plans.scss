@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 51px;
-    padding-bottom: 75px;
+    padding-bottom: 95px;
     border-radius: 56px 56px 0 0;
   }
 }
@@ -36,6 +36,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 64px;
+
     &::after {
       display: none;
     }

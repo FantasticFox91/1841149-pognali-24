@@ -8,6 +8,12 @@
     padding-bottom: 51px;
     order: 4;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 32px;
+    padding-bottom: 58px;
+  }
 }
 
 .slider__button {
@@ -35,6 +41,10 @@
     background-size: 30px 36px;
     background-position-x: 11px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-position-x: -5px;
+  }
 }
 
 .slider__heading {
@@ -53,5 +63,9 @@
     padding-top: 27px;
     padding-bottom: 23px;
     margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
   }
 }

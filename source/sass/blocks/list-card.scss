@@ -32,4 +32,13 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    align-self: start;
+
+    br {
+      display: none;
+    }
+  }
 }

@@ -9,14 +9,28 @@
   }
 }
 
+.calendar__weekday {
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
 .calendar__workdays {
   padding: 8px 6px;
   font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 16px 16px;
+  }
 }
 
 .calendar__weekend {
   font-weight: 400;
   color: $special-red;
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 16px 16px;
+  }
 }
 
 .calendar__button {
@@ -30,6 +44,14 @@
     width: 72px;
     height: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-top: 11px;
+    padding-left: 14px;
+    width: 140px;
+    height: 68px;
+  }
 }
 
 .calendar__tablet-text {
@@ -39,15 +61,35 @@
 }
 
 .calendar__month {
-  display: none;
+  text-transform: lowercase;
+
+  @media (max-width: 1439px) {
+    display: none;
+  }
 }
 
 .calendar__check-in {
-  display: none;
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $white-color;
+
+  @media (max-width: 1439px) {
+    display: none;
+  }
 }
 
 .calendar__check-out {
-  display: none;
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $white-color;
+
+  @media (max-width: 1439px) {
+    display: none;
+  }
 }
 
 .calendar__body {
@@ -68,6 +110,14 @@
   .calendar__button {
     color: $white-color;
     font-weight: 500;
+  }
+
+  @media (min-width: $desktop-width) {
+    .calendar__button {
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+    }
   }
 }
 

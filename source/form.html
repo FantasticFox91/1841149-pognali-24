@@ -270,40 +270,42 @@
 <!-- Step 1 -->
               <li class="form__item">
                 <div class="list-card form__card" id="step1">
-                  <h3 class="heading heading--inner list-card__heading">Шаг 1. <br> Даты пребывания</h3>
-                  <p class="form__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-                  <div class="form__numbers form__numbers--companions">
-                    <label class="form__label" for="companions-number">Ищу попутчиков:
-                      <span class="form__unit">чел.</span>
+                  <h3 class="heading heading--inner list-card__heading">Шаг 1. <br>&nbspДаты пребывания</h3>
+                  <p class="form__description">Укажите предпочтительное количество попутчиков, которых <br> вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+                  <div class="form__parameters">
+                    <div class="form__numbers form__numbers--companions">
+                      <label class="form__label" for="companions-number">Ищу попутчиков:
+                        <span class="form__unit">чел.</span>
+                      </label>
+                    <div class="form__input counter">
+                      <input class="counter__input" id="companions-number" type="number" value="2">
+                      <button class="counter__sign counter__sign--plus" type="button">
+                        <span class="visually-hidden">Увеличить на один</span>
+                      </button>
+                      <button class="counter__sign counter__sign--minus" type="button">
+                        <span class="visually-hidden">Уменьшить на один</span>
+                      </button>
+                    </div>
+                    </div>
+                    <div class="form__numbers form__numbers--duration">
+                      <label class="form__label" for="days-number">Длительность:
+                        <span class="form__unit">дн.</span>
+                      </label>
+                    <div class="form__input counter">
+                      <input class="counter__input" id="days-number" type="number" value="3">
+                      <button class="counter__sign counter__sign--plus" type="button">
+                        <span class="visually-hidden">Увеличить на один</span>
+                      </button>
+                      <button class="counter__sign counter__sign--minus" type="button">
+                        <span class="visually-hidden">Уменьшить на один</span>
+                      </button>
+                    </div>
+                    </div>
+                    <label class="form__control form__control--checkbox"> Можно с детьми
+                      <input class="form__input visually-hidden" type="checkbox" value="Yes" name="Allowed with childrens" checked>
+                      <span class="form__checkbox form__label--checkbox"></span>
                     </label>
-                  <div class="form__input counter">
-                    <input class="counter__input" id="companions-number" type="number" value="2">
-                    <button class="counter__sign counter__sign--plus" type="button">
-                      <span class="visually-hidden">Увеличить на один</span>
-                    </button>
-                    <button class="counter__sign counter__sign--minus" type="button">
-                      <span class="visually-hidden">Уменьшить на один</span>
-                    </button>
                   </div>
-                  </div>
-                  <div class="form__numbers form__numbers--duration">
-                    <label class="form__label" for="days-number">Длительность:
-                      <span class="form__unit">дн.</span>
-                    </label>
-                  <div class="form__input counter">
-                    <input class="counter__input" id="days-number" type="number" value="3">
-                    <button class="counter__sign counter__sign--plus" type="button">
-                      <span class="visually-hidden">Увеличить на один</span>
-                    </button>
-                    <button class="counter__sign counter__sign--minus" type="button">
-                      <span class="visually-hidden">Уменьшить на один</span>
-                    </button>
-                  </div>
-                  </div>
-                  <label class="form__control form__control--checkbox"> Можно с детьми
-                    <input class="form__input visually-hidden" type="checkbox" value="Yes" name="Allowed with childrens" checked>
-                    <span class="form__label form__label--checkbox"></span>
-                  </label>
 <!-- Calendar slider block -->
                   <div class="slider">
                     <button class="slider__button slider__button--prev" type="button">
@@ -349,7 +351,7 @@
                                   <button class="calendar__button" type="button" disabled>28</button>
                                 </td>
                                 <td class="calendar__day">
-                                  <button class="calendar__button" type="button" disabled>1<span class="calendar__month"> Мар</span></button>
+                                  <button class="calendar__button" type="button" disabled>1<span class="calendar__month">&nbsp;Мар</span></button>
                                   </td>
                               </tr>
                               <tr class="calendar__days">
@@ -432,15 +434,14 @@
                                   <button class="calendar__button" type="button" disabled>25</button>
                                 </td>
                                 <td class="calendar__day calendar__day--active calendar__day--check-in">
-                                  <button class="calendar__button calendar__button--active" type="button">26</button>
-                                  <span class="calendar__check-in">Заезд</span>
+                                  <button class="calendar__button calendar__button--active" type="button">26<span class="calendar__check-in">Заезд</span></button>
                                 </td>
                                 <td class="calendar__day calendar__day--active">
                                   <button class="calendar__button" type="button">27</button>
                                 </td>
                                 <td class="calendar__day calendar__day--active calendar__day--check-out">
-                                  <button class="calendar__button" type="button">28</button>
-                                  <span class="calendar__check-out">Выезд</span>
+                                  <button class="calendar__button" type="button">28 <span class="calendar__check-out">Выезд</span></button>
+
                                 </td>
                                 <td class="calendar__day calendar__day--avaliable">
                                   <button class="calendar__button" type="button">29</button>
@@ -455,7 +456,7 @@
                                 </td>
                                 <td class="calendar__day calendar__day--avaliable">
                                   <button class="calendar__button" type="button">
-                                    1<span class="calendar__month"> Апр</span>
+                                    1<span class="calendar__month">&nbsp;Апр</span>
                                   </button>
                                 </td>
                                 <td class="calendar__day calendar__day--avaliable">

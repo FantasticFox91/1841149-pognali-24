@@ -1,3 +1,10 @@
+.profile {
+  @media (min-width: $desktop-width) {
+    margin-top: -256px;
+    margin-left: 63px;
+  }
+}
+
 .profile__container {
   position: relative;
   display: grid;
@@ -16,6 +23,13 @@
     grid-template-columns: 94px 1fr 94px;
     grid-template-rows: 1fr 60px 105px;
     row-gap: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1256px;
+    grid-template-columns: 732px 139px 190px 202px;
+    grid-template-rows: 188px 74px 105px;
+    row-gap: 0;
   }
 }
 
@@ -46,6 +60,15 @@
       stroke-dasharray: 240px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -10px;
+    margin-left: 158px;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: $white-color;
+  }
 }
 
 .profile__underscore {
@@ -65,6 +88,10 @@
     background-color: #babcc1;
     content: "";
   }
+
+  @media (min-width: $desktop-width) {
+    color: $white-color;
+  }
 }
 
 .profile__image {
@@ -76,6 +103,12 @@
     height: 94px;
     border-radius: 7px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    height: 190px;
+    border-radius: 0;
+  }
 }
 
 .profile__image-container {
@@ -84,10 +117,10 @@
   margin-right: 1px;
 
   @media (min-width: $tablet-width) {
-    width: 94px;
-    height: 94px;
+    width: 190px;
+    height: 190px;
     margin-top: -2px;
-    grid-column: 3/4;
+    grid-column: 3/5;
   }
 }
 
@@ -113,6 +146,17 @@
     grid-column: span 3;
     letter-spacing: 0.09em;
     border-radius: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 190px;
+    max-height: 47px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 }
 
@@ -147,6 +191,25 @@
       height: 94px;
       margin-top: 3px;
       grid-column: span 3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--transport {
+      min-width: 384px;
+      height: 94px;
+      grid-column: 3/5;
+      grid-row: 3/4;
+    }
+
+    &--hashtags {
+      margin-top: 0;
+      grid-column: 1/2;
+      grid-row: 3/4;
+
+      .profile__legend {
+        left: 23px;
+      }
     }
   }
 }
@@ -238,4 +301,10 @@
 
 .profile__input:not(:checked) + .profile__label--checkbox {
   opacity: 0.15;
+}
+
+.profile__hidedesktop {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

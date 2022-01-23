@@ -47,6 +47,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 500px;
+
     &::after {
       left: 52px;
       bottom: -75px;

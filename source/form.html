@@ -140,11 +140,12 @@
   <!-- Profile photo -->
               <picture>
                 <source media="(min-width: 768px)" srcset="img/demin-desktop.png, img/demin-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet.png, img/demin-tablet@2x.png 2x">
                 <img class="profile__image" src="img/avatar.jpg" alt="Автарка попутчика." width="100" height="100">
               </picture>
               <p class="profile__image-description">Фото</p>
             </div>
-            <label class="profile__label" for="changephoto">Сменить фото</label>
+            <label class="profile__label" for="changephoto"><span class="profile__hidedesktop">Сменить</span> фото</label>
             <input class="button profile__button visually-hidden" type="file" name="avatar" id="changephoto">
   <!-- Profile hashtags -->
             <fieldset class="profile__group profile__group--hashtags">

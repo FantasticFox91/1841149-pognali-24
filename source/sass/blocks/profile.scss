@@ -21,7 +21,7 @@
     padding-bottom: 51px;
     margin: 0 auto;
     grid-template-columns: 94px 1fr 94px;
-    grid-template-rows: 1fr 60px 105px;
+    grid-template-rows: 93px 60px 105px;
     row-gap: 49px;
   }
 
@@ -118,8 +118,17 @@
   margin-right: 1px;
 
   @media (min-width: $tablet-width) {
+    width: 100px;
+    height: 100px;
+    margin-top: -2px;
+    margin-left: 6px;
+    grid-column: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 190px;
     height: 190px;
+    margin-left: 0;
     margin-top: -2px;
     grid-column: 3/5;
   }
@@ -235,6 +244,7 @@
 }
 
 .profile__textarea {
+  width: 100%;
   padding: 17px 28px 27px 25px;
   font-family: $main-font;
   font-size: 16px;

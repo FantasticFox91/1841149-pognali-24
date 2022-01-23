@@ -18,7 +18,7 @@
   <body>
 <!-- Header block -->
     <header class="top-menu">
-      <div class="container top-menu__container">
+      <div class="container top-menu__container top-menu__container--inner">
         <nav class="main-nav">
           <div class="main-nav__logo logo">
             <a class="logo__link" href="index.html">
@@ -252,17 +252,17 @@
             <ul class="form__pagination list">
               <li class="form__dot form__dot--active">
                 <a class="form__link" href="#step1">
-                  <span class="visually-hidden">Шаг 1</span>
+                  <span class="form__desktoptext">Даты</span>
                 </a>
               </li>
               <li class="form__dot">
                 <a class="form__link" href="#step2">
-                  <span class="visually-hidden">Шаг 2</span>
+                  <span class="form__desktoptext">Маршрут</span>
                 </a>
               </li>
               <li class="form__dot">
                 <a class="form__link" href="#step3">
-                  <span class="visually-hidden">Шаг 3</span>
+                  <span class="form__desktoptext">Развлечения</span>
                 </a>
               </li>
             </ul>
@@ -270,7 +270,7 @@
 <!-- Step 1 -->
               <li class="form__item">
                 <div class="list-card form__card" id="step1">
-                  <h3 class="heading heading--inner list-card__heading">Шаг 1. <br>&nbsp;Даты пребывания</h3>
+                  <h3 class="heading heading--inner list-card__heading">Шаг 1. <br><span class="form__desktopspace">&nbsp;</span>Даты пребывания</h3>
                   <p class="form__description">Укажите предпочтительное количество попутчиков, которых <br> вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
                   <div class="form__parameters">
                     <div class="form__numbers form__numbers--companions">
@@ -484,7 +484,7 @@
 <!-- Step 2 -->
               <li class="form__item form__item--country">
                 <div class="list-card form__card country" id="step2">
-                  <h3 class="heading heading--inner list-card__heading">Шаг 2. <br>&nbsp;Маршрут</h3>
+                  <h3 class="heading heading--inner list-card__heading">Шаг 2. <br><span class="form__desktopspace">&nbsp;</span>Маршрут</h3>
                   <p class="form__description country__description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
                   <ul class="country__list list">
                     <li class="country__item">
@@ -505,7 +505,7 @@
                     </li>
                     <li class="country__item">
   <!-- Для показа выпадающего меню используйте модификатор country__button--active -->
-                      <button class="country__button country__button--dropdown country__button--active" type="button">Выберите страну</button>
+                      <button class="country__button country__button--dropdown" type="button">Выберите страну</button>
                       <div class="country__flag">
                         <button class="country__close-button" type="button">
                           <span class="visually-hidden">Удалить страну</span>
@@ -514,7 +514,7 @@
                       <div class="country__dropdown dropdown-list">
                         <div class="dropdown-list__alphabet alphabet">
   <!-- Для показа определенного списка стран задайте кнопке модификатор alphabet__list--active alphabet__button--active -->
-                          <ul class="alphabet__list alphabet__list--active list">
+                          <ul class="alphabet__list list">
                             <li class="alphabet__item">
                               <button class="alphabet__button alphabet__button--active" type="button">А</button>
                               <ul class="alphabet__sublist list">
@@ -817,8 +817,8 @@
               </li>
 <!-- Step 3 -->
               <li class="form__item">
-                <div class="list-card entertainment" id="step3">
-                  <h3 class="heading heading--inner list-card__heading">Шаг 3. <br> Развлечения</h3>
+                <div class="list-card form__card entertainment" id="step3">
+                  <h3 class="heading heading--inner list-card__heading">Шаг 3. <br><span class="form__desktopspace">&nbsp;</span>Развлечения</h3>
                   <p class="form__description entertainment__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   <ul class="entertainment__list list">
                     <li class="entertainment__item">

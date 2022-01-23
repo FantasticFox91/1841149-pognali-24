@@ -1,24 +1,27 @@
 .page-title {
   position: relative;
   padding: 35px 25px 22px;
-  background-color: #182044;
+  background-color: #161c35;
   border-radius: 0 0 20px 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 106px;
-    padding-bottom: 70px;
+    padding-top: 105px;
+    padding-bottom: 71px;
     border-radius: 0 0 60px 60px;
+    background-color: #182044;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 98px 74px 71px;
     border-radius: 0 0 56px 56px;
+    background-color: #161c35;
   }
 }
 
 .page-title__heading {
   position: relative;
   margin: 0;
+  margin-left: -25px;
   font-size: 36px;
   color: $white-color;
 
@@ -34,13 +37,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 50px;
+    margin-left: 0;
+    padding-left: 10px;
     font-size: 60px;
     line-height: 60px;
 
     &::after {
-      left: 50px;
-      bottom: -74px;
+      left: 10px;
+      bottom: -75px;
       width: 358px;
       height: 8px;
     }
@@ -48,6 +52,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 500px;
+    padding-left: 50px;
 
     &::after {
       left: 52px;

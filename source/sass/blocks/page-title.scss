@@ -9,6 +9,11 @@
     padding-bottom: 70px;
     border-radius: 0 0 60px 60px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 98px 74px 71px;
+    border-radius: 0 0 56px 56px;
+  }
 }
 
 .page-title__heading {
@@ -38,6 +43,13 @@
       bottom: -74px;
       width: 358px;
       height: 8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: 52px;
+      bottom: -75px;
     }
   }
 }

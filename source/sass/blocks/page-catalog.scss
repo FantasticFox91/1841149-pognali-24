@@ -7,3 +7,18 @@
   padding: 0 25px;
   padding-bottom: 156px;
 }
+
+.page-catalog__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    .page-title__heading {
+      margin-right: 156px;
+
+      &::after {
+        width: 288px;
+      }
+    }
+  }
+}

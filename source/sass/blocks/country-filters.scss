@@ -1,7 +1,7 @@
 .country-filters {
-  margin-top: 3px;
+  margin-top: -10px;
   margin-bottom: 21px;
-  padding-top: 23px;
+  padding-top: 31px;
   padding-bottom: 15px;
   background-color: $country-filter-color;
   color: $special-blue;
@@ -20,7 +20,7 @@
 
 .country-filters__heading {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   font-size: inherit;
   line-height: 18px;
   font-weight: 700;
@@ -106,12 +106,16 @@
     }
   }
 
+  .country-filters__heading {
+    max-width: 247px;
+  }
+
   .country-filters__dropdown {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 0;
     width: 100%;
-    padding: 25px;
+    padding: 30px 25px 28px;
     z-index: 3;
     background-color: $country-filter-color;
     border-radius: 0 0 20px 20px;

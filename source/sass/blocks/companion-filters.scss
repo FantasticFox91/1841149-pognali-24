@@ -1,15 +1,17 @@
 .companion-filters {
   margin-bottom: 28px;
-  padding: 26px 0 22px 0;
+  padding: 24px 0 22px 0;
   background-color: $basic-yellow;
   border-radius: 20px;
 }
 
 .companion-filters__heading {
+  margin-bottom: 24px;
   padding: 0;
   font-size: 22px;
   line-height: inherit;
   color: inherit;
+  letter-spacing: 0.02em;
 }
 
 .companion-filters__fieldset {
@@ -20,7 +22,8 @@
 
 .companion-filters__legend {
   width: 100%;
-  padding: 13px 0;
+  padding: 11px 0 10px 1px;
+  line-height: 18px;
   border-top: 1px solid $special-border-color;
 }
 
@@ -78,6 +81,10 @@
 .companion-filters__label {
   position: relative;
   padding-left: 27px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $black-color;
 
   &::before {
     position: absolute;
@@ -98,15 +105,20 @@
 }
 
 .companion-filters__input-containers {
-  margin-bottom: 21px;
+  margin-bottom: 17px;
 }
 
 .companion-filters__icon {
   opacity: 0.3;
 }
 
+.companion-filters__list {
+  margin-top: 3px;
+}
+
 .companion-filters__list--transport {
   display: flex;
+  margin-top: 6px;
 
   .companion-filters__label--checkbox {
     display: flex;
@@ -134,6 +146,8 @@
 }
 
 .companion-filters__fieldset--range {
+  margin-top: -6px;
+
   .companion-filters__label {
     padding: 0;
 
@@ -145,7 +159,8 @@
 
 .companion-filters__range-container {
   display: flex;
-  margin-bottom: 21px;
+  margin-top: 2px;
+  margin-bottom: 20px;
 }
 
 .companion-filters__range-input {
@@ -186,5 +201,13 @@
 }
 
 .companion-filters__submit-button {
+  width: 230px;
+  margin-left: -5px;
+  margin-bottom: 0;
+  padding-bottom: 11px;
   background-color: $white-color;
+}
+
+.companion-filters__item:not(:last-child) {
+  margin-bottom: 8px;
 }

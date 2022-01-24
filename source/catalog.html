@@ -122,8 +122,10 @@
 <!-- Main block -->
     <main class="page-catalog">
       <div class="page-title">
-        <h1 class="page-title__heading">Попутчики</h1>
-        <a class="page-title__link" href="#">На главную</a>
+        <div class="text-wrapper">
+          <h1 class="page-title__heading">Попутчики</h1>
+          <a class="page-title__link" href="#">На главную</a>
+        </div>
       </div>
 <!-- Filter by continents -->
 <!-- country-filters--open -->
@@ -571,7 +573,7 @@
                     </li>
                     <li class="companion-filters__item">
                       <input class="companion-filters__checkbox visually-hidden" type="checkbox" name="music" value="russian rap" id="russianRap" checked>
-                      <label class="companion-filters__label" for="russianRap">Руский рэп</label>
+                      <label class="companion-filters__label" for="russianRap">Русский рэп</label>
                     </li>
                     <li class="companion-filters__item">
                       <input class="companion-filters__checkbox visually-hidden" type="checkbox" name="music" value="dance" id="dance">
@@ -708,7 +710,8 @@
                 <h3 class="catalog-card__fullname catalog-card__fullname--offline">Таня Фирсова</h3>
                 <div class="catalog-card__interactive-elements">
                   <div class="catalog-card__heart-container">
-                    <span class="catalog-card__heart-counter">1,5 М</span>
+                    <input class="catalog-card__input visually-hidden" type="checkbox" value="liked" name="Firsova" id="like" checked>
+                    <label class="catalog-card__heart-counter" for="like">1,5 М</label>
                   </div>
                 </div>
                 <div class="catalog-card__hashtags">
@@ -784,8 +787,8 @@
                 <a class="catalog-card__link-button link-button" href="#">Позвать!</a>
               </div>
             </li>
-            <li class="companions-catalog__item">
-              <div class="catalog-card">
+            <li class="companions-catalog__item ">
+              <div class="catalog-card catalog-card-two">
                 <a class="catalog-card__link" href="#">
                   <picture>
                     <img class="catalog-card__avatar" src="img/demin-mobile.jpg" alt="Аватарка" width="70" height="70">
@@ -794,7 +797,8 @@
                 <h3 class="catalog-card__fullname catalog-card__fullname--offline">Петя Демин</h3>
                 <div class="catalog-card__interactive-elements">
                   <div class="catalog-card__heart-container">
-                    <span class="catalog-card__heart-counter">1500</span>
+                    <input class="catalog-card__input visually-hidden" type="checkbox" value="liked" name="Firsova" id="like2">
+                    <label class="catalog-card__heart-counter" for="like2">1500</label>
                   </div>
                 </div>
                 <div class="catalog-card__hashtags">
@@ -808,7 +812,7 @@
                 </div>
                 <fieldset class="catalog-card__fieldset catalog-card__fieldset--visit">
                   <legend class="catalog-card__legend">хочет посетить:</legend>
-                  <ul class="catalog-card__list list">
+                  <ul class="catalog-card__list catalog-card__list--second list">
                     <li class="catalog-card__item catalog-card__item--belgium">Бельгия</li>
                     <li class="catalog-card__item catalog-card__item--chech">Чехия</li>
                   </ul>
@@ -878,23 +882,24 @@
                 <h3 class="catalog-card__fullname catalog-card__fullname--offline">Марк Смолов</h3>
                 <div class="catalog-card__interactive-elements">
                   <div class="catalog-card__heart-container">
-                    <span class="catalog-card__heart-counter">170</span>
+                    <input class="catalog-card__input visually-hidden" type="checkbox" value="liked" name="Firsova" id="like3">
+                    <label class="catalog-card__heart-counter" for="like3">170</lab>
                   </div>
                 </div>
                 <div class="catalog-card__hashtags">
                   <ul class="catalog-card__hashtags-list list">
                     <li class="catalog-card__hashtags-item">#рэп</li>
                     <li class="catalog-card__hashtags-item">#тату</li>
-                    <li class="catalog-card__hashtags-item">#хайпист</li>
+                    <li class="catalog-card__hashtags-item">#хайпбист</li>
                     <li class="catalog-card__hashtags-item">#кроссовки</li>
                     <li class="catalog-card__hashtags-item">#суприм</li>
                   </ul>
                 </div>
                 <fieldset class="catalog-card__fieldset catalog-card__fieldset--visit">
                   <legend class="catalog-card__legend">хочет посетить:</legend>
-                  <ul class="catalog-card__list list">
+                  <ul class="catalog-card__list catalog-card__list--third list">
                     <li class="catalog-card__item catalog-card__item--usa">США</li>
-                    <li class="catalog-card__item catalog-card__item--australia">Австалия</li>
+                    <li class="catalog-card__item catalog-card__item--australia">Австралия</li>
                     <li class="catalog-card__item catalog-card__item--dominican">Доминикана</li>
                   </ul>
                 </fieldset>
@@ -963,7 +968,8 @@
                 <h3 class="catalog-card__fullname catalog-card__fullname--offline">Лариса Роговая</h3>
                 <div class="catalog-card__interactive-elements">
                   <div class="catalog-card__heart-container">
-                    <span class="catalog-card__heart-counter">23</span>
+                    <input class="catalog-card__input visually-hidden" type="checkbox" value="liked" name="Firsova" id="like4">
+                    <label class="catalog-card__heart-counter" for="like4">23</label>
                   </div>
                 </div>
                 <div class="catalog-card__hashtags">
@@ -976,7 +982,7 @@
                 </div>
                 <fieldset class="catalog-card__fieldset catalog-card__fieldset--visit">
                   <legend class="catalog-card__legend">хочет посетить:</legend>
-                  <ul class="catalog-card__list list">
+                  <ul class="catalog-card__list catalog-card__list--fourth list">
                     <li class="catalog-card__item catalog-card__item--uk">Великобритания</li>
                     <li class="catalog-card__item catalog-card__item--germany">Германия</li>
                   </ul>

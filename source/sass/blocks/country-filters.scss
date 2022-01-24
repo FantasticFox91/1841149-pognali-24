@@ -131,6 +131,15 @@
 
     @media (min-width: $tablet-width) {
       display: flex;
+      margin-left: auto;
+      margin-right: 33px;
+      align-items: center;
+      width: 185px;
+
+      &::after {
+        top: 6px;
+        left: 91%;
+      }
     }
   }
 
@@ -160,19 +169,6 @@
       display: block;
     }
 
-    .country-filters__button {
-      display: flex;
-      margin-left: auto;
-      margin-right: 33px;
-      align-items: center;
-      width: 185px;
-
-      &::after {
-        top: 6px;
-        left: 91%;
-      }
-    }
-
     .continents__list {
       display: flex;
     }
@@ -193,7 +189,6 @@
     .dropdown-list__button {
       display: block;
     }
-
 
     .country-filters__button {
       display: flex;

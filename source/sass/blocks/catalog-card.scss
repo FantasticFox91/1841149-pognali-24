@@ -298,7 +298,7 @@
     left: 10px;
     width: 13px;
     height: 11px;
-    background: url("../img/icon-heart.svg");
+    background: url("../img/icon-heart.svg") no-repeat;
     z-index: 2;
     opacity: 0.5;
     content: "";
@@ -311,7 +311,7 @@
   }
 
   &::after {
-    background: url("../img/icon-heaat-filled.svg");
+    background: url("../img/icon-heaat-filled.svg") no-repeat;
     opacity: 1;
   }
 }

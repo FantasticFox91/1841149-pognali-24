@@ -2,11 +2,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-.pagination {
-  @media (min-width: $tablet-width) {
     padding: 25px 35px 24px 28px;
     background-color: $white-color;
     border-radius: 20px;

@@ -6,6 +6,12 @@
   grid-template-rows: 13px 40px 30px 65px min-content 96px 40px 23px;
   background-color: $white-color;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 688px;
+    grid-template-columns: 35px 224px 147px 199px 60px 25px;
+    grid-template-rows: 31px 30px 108px 60px 103px;
+  }
 }
 
 .catalog-card__link {
@@ -13,12 +19,24 @@
   margin-left: -7px;
   grid-row: 2/4;
   grid-column: 2/3;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2/6;
+    margin-left: 0;
+  }
 }
 
 .catalog-card__avatar {
   display: block;
   margin-top: 2px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    height: 190px;
+    margin-top: 4px;
+    border-radius: 20px;
+  }
 }
 
 .catalog-card__fullname {
@@ -29,17 +47,37 @@
   line-height: 20px;
   color: $basic-blue-dark;
   grid-row: 2/3;
-  grid-column: 3/4;
+  grid-column: 3/5;
 
-  &--offline::before {
+  &::before {
     position: absolute;
     top: 8px;
     right: -63px;
     width: 6px;
     height: 6px;
-    background-color: $special-red;
+    background-color: $special-green;
     border-radius: 50%;
     content: "";
+  }
+
+  &--offline::before {
+    background-color: $special-red;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    padding-left: 0;
+    padding-right: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+
+    &::before {
+      width: 8px;
+      height: 8px;
+      top: calc(50% - 2px);
+      right: 0;
+    }
   }
 }
 
@@ -51,6 +89,15 @@
   color: $basic-blue;
   grid-row: 3/4;
   grid-column: 3/4;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding: 20px 0;
+    grid-row: 4/5;
+    grid-column: 4/5;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .catalog-card__hashtags {
@@ -58,6 +105,14 @@
   align-items: center;
   grid-row: 4/5;
   grid-column: 2/5;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+    padding-top: 20px;
+    padding-left: 2px;
+    grid-row: 3/4;
+    grid-column: 3/5;
+  }
 }
 
 .catalog-card__hashtags-list {
@@ -68,21 +123,16 @@
   line-height: 18px;
   font-weight: 400;
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .catalog-card__hashtags-item:not(:last-child) {
   margin-right: 5px;
-}
-
-.catalog-card__fieldset--visit {
-  grid-row: 5/6;
-  grid-column: 2/5;
-
-  .catalog-card__legend {
-    width: 117px;
-    margin-left: -11px;
-    padding-left: 11px;
-  }
 }
 
 .catalog-card__fieldset {
@@ -99,6 +149,41 @@
     height: 1px;
     background-color: $basic-blue-light;
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+.catalog-card__fieldset--visit {
+  grid-row: 5/6;
+  grid-column: 2/5;
+
+  .catalog-card__legend {
+    width: 117px;
+    margin-left: -11px;
+    padding-left: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 17px;
+    margin-bottom: 22px;
+    grid-column: 1/7;
+    flex-direction: column;
+
+    .catalog-card__legend {
+      margin-left: 73px;
+    }
+
+    .catalog-card__list {
+      display: flex;
+      flex-direction: row;
+      padding-left: 37px;
+    }
   }
 }
 
@@ -120,6 +205,12 @@
   line-height: 16px;
   font-weight: 500;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 4px;
+  }
 }
 
 .catalog-card__item {
@@ -199,6 +290,21 @@
       background-image: url("../img/germany.svg");
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-left: 45px;
+
+    &::after {
+      width: 35px;
+      height: 24px;
+      background-size: 35px 24px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+  }
 }
 
 .catalog-card__fieldset--transport {
@@ -228,6 +334,47 @@
   .catalog-card__item:not(:last-child) {
     margin-right: 1px;
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+
+    .catalog-card__list {
+      align-items: center;
+      flex-direction: column;
+      margin-top: 0;
+    }
+
+    .catalog-card__item {
+      margin-bottom: 0;
+      background-color: transparent;
+
+      &::after {
+        display: none;
+      }
+
+      &--airplane .catalog-card__icon {
+        width: 23px;
+        height: 22px;
+      }
+
+      &--bus .catalog-card__icon {
+        width: 19px;
+        height: 20px;
+      }
+
+      &--bicycle .catalog-card__icon {
+        width: 26px;
+        height: 25px;
+      }
+
+      &--walk .catalog-card__icon {
+        width: 23px;
+        height: 24px;
+      }
+    }
+  }
 }
 
 .catalog-card__icon {
@@ -248,6 +395,22 @@
   .catalog-card__fieldset--transport {
     margin-right: 53px;
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: auto;
+    padding-top: 3px;
+    grid-row: 2/5;
+    grid-column: 5/6;
+    flex-direction: column;
+  }
+
+  .catalog-card__fieldset--transport {
+    margin-right: 0;
+
+    .catalog-card__legend {
+      display: none;
+    }
+  }
 }
 
 .catalog-card__link-button {
@@ -255,11 +418,28 @@
   margin-left: -5px;
   grid-row: 7/8;
   grid-column: 2/5;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px 0;
+    font-size: 20px;
+    line-height: 20px;
+    grid-row: 4/5;
+    grid-column: 3/4;
+  }
 }
 
 .catalog-card__fieldset--level {
   &::after {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    .catalog-card__legend {
+      display: none;
+    }
   }
 }
 
@@ -294,14 +474,31 @@
 
   &::after {
     position: absolute;
-    top: 14px;
-    left: 10px;
+    top: 20px;
+    left: 15px;
     width: 13px;
     height: 11px;
     background: url("../img/icon-heart.svg") no-repeat;
     z-index: 2;
     opacity: 0.5;
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 56px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+
+    &::after {
+      width: 20px;
+      height: 18px;
+      background-size: 20px 18px;
+    }
   }
 }
 
@@ -313,5 +510,13 @@
   &::after {
     background: url("../img/icon-heaat-filled.svg") no-repeat;
     opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 20px;
+      height: 18px;
+      background-size: 20px 18px;
+    }
   }
 }

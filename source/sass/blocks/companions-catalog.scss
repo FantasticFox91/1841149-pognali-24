@@ -5,10 +5,18 @@
 
 .companions-catalog__list {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .companions-catalog__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .companions-catalog__show-more {
@@ -27,7 +35,7 @@
 
   &::after {
     position: absolute;
-    top: calc(50% - 2px);
+    top: calc(50% - 1px);
     left: 0;
     width: 18px;
     height: 2px;
@@ -38,7 +46,7 @@
 
   &::before {
     position: absolute;
-    top: calc(50% - 2px);
+    top: calc(50% - 1px);
     left: 0;
     width: 18px;
     height: 2px;
@@ -47,43 +55,20 @@
     transform: rotate(90deg);
     content: "";
   }
-}
 
-.companions-catalog__navigation {
-  .pagination__list {
-    @media (max-width: 767px) {
-      display: none;
-    }
-  }
-
-  .pagination__controls {
-    display: flex;
-    margin: 0 auto;
-    position: relative;
-    width: 270px;
-    height: 51px;
-    background-color: $white-color;
-    border-radius: 20px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    padding-left: 51px;
+    padding-right: 7px;
+    font-size: 20px;
+    line-height: 20px;
 
     &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 1px;
-      height: 51px;
-      background-color: $background-color;
-      content: "";
+      width: 26px;
     }
-  }
-}
 
-
-.pagination__arrow {
-  flex-grow: 1;
-  padding: 17px 59px 14px 63px;
-  background: url("../img/page\ arrows.svg") no-repeat 50% 50%;
-
-  &--prev {
-    transform: rotate(180deg);
+    &::before {
+      width: 26px;
+    }
   }
 }

@@ -6,6 +6,11 @@
 .page-catalog__columns {
   padding: 0 25px;
   padding-bottom: 156px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .page-catalog__container {

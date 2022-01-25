@@ -20,6 +20,12 @@
   border: none;
   border-radius: 25px;
   background-color: #d6daed;
+
+  @media (min-width: $tablet-width) {
+    max-width: 615px;
+    margin: 0 auto;
+    padding: 40px 0 39px;
+  }
 }
 
 .dropdown-list__opened-text {
@@ -48,5 +54,21 @@
     background-color: $basic-blue-dark;
     transform: rotate(-45deg);
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 41px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 22px;
+      height: 3px;
+    }
+
+    &::after {
+      width: 22px;
+      height: 3px;
+    }
   }
 }

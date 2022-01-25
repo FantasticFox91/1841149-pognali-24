@@ -160,6 +160,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    border-radius: 0;
 
     .country-filters__info--closed {
       display: none;
@@ -171,6 +172,9 @@
 
     .continents__list {
       display: flex;
+      margin-top: -108px;
+      margin-left: 7px;
+      max-width: 450px;
     }
 
     .continents__item:not(:last-child) {
@@ -182,12 +186,29 @@
       top: 200px;
       left: 32px;
       display: block;
+      padding-bottom: 79px;
       font-size: 20px;
       line-height: 20px;
+      border-radius: 0 0 60px 60px;
     }
 
     .dropdown-list__button {
       display: block;
+    }
+
+    .dropdown-list {
+      top: 184px;
+      left: 0;
+    }
+
+    .dropdown-list__alphabet {
+      display: flex;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      padding-top: 22px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .country-filters__button {
@@ -196,14 +217,43 @@
       margin-right: 32px;
       align-items: center;
       width: 185px;
+      z-index: 4;
 
       &::after {
-        left: 100%;
+        width: 25px;
+        top: 8px;
+        left: 159px;
       }
 
       &::before {
-        left: 100%;
+        width: 25px;
+        left: 159px;
       }
+    }
+
+    .alphabet__list--letters {
+      max-width: none;
+      grid-template-columns: repeat(5, 75px);
+      grid-template-rows: repeat(4, 83px) 84px;
+      border: none;
+      margin-right: 77px;
+    }
+
+    .alphabet__item {
+      border: none;
+    }
+
+    .alphabet__button {
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 700;
+      background-color: $country-filter-color;
+      color: rgba(25, 33, 68, 0.3);
+    }
+
+    .countries-list__sublist {
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }

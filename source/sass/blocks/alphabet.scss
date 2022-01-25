@@ -136,6 +136,12 @@
       background-color: $country-filter-color;
       z-index: 1;
     }
+
+    @media (min-width: $tablet-width) {
+      color: $basic-blue-dark;
+      background-color: $country-filter-color;
+      opacity: 1;
+    }
   }
 }
 

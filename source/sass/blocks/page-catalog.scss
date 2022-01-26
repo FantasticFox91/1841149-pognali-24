@@ -10,6 +10,14 @@
   @media (min-width: $tablet-width) {
     padding: 0 40px 132px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    padding: 0;
+    padding-bottom: 145px;
+    grid-template-columns: 954px 285px;
+    column-gap: 86px;
+  }
 }
 
 .page-catalog__container {

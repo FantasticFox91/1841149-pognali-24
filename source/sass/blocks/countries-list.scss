@@ -1,6 +1,13 @@
 .countries-list__letter {
-  @media (max-width: 1329px) {
+  @media (max-width: 1439px) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    color: $basic-blue-dark;
   }
 }
 
@@ -11,6 +18,14 @@
   font-size: 16px;
   font-weight: 400;
   color: $special-grey;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 235px 239px 238px 227px 235px;
+    grid-template-rows: 600px 450px 398px 450px 202px;
+    row-gap: 51px;
+    margin-bottom: 61px;
+  }
 }
 
 .countries-list__sublist {
@@ -20,5 +35,14 @@
 
   &--active {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    display: block;
+    margin-top: 30px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

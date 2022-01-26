@@ -71,6 +71,7 @@
   color: $white-color;
   text-decoration: none;
   text-transform: uppercase;
+  margin-left: auto;
 
   &::after {
     position: absolute;
@@ -80,6 +81,10 @@
     height: 16px;
     background: url("../img/icon_arrow_bend.svg");
     content: "";
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 49px;
   }
 
   @media (max-width: 767px) {

@@ -62,6 +62,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 77px;
+  }
 }
 
 .pagination__arrow {

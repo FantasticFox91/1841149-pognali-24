@@ -1,6 +1,12 @@
 .companions-catalog {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 1/2;
+    margin-left: 5px;
+  }
 }
 
 .companions-catalog__list {
@@ -9,6 +15,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
+  }
 }
 
 .companions-catalog__item:not(:last-child) {
@@ -16,6 +26,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
   }
 }
 
@@ -70,5 +84,9 @@
     &::before {
       width: 26px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
   }
 }

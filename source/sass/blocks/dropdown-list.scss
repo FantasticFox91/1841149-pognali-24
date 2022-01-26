@@ -7,6 +7,11 @@
   @media (min-width: $tablet-width) {
     top: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    display: block;
+  }
 }
 
 .dropdown-list__button--close {
@@ -70,5 +75,13 @@
       width: 22px;
       height: 3px;
     }
+  }
+}
+
+.dropdown-list__button {
+  @media (min-width: $desktop-width) {
+    max-width: none;
+    width: 100%;
+    margin: 0;
   }
 }

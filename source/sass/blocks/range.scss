@@ -18,6 +18,10 @@
     height: 3px;
     width: 275px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 189px;
+  }
 }
 
 .range__bar {
@@ -31,6 +35,10 @@
   @media (min-width: $tablet-width) {
     height: 3px;
     width: 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 119px;
   }
 }
 
@@ -58,11 +66,21 @@
     height: 13px;
 
     &--max {
-      right: -7px;
+      right: -5px;
     }
 
     &--min {
-      left: -8px;
+      left: -5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--max {
+      right: -1px;
+    }
+
+    &--min {
+      left: -13px;
     }
   }
 }

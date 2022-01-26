@@ -72,4 +72,24 @@
       r: 30px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 2px;
+
+    .level-mark__ring {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .level-mark__circle {
+      cx: 30px;
+      cy: 30px;
+      r: 27px;
+    }
+  }
 }

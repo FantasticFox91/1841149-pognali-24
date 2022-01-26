@@ -1,9 +1,19 @@
 .continents__list {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 343px;
+    margin-top: -21px;
+  }
 }
 
 .continents__item:not(:last-child) {
   margin-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
 }
 
 .continents__link {

@@ -38,6 +38,11 @@
   background-image: url("../img/icon-call.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  transition: $basic-animation;
+
+  &:hover {
+    background-color: $special-orange-dark;
+  }
 }
 
 .user-list__link--email {
@@ -45,4 +50,9 @@
   background-image: url("../img/icon-top-menu-mail.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  transition: $basic-animation;
+
+  &:hover {
+    background-color: $special-orange;
+  }
 }

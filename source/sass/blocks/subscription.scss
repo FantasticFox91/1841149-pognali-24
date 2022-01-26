@@ -169,6 +169,7 @@
   border: none;
   border-radius: 10px;
   transition: $basic-animation;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 80px;

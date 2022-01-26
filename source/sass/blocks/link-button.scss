@@ -65,6 +65,11 @@
 
 .link-button--auth {
   font-size: 17px;
+  transition: $basic-animation;
+
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 16px 28px 14px 29px;

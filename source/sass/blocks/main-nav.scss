@@ -99,6 +99,8 @@
 }
 
 .main-nav__logo {
+  cursor: pointer;
+
   @media (min-width: $desktop-width) {
     margin-left: -6px;
     margin-right: 45px;

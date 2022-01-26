@@ -1,6 +1,7 @@
 .links-list {
   padding-top: 51px;
   padding-bottom: 54px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -25,13 +26,39 @@
   }
 }
 
+.links-list__item {
+  transition: $basic-animation;
+
+  &:hover {
+    color: $basic-yellow;
+    transform: translateY(-147%);
+  }
+}
+
 .links-list__link {
+  position: relative;
   font-size: 30px;
   line-height: 35px;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   color: $special-blue;
+  transition: $basic-animation;
+
+  &::before {
+    position: absolute;
+	  top: 100%;
+    content: attr(data-hover);
+  }
+
+  &:hover {
+    color: $basic-yellow;
+    transform: translateY(-200px);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

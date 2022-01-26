@@ -43,6 +43,7 @@
 
 .footer__logo {
   margin-bottom: 34px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

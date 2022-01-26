@@ -62,6 +62,12 @@
   }
 }
 
+.page-title__heading--catalog {
+  &::after {
+    width: 172px;
+  }
+}
+
 .page-title__link {
   position: relative;
   padding-top: 5px;
@@ -81,6 +87,10 @@
     height: 16px;
     background: url("../img/icon_arrow_bend.svg");
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 8px;
   }
 
   @media (min-width: $desktop-width) {

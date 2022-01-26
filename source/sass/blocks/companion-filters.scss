@@ -32,7 +32,7 @@
 }
 
 .companion-filters__heading {
-  margin-bottom: 24px;
+  margin-bottom: 34px;
   padding: 0;
   font-size: 22px;
   line-height: inherit;
@@ -233,7 +233,7 @@
 }
 
 .companion-filters__input-containers {
-  margin-bottom: 17px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -250,10 +250,11 @@
 }
 
 .companion-filters__list {
-  margin-top: 3px;
+  margin-top: 9px;
 
   @media (min-width: $tablet-width) {
     display: grid;
+    margin-top: 3px;
     grid-template-columns: 143px 146px 150px;
     column-gap: 26px;
   }
@@ -267,7 +268,7 @@
 
 .companion-filters__list--transport {
   display: flex;
-  margin-top: 6px;
+  margin-top: 12px;
 
   .companion-filters__label--checkbox {
     display: flex;
@@ -323,6 +324,7 @@
 
 .companion-filters__fieldset--range {
   margin-top: -6px;
+  margin-bottom: 0;
 
   .companion-filters__label {
     padding: 0;
@@ -351,11 +353,12 @@
 
 .companion-filters__range-container {
   display: flex;
-  margin-top: 2px;
+  margin-top: 8px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
+    margin-top: 2px;
     margin-bottom: 0;
   }
 
@@ -459,7 +462,7 @@
 }
 
 .companion-filters__item:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

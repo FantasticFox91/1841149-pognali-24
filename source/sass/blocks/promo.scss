@@ -118,7 +118,7 @@
     @media (min-width: $tablet-width) {
       position: relative;
       display: grid;
-      grid-template-columns: 369px 344px;
+      grid-template-columns: minmax(344px, 1fr) minmax(344px, 1fr);
       grid-template-rows: repeat(2, 140px);
 
       &::after {
@@ -183,7 +183,7 @@
 
   &:nth-child(4n + 3) {
     background-color: $special-yellow-dark;
-    padding-right: 108px;
+    padding-right: 145px;
   }
 
   &:nth-child(4n) {
@@ -208,7 +208,6 @@
 
     &:nth-child(2n) {
       min-width: 344px;
-      margin-left: -25px;
     }
 
     &:nth-child(4n + 1) {
@@ -224,6 +223,12 @@
     }
   }
 
+  @media (min-width: 780px) {
+    &:nth-child(2n) {
+      margin-left: -14px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     border-radius: 20px;
     padding-bottom: 30px;
@@ -231,25 +236,29 @@
 
     &::after {
       top: 25px;
-      left: 70%;
+      left: 79%;
     }
 
     &:nth-child(4n + 1) {
-      width: 345px;
+      min-width: 345px;
+      max-width: 345px;
     }
 
     &:nth-child(2n) {
+      min-width: 375px;
       width: 375px;
       flex-grow: 1;
     }
 
     &:nth-child(4n + 3) {
       border-radius: 20px 0 0 20px;
+      padding-right: 155px;
       flex-grow: 1;
     }
 
     &:nth-child(4n) {
-      width: 315px;
+      min-width: 315px;
+      max-width: 315px;
       border-radius: 20px;
     }
   }
@@ -257,7 +266,7 @@
 
 .promo__item:not(:first-child) {
   @media (min-width: $desktop-width) {
-    margin-left: -50px;
+    margin-left: -30px;
   }
 }
 
@@ -275,5 +284,9 @@
     height: 255px;
     background: url("../img/promo-list-pseudo.png");
     content: "";
+  }
+
+  & :last-child {
+    flex-grow: 1;
   }
 }

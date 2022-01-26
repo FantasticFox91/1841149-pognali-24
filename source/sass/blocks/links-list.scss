@@ -46,8 +46,8 @@
   transition: $basic-animation;
 
   &::before {
+    top: 100%;
     position: absolute;
-	  top: 100%;
     content: attr(data-hover);
   }
 

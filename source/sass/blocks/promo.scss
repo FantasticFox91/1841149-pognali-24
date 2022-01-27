@@ -183,7 +183,7 @@
 
   &:nth-child(4n + 3) {
     background-color: $special-yellow-dark;
-    padding-right: 145px;
+    padding-right: 105px;
   }
 
   &:nth-child(4n) {
@@ -215,6 +215,7 @@
     }
 
     &:nth-child(4n + 3) {
+      padding-right: 150px;
       border-radius: 0 0 0 20px;
     }
 

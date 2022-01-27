@@ -33,7 +33,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 20px;
+    margin: 0;
   }
 }
 
@@ -63,6 +63,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin-left: 6px;
     padding-left: 45px;
     font-size: 20px;
     line-height: 20px;
@@ -121,6 +122,8 @@
 
 .country-filters--open {
   position: relative;
+  display: flex;
+  align-items: center;
 
   .country-filters__alphabet {
     display: flex;
@@ -129,6 +132,7 @@
 
   .country-filters__button {
     display: block;
+    margin-top: -5px;
     padding: 0;
     width: 16px;
     height: 16px;
@@ -182,6 +186,7 @@
 
   @media (min-width: $tablet-width) {
     border-radius: 0;
+    justify-content: flex-end;
 
     .country-filters__alphabet {
       flex-direction: row;
@@ -207,19 +212,20 @@
       display: flex;
       margin-left: auto;
       margin-right: 32px;
+      margin-top: 0;
       align-items: center;
-      width: 185px;
+      width: 175px;
       z-index: 4;
 
       &::after {
         width: 25px;
         top: 8px;
-        left: 159px;
+        left: 149px;
       }
 
       &::before {
         width: 25px;
-        left: 159px;
+        left: 149px;
       }
     }
   }

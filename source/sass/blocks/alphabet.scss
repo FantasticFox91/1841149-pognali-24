@@ -42,14 +42,16 @@
   border-left: 1px solid $range-input-border-color;
 
   @media (min-width: $tablet-width) {
-    padding: 35px 80px 33px 27px;
+    padding: 35px 77px 29px 27px;
     border-top: none;
-    border-right: 1px solid rgba(214, 217 ,230, 0.5);
+    border-right: 1px solid rgba(214, 217, 230, 0.5);
     grid-template-columns: repeat(4, 53px) 54px;
     grid-template-rows: repeat(5, 70px);
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 101px;
+    padding-bottom: 36px;
     grid-template-columns: repeat(5, 60px);
     gap: 14px 15px;
   }
@@ -205,6 +207,7 @@
 
 .alphabet--catalog {
   position: static;
+  padding-left: 25px;
 
   .alphabet__letters {
     background-color: transparent;
@@ -224,8 +227,8 @@
     box-shadow: none;
 
     .alphabet__letters {
-      padding-right: 32px;
-      grid-template-columns: repeat(4, 86px) 85px;
+      padding: 25px 78px 62px 0;
+      grid-template-columns: repeat(5, 78px);
       grid-template-rows: repeat(5, 82px);
       border: none;
     }
@@ -251,6 +254,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    padding-left: 22px;
 
     .alphabet__letters {
       display: none;
@@ -259,7 +263,7 @@
     .alphabet__countries {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
       background-color: transparent;
     }
   }

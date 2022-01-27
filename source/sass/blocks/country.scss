@@ -1,5 +1,5 @@
 .country {
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 55px;
@@ -12,8 +12,10 @@
 }
 
 .country__description {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
-    max-width: 440px;
+    max-width: 450px;
     margin-bottom: 76px;
   }
 
@@ -133,11 +135,11 @@
 }
 
 .country__button--active {
-  padding-left: 17px;
+  padding-left: 22px;
   color: $white-color;
   background: $basic-blue-dark url("../../img/icon_close--white.svg") no-repeat 195px center;
   border-radius: 5px 5px 0 0;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
 
   &::after {
     display: none;
@@ -279,6 +281,7 @@
 
     &::after {
       top: -63px;
+      height: 369px;
     }
   }
 }
@@ -291,7 +294,7 @@
     width: 8px;
     height: 8px;
     border: none;
-    background-color: $black-color;
+    background-color: $basic-blue-dark;
     border-radius: 50%;
     content: "";
   }
@@ -403,12 +406,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 167px;
+    min-width: 223px;
   }
 }
 
 .country__button--choosed + .country__flag--bih {
-  background: url("../img/bah.svg") no-repeat 50% 50%;
+  background: url("../img/bah.svg") no-repeat 32% 50%;
   background-size: 35px 24px;
 
   @media (min-width: $tablet-width) {
@@ -417,7 +420,7 @@
 }
 
 .country__button--choosed + .country__flag--chech {
-  background: url("../img/chech.svg") no-repeat 50% 50%;
+  background: url("../img/chech.svg") no-repeat 32% 50%;
   background-size: 35px 24px;
 
   @media (min-width: $tablet-width) {

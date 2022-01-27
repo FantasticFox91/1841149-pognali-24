@@ -1,6 +1,8 @@
 .continents {
+  padding-left: 25px;
+
   @media (min-width: $tablet-width) {
-    margin: 0 32px;
+    margin: 0 15px;
   }
 }
 
@@ -14,7 +16,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 343px;
+    margin-left: 289px;
     margin-top: -21px;
   }
 }

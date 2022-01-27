@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
-    grid-template-columns: 285px 62px 150px 110px 66px 1fr 43px;
+    grid-template-columns: 285px 62px 150px 110px 66px 1fr 34px;
     grid-template-rows: 44px 30px 108px 60px 43px;
   }
 }
@@ -518,6 +518,10 @@
     .catalog-card__legend {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
   }
 }
 

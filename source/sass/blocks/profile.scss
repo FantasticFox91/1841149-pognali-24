@@ -151,6 +151,10 @@
   background-color: $special-blue-light;
   border-radius: 25px;
 
+  &:focus {
+    outline: 1px solid tomato;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 20px;
     grid-column: span 3;

@@ -78,6 +78,10 @@
     height: 60px;
     margin-top: 2px;
 
+    .level-mark__underscore--catalog {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
     .level-mark__ring {
       width: 60px;
       height: 60px;
@@ -91,5 +95,11 @@
       cy: 30px;
       r: 27px;
     }
+  }
+}
+
+.level-mark__level {
+  @media (max-width: 1439px) {
+    display: none;
   }
 }

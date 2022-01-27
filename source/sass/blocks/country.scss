@@ -143,21 +143,30 @@
     display: none;
   }
 
-  & + .country__flag::before {
+  & ~ .country__flag::before {
     display: none;
   }
 
-  & + .country__flag .country__close-button {
+  & ~ .country__flag .country__close-button {
     display: none;
+  }
+
+  & + .country__alphabet {
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $tablet-width) {
     background-size: 17px 21px;
     background-position: 95% 50%;
+
+    & + .country__alphabet {
+      flex-direction: row;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 21px 6px 28px 23px;
+    padding: 21px 6px 27px 23px;
     letter-spacing: 0.1em;
     background-size: 22px 24px;
     background-position-x: 96%;
@@ -267,6 +276,10 @@
     &::before {
       right: 151px;
     }
+
+    &::after {
+      top: -63px;
+    }
   }
 }
 
@@ -306,6 +319,8 @@
 .country__add-button {
   width: 220px;
   margin-bottom: 25px;
+  background-color: $basic-blue-light;
+  border: none;
 
   &::after {
     top: 14px;
@@ -319,7 +334,7 @@
     width: 8px;
     height: 8px;
     border: 1px solid $border-color;
-    background-color: $white-color;
+    background-color: transparent;
     border-radius: 50%;
     content: "";
     z-index: 1;
@@ -334,6 +349,7 @@
       width: 14px;
       height: 14px;
       right: -37px;
+      background-color: $white-color;
     }
 
     &::after {
@@ -407,4 +423,8 @@
   @media (min-width: $tablet-width) {
     background-size: 70px 47px;
   }
+}
+
+.country__dropdown {
+  position: relative;
 }

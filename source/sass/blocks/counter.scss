@@ -14,6 +14,11 @@
   }
 }
 
+.counter__input::-webkit-outer-spin-button,
+.counter__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .counter__sign {
   position: absolute;
   padding: 0;

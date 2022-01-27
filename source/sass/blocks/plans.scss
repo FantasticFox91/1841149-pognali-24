@@ -88,7 +88,6 @@
 }
 
 .plans__info {
-  margin-bottom: 20px;
   margin-left: 2px;
   font-size: 14px;
   line-height: 14px;
@@ -118,6 +117,7 @@
 
 .plans__dates {
   margin: 0;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     margin-right: 36px;

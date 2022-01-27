@@ -1,6 +1,6 @@
 .form {
   position: relative;
-  margin-top: -10px;
+  margin-top: -20px;
   background-color: $form-bg-color;
   padding: 28px 25px 110px;
   border-radius: 30px 30px 0 0;
@@ -197,6 +197,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    padding-right: 10px;
     order: 0;
     font-size: 20px;
     line-height: 24px;
@@ -206,6 +207,7 @@
   @media (min-width: $desktop-width) {
     align-self: start;
     margin-bottom: 54px;
+    max-width: 595px;
   }
 
   br {
@@ -216,20 +218,16 @@
 }
 
 .form__pagination {
-  position: absolute;
-  top: 26px;
-  right: 32px;
   display: flex;
+  margin-right: 8px;
 
   @media (min-width: $tablet-width) {
-    top: 53px;
-    right: 62px;
+    margin-right: -13px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    top: 250px;
-    right: 222px;
+    margin: 199px 160px -199px 0;
     flex-direction: column;
   }
 }
@@ -253,9 +251,10 @@
 .form__link {
   position: relative;
   display: block;
+  margin: 0;
   width: 5px;
   height: 5px;
-  padding: 15px 11px;
+  padding: 13px 11px;
   font-family: $main-font;
   font-size: 20px;
   line-height: 24px;
@@ -279,7 +278,7 @@
   @media (min-width: $tablet-width) {
     width: 6px;
     height: 6px;
-    padding: 15px 17px;
+    padding: 18px 17px;
 
     &::after {
       width: 6px;
@@ -341,6 +340,7 @@
 
   @media (min-width: $desktop-width) {
     opacity: 1;
+    min-width: 39px;
     color: $basic-blue-dark;
   }
 }
@@ -416,4 +416,9 @@
   @media (max-width: 1439px) {
     display: none;
   }
+}
+
+.form__pagination-container {
+  display: flex;
+  justify-content: space-between;
 }

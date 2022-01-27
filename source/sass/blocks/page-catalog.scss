@@ -12,11 +12,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
+    display: flex;
+    justify-content: flex-start;
     padding: 0;
     padding-bottom: 145px;
-    grid-template-columns: 954px 285px;
-    column-gap: 86px;
   }
 }
 

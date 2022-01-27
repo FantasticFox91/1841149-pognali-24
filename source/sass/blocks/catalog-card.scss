@@ -71,8 +71,8 @@
 
   &::before {
     position: absolute;
-    top: 8px;
-    right: -63px;
+    top: 10px;
+    right: -53px;
     width: 6px;
     height: 6px;
     background-color: $special-green;
@@ -288,7 +288,7 @@
 
   &--srilanka {
     &::after {
-      background-image: url("../img/srilanka.svg");
+      background-image: url("../img/shrilanka-catalog.svg");
     }
   }
 

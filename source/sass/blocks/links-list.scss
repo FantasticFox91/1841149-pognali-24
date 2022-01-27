@@ -45,15 +45,8 @@
   color: $special-blue;
   transition: $basic-animation;
 
-  &::before {
-    top: 100%;
-    position: absolute;
-    content: attr(data-hover);
-  }
-
   &:hover {
     color: $basic-yellow;
-    transform: translateY(-200px);
   }
 
   &:active {
@@ -70,5 +63,16 @@
     font-size: 20px;
     line-height: 20px;
     color: $white-color;
+
+    &::before {
+      top: 100%;
+      position: absolute;
+      content: attr(data-hover);
+    }
+
+    &:hover {
+      color: $basic-yellow;
+      transform: translateY(-200px);
+    }
   }
 }

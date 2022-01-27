@@ -1,33 +1,70 @@
 .alphabet {
-  @media (min-width: $tablet-width) {
-    display: none;
-    padding: 35px 73px 33px 27px;
-    border-right: 1px solid #d6d9e6;
-    background-color: $white-color;
-    box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
-    border-bottom-left-radius: 5px;
-  }
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  z-index: 2;
 
-  @media (min-width: $desktop-width) {
-    padding: 37px;
-    padding-top: 53px;
-    padding-bottom: 41px;
-    background-color: $basic-blue-light;
-    box-shadow: none;
-    border: none;
+  @media (min-width: $tablet-width) {
+    top: 69px;
+    background-color: $white-color;
+    box-shadow: 5px 8px 16px rgba(54, 80, 148, 0.18);
   }
+  // display: block;
+
+  // &--form {
+  //   display: block;
+  // }
+
+  // @media (min-width: $tablet-width) {
+  //   padding: 35px 73px 33px 27px;
+  //   border-right: 1px solid #d6d9e6;
+  //   background-color: $white-color;
+  //   box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
+  //   border-bottom-left-radius: 5px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   padding: 37px;
+  //   padding-top: 53px;
+  //   padding-bottom: 41px;
+  //   background-color: $basic-blue-light;
+  //   box-shadow: none;
+  //   border: none;
+  // }
 }
 
-.alphabet__list {
-  display: none;
+.alphabet__letters {
+  display: grid;
   grid-template-columns: repeat(4, 44px) 43px;
   grid-template-rows: repeat(5, 41px);
   background-color: $white-color;
   border-left: 1px solid $range-input-border-color;
 
-  &--active {
-    display: grid;
+  @media (min-width: $tablet-width) {
+    padding: 35px 80px 33px 27px;
+    border-top: none;
+    border-right: 1px solid rgba(214, 217 ,230, 0.5);
+    grid-template-columns: repeat(4, 53px) 54px;
+    grid-template-rows: repeat(5, 70px);
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(5, 60px);
+    gap: 14px 15px;
+  }
+}
+
+.alphabet__countries {
+  background-color: $white-color;
+}
+
+.alphabet__list {
+  display: grid;
+  grid-template-columns: repeat(4, 44px) 43px;
+  grid-template-rows: repeat(5, 41px);
+  background-color: $white-color;
+  border-left: 1px solid $range-input-border-color;
 
   @media (min-width: $tablet-width) {
     border-top: 1px solid $range-input-border-color;
@@ -121,6 +158,10 @@
   border-right: 1px solid $range-input-border-color;
   border-bottom: 1px solid $range-input-border-color;
 
+  @media (min-width: $tablet-width) {
+    border: 1px solid $range-input-border-color;
+  }
+
   @media (min-width: $desktop-width) {
     border: none;
   }
@@ -159,5 +200,67 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
+  }
+}
+
+.alphabet--catalog {
+  position: static;
+
+  .alphabet__letters {
+    background-color: transparent;
+  }
+
+  .alphabet__button--active {
+    background-color: $basic-blue-dark;
+    color: $white-color;
+  }
+
+  .alphabet__countries {
+    background-color: transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    box-shadow: none;
+
+    .alphabet__letters {
+      padding-right: 32px;
+      grid-template-columns: repeat(4, 86px) 85px;
+      grid-template-rows: repeat(5, 82px);
+      border: none;
+    }
+
+    .alphabet__item {
+      border: none;
+    }
+
+    .alphabet__button {
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 700;
+      color: $basic-blue-dark;
+      background-color: transparent;
+      opacity: 0.3;
+    }
+
+    .alphabet__button--active {
+      background-color: transparent;
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    .alphabet__letters {
+      display: none;
+    }
+
+    .alphabet__countries {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(5, 1fr);
+      background-color: transparent;
+    }
   }
 }

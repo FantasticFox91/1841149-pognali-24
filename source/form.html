@@ -62,7 +62,7 @@
             <div class="container main-nav_container">
               <ul class="main-nav__list links-list list">
                 <li class="links-list__item">
-                  <a class="links-list__link" data-hover="О сервисе" href="#">О сервисе</a>
+                  <a class="links-list__link" data-hover="О сервисе" href="index.html">О сервисе</a>
                 </li>
                 <li class="links-list__item">
                   <a class="links-list__link" data-hover="Направления" href="form.html">Направления</a>
@@ -135,7 +135,7 @@
               <span class="profile__underscore">80</span>
               <span class="profile__level">level</span>
               <svg class="level-mark__ring" width="100" height="100">
-                <circle class="level-mark__circle" stroke="#FF8D30" stroke-width="3" stroke-dasharray="260" fill="transparent" r="49" cx="50" cy="50"/>
+                <circle class="level-mark__circle" stroke="#FF8D30" stroke-width="3" stroke-dasharray="260" fill="transparent" r="48" cx="50" cy="50"/>
               </svg>
             </div>
             <div class="profile__image-container">
@@ -248,30 +248,32 @@
 <!-- Form block -->
         <section class="form">
           <div class="add-plan__container">
-            <h2 class="heading heading--inner form__heading">Добавить план:</h2>
-            <ul class="form__pagination list">
-              <li class="form__dot form__dot--active">
-                <a class="form__link" href="#step1">
-                  <span class="form__desktoptext">Даты</span>
-                </a>
-              </li>
-              <li class="form__dot">
-                <a class="form__link" href="#step2">
-                  <span class="form__desktoptext">Маршрут</span>
-                </a>
-              </li>
-              <li class="form__dot">
-                <a class="form__link" href="#step3">
-                  <span class="form__desktoptext">Развлечения</span>
-                </a>
-              </li>
-            </ul>
+            <div class="form__pagination-container">
+              <h2 class="heading heading--inner form__heading">Добавить план:</h2>
+              <ul class="form__pagination list">
+                <li class="form__dot form__dot--active">
+                  <p class="form__link">
+                    <span class="form__desktoptext">Даты</span>
+                  </p>
+                </li>
+                <li class="form__dot">
+                  <p class="form__link">
+                    <span class="form__desktoptext">Маршрут</span>
+                  </p>
+                </li>
+                <li class="form__dot">
+                  <p class="form__link">
+                    <span class="form__desktoptext">Развлечения</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
             <ul class="form__list list">
 <!-- Step 1 -->
               <li class="form__item">
                 <div class="list-card form__card" id="step1">
                   <h3 class="heading heading--inner list-card__heading">Шаг 1. <br><span class="form__desktopspace">&nbsp;</span>Даты пребывания</h3>
-                  <p class="form__description">Укажите предпочтительное количество попутчиков, которых <br> вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+                  <p class="form__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
                   <div class="form__parameters">
                     <div class="form__numbers form__numbers--companions">
                       <label class="form__label" for="companions-number">Ищу попутчиков:
@@ -441,7 +443,6 @@
                                 </td>
                                 <td class="calendar__day calendar__day--active calendar__day--check-out">
                                   <button class="calendar__button" type="button">28 <span class="calendar__check-out">Выезд</span></button>
-
                                 </td>
                                 <td class="calendar__day calendar__day--avaliable">
                                   <button class="calendar__button" type="button">29</button>
@@ -478,7 +479,7 @@
                       </li>
                     </ul>
                   </div>
-                  <a class="form__button link-button" href="#">Следующий шаг</a>
+                  <a class="form__button link-button" href="#step2">Следующий шаг</a>
                 </div>
               </li>
 <!-- Step 2 -->
@@ -503,316 +504,365 @@
                         </button>
                       </div>
                     </li>
-                    <li class="country__item">
+                    <li class="country__item country__dropdown">
   <!-- Для показа выпадающего меню используйте модификатор country__button--active -->
-                      <button class="country__button country__button--dropdown" type="button">Выберите страну</button>
-                      <div class="country__flag">
-                        <button class="country__close-button" type="button">
-                          <span class="visually-hidden">Удалить страну</span>
-                        </button>
-                      </div>
-                      <div class="country__dropdown dropdown-list">
-                        <div class="dropdown-list__alphabet alphabet">
-  <!-- Для показа определенного списка стран задайте кнопке модификатор alphabet__list--active alphabet__button--active -->
-                          <ul class="alphabet__list alphabet__list--active list">
+                      <button class="country__button country__button--dropdown country__button--active" type="button">Выберите страну</button>
+                        <div class="country__alphabet alphabet">
+                          <ul class="alphabet__letters list">
                             <li class="alphabet__item">
                               <button class="alphabet__button alphabet__button--active" type="button">А</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Австралия</li>
-                                <li class="alphabet__subitem">Австрия</li>
-                                <li class="alphabet__subitem">Азербайджан</li>
-                                <li class="alphabet__subitem">Албания</li>
-                                <li class="alphabet__subitem">Алжир</li>
-                                <li class="alphabet__subitem">Ангола</li>
-                                <li class="alphabet__subitem">Андорра</li>
-                                <li class="alphabet__subitem">Антигуа и Барбуда</li>
-                                <li class="alphabet__subitem">Аргентина</li>
-                                <li class="alphabet__subitem">Армения</li>
-                                <li class="alphabet__subitem">Афганистан</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Б</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Багамские Острова</li>
-                                <li class="alphabet__subitem">Бангладеш</li>
-                                <li class="alphabet__subitem">Барбадос</li>
-                                <li class="alphabet__subitem">Бахрейн</li>
-                                <li class="alphabet__subitem">Белоруссия</li>
-                                <li class="alphabet__subitem">Белиз</li>
-                                <li class="alphabet__subitem">Бельгия</li>
-                                <li class="alphabet__subitem">Бенин</li>
-                                <li class="alphabet__subitem">Болгария</li>
-                                <li class="alphabet__subitem">Боливия</li>
-                                <li class="alphabet__subitem">Босния и Герцеговина</li>
-                                <li class="alphabet__subitem">Ботсвана</li>
-                                <li class="alphabet__subitem">Бразилия</li>
-                                <li class="alphabet__subitem">Бруней</li>
-                                <li class="alphabet__subitem">Буркина-Фасо</li>
-                                <li class="alphabet__subitem">Бурунди</li>
-                                <li class="alphabet__subitem">Бутан</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">В</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Вануату</li>
-                                <li class="alphabet__subitem">Великобритания</li>
-                                <li class="alphabet__subitem">Венгрия</li>
-                                <li class="alphabet__subitem">Венесуэла</li>
-                                <li class="alphabet__subitem">Восточный Тимор</li>
-                                <li class="alphabet__subitem">Вьетнам</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Г</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Габон</li>
-                                <li class="alphabet__subitem">Гаити</li>
-                                <li class="alphabet__subitem">Гайана</li>
-                                <li class="alphabet__subitem">Гамбия</li>
-                                <li class="alphabet__subitem">Гана</li>
-                                <li class="alphabet__subitem">Гватемала</li>
-                                <li class="alphabet__subitem">Гвинея</li>
-                                <li class="alphabet__subitem">Гвинея-Бисау</li>
-                                <li class="alphabet__subitem">Германия</li>
-                                <li class="alphabet__subitem">Гондурас</li>
-                                <li class="alphabet__subitem">Гренада</li>
-                                <li class="alphabet__subitem">Греция</li>
-                                <li class="alphabet__subitem">Грузия</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Д</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Дания</li>
-                                <li class="alphabet__subitem">Джибути</li>
-                                <li class="alphabet__subitem">Доминика</li>
-                                <li class="alphabet__subitem">Доминикана</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Е</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Египет</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">З</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Замбия</li>
-                                <li class="alphabet__subitem">Зимбабве</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">И</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Израиль</li>
-                                <li class="alphabet__subitem">Индия</li>
-                                <li class="alphabet__subitem">Индонезия</li>
-                                <li class="alphabet__subitem">Иордания</li>
-                                <li class="alphabet__subitem">Ирак</li>
-                                <li class="alphabet__subitem">Иран</li>
-                                <li class="alphabet__subitem">Ирландия</li>
-                                <li class="alphabet__subitem">Исландия</li>
-                                <li class="alphabet__subitem">Испания</li>
-                                <li class="alphabet__subitem">Италия</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">К</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Кабо-Верде</li>
-                                <li class="alphabet__subitem">Казахстан</li>
-                                <li class="alphabet__subitem">Камбоджа</li>
-                                <li class="alphabet__subitem">Камерун</li>
-                                <li class="alphabet__subitem">Канада</li>
-                                <li class="alphabet__subitem">Катар</li>
-                                <li class="alphabet__subitem">Кения</li>
-                                <li class="alphabet__subitem">Кипр</li>
-                                <li class="alphabet__subitem">Киргизия</li>
-                                <li class="alphabet__subitem">Кирибати</li>
-                                <li class="alphabet__subitem">Китай</li>
-                                <li class="alphabet__subitem">Колумбия</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Л</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Лаос</li>
-                                <li class="alphabet__subitem">Латвия</li>
-                                <li class="alphabet__subitem">Лесото</li>
-                                <li class="alphabet__subitem">Либерия</li>
-                                <li class="alphabet__subitem">Ливан</li>
-                                <li class="alphabet__subitem">Ливия</li>
-                                <li class="alphabet__subitem">Литва</li>
-                                <li class="alphabet__subitem">Лихтенштейн</li>
-                                <li class="alphabet__subitem">Люксембург</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">М</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Маврикий</li>
-                                <li class="alphabet__subitem">Мавритания</li>
-                                <li class="alphabet__subitem">Мадагаскар</li>
-                                <li class="alphabet__subitem">Малави</li>
-                                <li class="alphabet__subitem">Малайзия</li>
-                                <li class="alphabet__subitem">Мали</li>
-                                <li class="alphabet__subitem">Мальдивы</li>
-                                <li class="alphabet__subitem">Мальта</li>
-                                <li class="alphabet__subitem">Марокко</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Н</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Намибия</li>
-                                <li class="alphabet__subitem">Науру</li>
-                                <li class="alphabet__subitem">Непал</li>
-                                <li class="alphabet__subitem">Нигер</li>
-                                <li class="alphabet__subitem">Нигерия</li>
-                                <li class="alphabet__subitem">Нидерланды</li>
-                                <li class="alphabet__subitem">Никарагуа</li>
-                                <li class="alphabet__subitem">Новая Зеландия</li>
-                                <li class="alphabet__subitem">Норвегия</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">О</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">ОАЭ</li>
-                                <li class="alphabet__subitem">Оман</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">П</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Пакистан</li>
-                                <li class="alphabet__subitem">Палау</li>
-                                <li class="alphabet__subitem">Панама</li>
-                                <li class="alphabet__subitem">Папуа - Новая Гвинея</li>
-                                <li class="alphabet__subitem">Парагвай</li>
-                                <li class="alphabet__subitem">Перу</li>
-                                <li class="alphabet__subitem">Польша</li>
-                                <li class="alphabet__subitem">Португалия</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Р</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Руанда</li>
-                                <li class="alphabet__subitem">Румыния</li>
-                                <li class="alphabet__subitem">Россия</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">С</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Сальвадор</li>
-                                <li class="alphabet__subitem">Самоа</li>
-                                <li class="alphabet__subitem">Сан-Марино</li>
-                                <li class="alphabet__subitem">Саудовская Аравия</li>
-                                <li class="alphabet__subitem">Сейшелы</li>
-                                <li class="alphabet__subitem">Сенегал</li>
-                                <li class="alphabet__subitem">Сербия</li>
-                                <li class="alphabet__subitem">Сингапур</li>
-                                <li class="alphabet__subitem">Сирия</li>
-                                <li class="alphabet__subitem">Словакия</li>
-                                <li class="alphabet__subitem">Словения</li>
-                                <li class="alphabet__subitem">США</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Т</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Таджикистан</li>
-                                <li class="alphabet__subitem">Таиланд</li>
-                                <li class="alphabet__subitem">Танзания</li>
-                                <li class="alphabet__subitem">Того</li>
-                                <li class="alphabet__subitem">Тонга</li>
-                                <li class="alphabet__subitem">Тринидад и Тобаго</li>
-                                <li class="alphabet__subitem">Тувалу</li>
-                                <li class="alphabet__subitem">Тунис</li>
-                                <li class="alphabet__subitem">Туркмения</li>
-                                <li class="alphabet__subitem">Турция</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">У</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Уганда</li>
-                                <li class="alphabet__subitem">Узбекистан</li>
-                                <li class="alphabet__subitem">Украина</li>
-                                <li class="alphabet__subitem">Уругвай</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Ф</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Фиджи</li>
-                                <li class="alphabet__subitem">Филиппины</li>
-                                <li class="alphabet__subitem">Финляндия</li>
-                                <li class="alphabet__subitem">Франция</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Х</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Хорватия</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Ч</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Чад</li>
-                                <li class="alphabet__subitem">Черногория</li>
-                                <li class="alphabet__subitem">Чехия</li>
-                                <li class="alphabet__subitem">Чили</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Ш</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Швейцария</li>
-                                <li class="alphabet__subitem">Швеция</li>
-                                <li class="alphabet__subitem">Шри-ланка</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Э</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Эквадор</li>
-                                <li class="alphabet__subitem">Эритрея</li>
-                                <li class="alphabet__subitem">Эсватини</li>
-                                <li class="alphabet__subitem">Эстония</li>
-                                <li class="alphabet__subitem">Эфиопия</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Ю</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">ЮАР</li>
-                                <li class="alphabet__subitem">Южный Судан</li>
-                              </ul>
                             </li>
                             <li class="alphabet__item">
                               <button class="alphabet__button" type="button">Я</button>
-                              <ul class="alphabet__sublist list">
-                                <li class="alphabet__subitem">Ямайка</li>
-                                <li class="alphabet__subitem">Япония</li>
+                            </li>
+                          </ul>
+                          <ul class="alphabet__countries countries-list list">
+                            <li class="countries-list__item countries-list__item--active">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Австралия</li>
+                                <li class="countries-list__subitem">Австрия</li>
+                                <li class="countries-list__subitem">Азербайджан</li>
+                                <li class="countries-list__subitem">Албания</li>
+                                <li class="countries-list__subitem">Алжир</li>
+                                <li class="countries-list__subitem">Ангола</li>
+                                <li class="countries-list__subitem">Андорра</li>
+                                <li class="countries-list__subitem">Антигуа и Барбуда</li>
+                                <li class="countries-list__subitem">Аргентина</li>
+                                <li class="countries-list__subitem">Армения</li>
+                                <li class="countries-list__subitem">Афганистан</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Багамские Острова</li>
+                                <li class="countries-list__subitem">Бангладеш</li>
+                                <li class="countries-list__subitem">Барбадос</li>
+                                <li class="countries-list__subitem">Бахрейн</li>
+                                <li class="countries-list__subitem">Белоруссия</li>
+                                <li class="countries-list__subitem">Белиз</li>
+                                <li class="countries-list__subitem">Бельгия</li>
+                                <li class="countries-list__subitem">Бенин</li>
+                                <li class="countries-list__subitem">Болгария</li>
+                                <li class="countries-list__subitem">Боливия</li>
+                                <li class="countries-list__subitem">Босния и Герцеговина</li>
+                                <li class="countries-list__subitem">Ботсвана</li>
+                                <li class="countries-list__subitem">Бразилия</li>
+                                <li class="countries-list__subitem">Бруней</li>
+                                <li class="countries-list__subitem">Буркина-Фасо</li>
+                                <li class="countries-list__subitem">Бурунди</li>
+                                <li class="countries-list__subitem">Бутан</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Вануату</li>
+                                <li class="countries-list__subitem">Великобритания</li>
+                                <li class="countries-list__subitem">Венгрия</li>
+                                <li class="countries-list__subitem">Венесуэла</li>
+                                <li class="countries-list__subitem">Восточный Тимор</li>
+                                <li class="countries-list__subitem">Вьетнам</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Габон</li>
+                                <li class="countries-list__subitem">Гаити</li>
+                                <li class="countries-list__subitem">Гайана</li>
+                                <li class="countries-list__subitem">Гамбия</li>
+                                <li class="countries-list__subitem">Гана</li>
+                                <li class="countries-list__subitem">Гватемала</li>
+                                <li class="countries-list__subitem">Гвинея</li>
+                                <li class="countries-list__subitem">Гвинея-Бисау</li>
+                                <li class="countries-list__subitem">Германия</li>
+                                <li class="countries-list__subitem">Гондурас</li>
+                                <li class="countries-list__subitem">Гренада</li>
+                                <li class="countries-list__subitem">Греция</li>
+                                <li class="countries-list__subitem">Грузия</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Дания</li>
+                                <li class="countries-list__subitem">Джибути</li>
+                                <li class="countries-list__subitem">Доминика</li>
+                                <li class="countries-list__subitem">Доминикана</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Египет</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Замбия</li>
+                                <li class="countries-list__subitem">Зимбабве</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Израиль</li>
+                                <li class="countries-list__subitem">Индия</li>
+                                <li class="countries-list__subitem">Индонезия</li>
+                                <li class="countries-list__subitem">Иордания</li>
+                                <li class="countries-list__subitem">Ирак</li>
+                                <li class="countries-list__subitem">Иран</li>
+                                <li class="countries-list__subitem">Ирландия</li>
+                                <li class="countries-list__subitem">Исландия</li>
+                                <li class="countries-list__subitem">Испания</li>
+                                <li class="countries-list__subitem">Италия</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Кабо-Верде</li>
+                                <li class="countries-list__subitem">Казахстан</li>
+                                <li class="countries-list__subitem">Камбоджа</li>
+                                <li class="countries-list__subitem">Камерун</li>
+                                <li class="countries-list__subitem">Канада</li>
+                                <li class="countries-list__subitem">Катар</li>
+                                <li class="countries-list__subitem">Кения</li>
+                                <li class="countries-list__subitem">Кипр</li>
+                                <li class="countries-list__subitem">Киргизия</li>
+                                <li class="countries-list__subitem">Кирибати</li>
+                                <li class="countries-list__subitem">Китай</li>
+                                <li class="countries-list__subitem">Колумбия</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Лаос</li>
+                                <li class="countries-list__subitem">Латвия</li>
+                                <li class="countries-list__subitem">Лесото</li>
+                                <li class="countries-list__subitem">Либерия</li>
+                                <li class="countries-list__subitem">Ливан</li>
+                                <li class="countries-list__subitem">Ливия</li>
+                                <li class="countries-list__subitem">Литва</li>
+                                <li class="countries-list__subitem">Лихтенштейн</li>
+                                <li class="countries-list__subitem">Люксембург</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Маврикий</li>
+                                <li class="countries-list__subitem">Мавритания</li>
+                                <li class="countries-list__subitem">Мадагаскар</li>
+                                <li class="countries-list__subitem">Малави</li>
+                                <li class="countries-list__subitem">Малайзия</li>
+                                <li class="countries-list__subitem">Мали</li>
+                                <li class="countries-list__subitem">Мальдивы</li>
+                                <li class="countries-list__subitem">Мальта</li>
+                                <li class="countries-list__subitem">Марокко</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Намибия</li>
+                                <li class="countries-list__subitem">Науру</li>
+                                <li class="countries-list__subitem">Непал</li>
+                                <li class="countries-list__subitem">Нигер</li>
+                                <li class="countries-list__subitem">Нигерия</li>
+                                <li class="countries-list__subitem">Нидерланды</li>
+                                <li class="countries-list__subitem">Никарагуа</li>
+                                <li class="countries-list__subitem">Новая Зеландия</li>
+                                <li class="countries-list__subitem">Норвегия</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">ОАЭ</li>
+                                <li class="countries-list__subitem">Оман</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Пакистан</li>
+                                <li class="countries-list__subitem">Палау</li>
+                                <li class="countries-list__subitem">Панама</li>
+                                <li class="countries-list__subitem">Папуа - Новая Гвинея</li>
+                                <li class="countries-list__subitem">Парагвай</li>
+                                <li class="countries-list__subitem">Перу</li>
+                                <li class="countries-list__subitem">Польша</li>
+                                <li class="countries-list__subitem">Португалия</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Руанда</li>
+                                <li class="countries-list__subitem">Румыния</li>
+                                <li class="countries-list__subitem">Россия</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Сальвадор</li>
+                                <li class="countries-list__subitem">Самоа</li>
+                                <li class="countries-list__subitem">Сан-Марино</li>
+                                <li class="countries-list__subitem">Саудовская Аравия</li>
+                                <li class="countries-list__subitem">Сейшелы</li>
+                                <li class="countries-list__subitem">Сенегал</li>
+                                <li class="countries-list__subitem">Сербия</li>
+                                <li class="countries-list__subitem">Сингапур</li>
+                                <li class="countries-list__subitem">Сирия</li>
+                                <li class="countries-list__subitem">Словакия</li>
+                                <li class="countries-list__subitem">Словения</li>
+                                <li class="countries-list__subitem">США</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Таджикистан</li>
+                                <li class="countries-list__subitem">Таиланд</li>
+                                <li class="countries-list__subitem">Танзания</li>
+                                <li class="countries-list__subitem">Того</li>
+                                <li class="countries-list__subitem">Тонга</li>
+                                <li class="countries-list__subitem">Тринидад и Тобаго</li>
+                                <li class="countries-list__subitem">Тувалу</li>
+                                <li class="countries-list__subitem">Тунис</li>
+                                <li class="countries-list__subitem">Туркмения</li>
+                                <li class="countries-list__subitem">Турция</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Уганда</li>
+                                <li class="countries-list__subitem">Узбекистан</li>
+                                <li class="countries-list__subitem">Украина</li>
+                                <li class="countries-list__subitem">Уругвай</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Фиджи</li>
+                                <li class="countries-list__subitem">Филиппины</li>
+                                <li class="countries-list__subitem">Финляндия</li>
+                                <li class="countries-list__subitem">Франция</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Хорватия</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Чад</li>
+                                <li class="countries-list__subitem">Черногория</li>
+                                <li class="countries-list__subitem">Чехия</li>
+                                <li class="countries-list__subitem">Чили</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Швейцария</li>
+                                <li class="countries-list__subitem">Швеция</li>
+                                <li class="countries-list__subitem">Шри-ланка</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Эквадор</li>
+                                <li class="countries-list__subitem">Эритрея</li>
+                                <li class="countries-list__subitem">Эсватини</li>
+                                <li class="countries-list__subitem">Эстония</li>
+                                <li class="countries-list__subitem">Эфиопия</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">ЮАР</li>
+                                <li class="countries-list__subitem">Южный Судан</li>
+                              </ul>
+                            </li>
+                            <li class="countries-list__item">
+                              <ul class="countries-list__sublist list">
+                                <li class="countries-list__subitem">Ямайка</li>
+                                <li class="countries-list__subitem">Япония</li>
                               </ul>
                             </li>
                           </ul>
                         </div>
+                      <div class="country__flag">
+                        <button class="country__close-button" type="button">
+                          <span class="visually-hidden">Удалить страну</span>
+                        </button>
                       </div>
                     </li>
                   </ul>
                   <button class="country__button country__add-button" type="button">
                     Добавить страну
                   </button>
-                  <a class="form__button link-button" href="#">Следующий шаг</a>
-                  <a class="form__button form__button--back link-button" href="#">На шаг назад</a>
+                  <a class="form__button link-button" href="#step3">Следующий шаг</a>
+                  <a class="form__button form__button--back link-button" href="#step1">На шаг назад</a>
                 </div>
               </li>
 <!-- Step 3 -->
@@ -841,7 +891,7 @@
                     </li>
                   </ul>
                   <button class="submit-button" type="submit">Отправить</button>
-                  <a class="link-button form__button form__button--back" href="#">На шаг назад</a>
+                  <a class="link-button form__button form__button--back" href="#step2">На шаг назад</a>
                 </div>
               </li>
             </ul>

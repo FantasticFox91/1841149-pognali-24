@@ -3,9 +3,8 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    grid-row: 1;
-    grid-column: 1/2;
     margin-left: 5px;
+    margin-right: 77px;
   }
 }
 
@@ -88,6 +87,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: calc(50% - 72px);
     margin-bottom: 64px;
   }
 }

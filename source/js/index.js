@@ -1,6 +1,7 @@
 const topMenu = document.querySelector(".top-menu");
 const burgerBtn = document.querySelector(".main-nav__toggle");
 const alphabetBtns = document.querySelectorAll(".alphabet__button");
+const dropdownBtn = document.querySelector(".country__button--dropdown");
 
 topMenu.classList.add("top-menu--close")
 
@@ -23,3 +24,5 @@ document.querySelector(".country-filters__button").addEventListener("click", () 
     document.querySelector(".country-filters").classList.add("country-filters--close")
   }
 })
+
+dropdownBtn.onclick = () => dropdownBtn.classList.toggle("country__button--active");

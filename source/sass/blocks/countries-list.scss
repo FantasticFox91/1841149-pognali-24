@@ -53,12 +53,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
     .countries-list__item {
       display: block;
+      padding-top: 50px;
     }
   }
 }

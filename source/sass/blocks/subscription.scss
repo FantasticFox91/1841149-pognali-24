@@ -39,6 +39,10 @@
   margin-right: 5px;
   text-align: center;
 
+  br {
+    display: block;
+  }
+
   &--questions {
     margin-right: 0;
   }
@@ -130,7 +134,7 @@
 
 .subscription__input {
   width: 95%;
-  padding: 19px 65px 18px 25px;
+  padding: 15px 65px 18px 21px;
   background-color: $white-color;
   font-family: $main-font;
   font-size: 18px;

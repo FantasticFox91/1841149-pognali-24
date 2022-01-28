@@ -20,18 +20,20 @@
 }
 
 .promo__container {
-  padding: 0;
+  padding: 0 25px;
   background-image: url("../img/promo-bg.jpg");
   background-repeat: no-repeat;
   background-position-y: 138px;
   transition: $basic-animation;
 
   @media (min-width: $tablet-width) {
+    padding: 0 40px;
     background-image: url("../img/promo-bg-tablet.png");
     background-position-y: 223px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     background-image: none;
   }
 }

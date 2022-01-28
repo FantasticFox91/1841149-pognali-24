@@ -90,6 +90,15 @@
 
 .subscription__link {
   color: $basic-yellow;
+  transition: $basic-animation;
+
+  &:hover {
+    color: $special-orange;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .subscription__list {
@@ -121,22 +130,47 @@
 
 .subscription__input {
   width: 95%;
-  padding: 21px 65px 20px 25px;
+  padding: 19px 65px 18px 25px;
   background-color: $white-color;
   font-family: $main-font;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: $special-grey;
-  border: none;
+  border: 4px solid $white-color;
   border-radius: 10px 0 0 10px;
+  outline: none;
+  transition: $basic-animation;
 
   &::placeholder {
     opacity: 0.3;
   }
 
+  &:hover {
+    cursor: pointer;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+
+  &:not(:placeholder-shown) {
+    background-color: $special-blue;
+    color: $white-color;
+    border: 4px solid $white-color;
+  }
+
+  &--error {
+    color: #ff0000;
+
+    &:not(:placeholder-shown) {
+      color: #ff0000;
+      background-color: $white-color;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 25px 80px 27px 36px;
+    padding: 22px 80px 22px 36px;
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px 0 0 20px;

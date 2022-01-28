@@ -24,6 +24,9 @@
   height: 21px;
   border: none;
   background: transparent url("../img/arrow-back.svg") no-repeat 50% 50%;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: $basic-animation;
 
   &--prev {
     left: 0;
@@ -32,6 +35,14 @@
   &--next {
     right: 0;
     transform: rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 
   @media (min-width: $tablet-width) {

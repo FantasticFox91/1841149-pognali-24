@@ -42,8 +42,24 @@
     width: 45px;
     height: 45px;
     margin-bottom: 37px;
-    background-color: $basic-yellow;
     border-radius: 50%;
+    transition: $basic-animation;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

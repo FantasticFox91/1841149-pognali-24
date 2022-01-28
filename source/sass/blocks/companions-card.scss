@@ -1,5 +1,15 @@
 .companions-card {
   max-width: 270px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+
+    .companions-card__image--scale {
+      transform: scale(1.1);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 285px;
@@ -14,6 +24,7 @@
   position: relative;
   display: block;
   border-radius: 10px 10px 0 0;
+  transition: $basic-animation;
 
   @media (min-width: $tablet-width) {
     width: 285px;
@@ -51,6 +62,20 @@
 
 .companions-card__item:not(:last-child) {
   margin-right: 5px;
+}
+
+.companions-card__link {
+  text-decoration: none;
+  color: inherit;
+  transition: $basic-animation;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .companions-card__name {

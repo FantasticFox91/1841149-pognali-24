@@ -38,6 +38,11 @@
   font-family: $main-font;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+
+  &:not(:disabled):hover {
+    outline: 4px solid $special-red;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

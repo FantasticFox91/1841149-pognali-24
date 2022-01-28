@@ -52,9 +52,37 @@
 }
 
 .form__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   margin-left: 2px;
   font-size: 17px;
   color: $basic-blue-dark;
+  transition: $basic-animation;
+
+  &::after {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right-width: 0;
+    border-bottom: 6px solid transparent;
+    border-left: 12px solid #1d2e5b;
+    content: "";
+  }
+
+  &:hover {
+    background-color: $special-orange;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     order: 6;
@@ -64,9 +92,6 @@
     line-height: 24px;
     text-align: left;
     text-transform: none;
-    background-image: url("../img/arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: 235px 50%;
     border-radius: 20px;
   }
 
@@ -79,6 +104,16 @@
 .form__button--back {
   margin-top: 10px;
   background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -88,6 +123,7 @@
     padding-left: 35px;
     background-position: left center;
     background-image: url("../img/arrow-left.svg");
+    background-repeat: no-repeat;
 
     &::after {
       position: absolute;
@@ -103,6 +139,10 @@
   @media (min-width: $desktop-width) {
     padding-top: 29px;
     padding-bottom: 27px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -137,6 +177,17 @@
   padding-left: 41px;
   font-size: 15px;
   font-weight: 400;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &:hover .form__checkbox {
+    border-color: #959bb2;
+  }
+
+  &:active .form__checkbox {
+    background-color: $country-filter-color;
+  }
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;
@@ -164,6 +215,7 @@
   height: 26px;
   border: 1px solid $border-color;
   border-radius: 4px;
+  transition: $basic-animation;
 
   @media (min-width: $tablet-width) {
     width: 36px;
@@ -184,6 +236,10 @@
 
 .form__input:checked + .form__checkbox {
   background: url("../img/icon_check-mark.svg") no-repeat 50% 50%;
+
+  &:active {
+    background-color: $country-filter-color;
+  }
 
   @media (min-width: $tablet-width) {
     background-size: 18px 17px;

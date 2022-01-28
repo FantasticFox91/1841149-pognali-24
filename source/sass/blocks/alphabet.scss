@@ -131,6 +131,8 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
+  cursor: pointer;
+  transition: $basic-animation;
 
   &--active {
     background-color: $basic-blue-light;
@@ -153,6 +155,10 @@
   @media (min-width: $desktop-width) {
     border: 1px solid $range-input-border-color;
     border-radius: 4px;
+
+    &:hover {
+      border-color: #959bb2;
+    }
   }
 }
 

@@ -71,6 +71,13 @@
 
 .footer__list .footer__item {
   margin-right: 0;
+  background-color: $basic-yellow;
+  border-radius: 50%;
+  transition: $basic-animation;
+
+  &:hover {
+    background-color: $special-orange;
+  }
 }
 
 .footer__link {
@@ -97,6 +104,16 @@
 
 .footer__developer-info {
   width: 100%;
+
+  & .footer__link {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: auto;

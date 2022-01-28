@@ -5,6 +5,27 @@
   border: 1px solid $border-color;
   border-radius: 5px;
   font-family: $main-font;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &:hover {
+    border-color: #959bb2;
+
+    & ~ .counter__sign::before,
+    & ~ .counter__sign::after {
+      background-color: #959bb2;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $basic-blue-dark;
+
+    & ~ .counter__sign::before,
+    & ~ .counter__sign::after {
+      background-color: $basic-blue-dark;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 22px;
@@ -26,6 +47,18 @@
   height: 43px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #959bb2;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $basic-blue-dark;
+  }
 
   @media (min-width: $tablet-width) {
     width: 50px;
@@ -42,6 +75,7 @@
       width: 2px;
       height: 14px;
       background-color: $border-color;
+      transition: $basic-animation;
       content: "";
     }
 
@@ -52,6 +86,7 @@
       height: 14px;
       background-color: $border-color;
       transform: rotate(90deg);
+      transition: $basic-animation;
       content: "";
     }
 
@@ -84,6 +119,7 @@
       background-color: $border-color;
       transform: rotate(90deg);
       content: "";
+      transition: $basic-animation;
     }
 
     @media (min-width: $tablet-width) {

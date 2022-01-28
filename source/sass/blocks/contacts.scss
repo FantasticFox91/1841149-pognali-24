@@ -98,6 +98,23 @@
     right: 19px;
   }
 
+  &:hover {
+    background-color: $special-blue;
+    color: $white-color;
+
+    &::after {
+      border-left-color: $white-color;
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    &::after {
+      border-left-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 24px 36px 26px 34px;
 

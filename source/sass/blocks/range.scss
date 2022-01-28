@@ -51,6 +51,8 @@
   background-color: $basic-blue-dark;
   border: none;
   border-radius: 50%;
+  transition: $basic-animation;
+  cursor: pointer;
 
   &--min {
     left: -1px;
@@ -81,6 +83,16 @@
 
     &--min {
       left: -13px;
+    }
+
+    &:hover {
+      top: -9px;
+      width: 19px;
+      height: 19px;
+    }
+
+    &:active {
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
     }
   }
 }

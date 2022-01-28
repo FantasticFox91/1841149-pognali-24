@@ -102,6 +102,7 @@
   color: $basic-blue-dark;
   border: 1px solid $border-color;
   border-radius: 5px;
+  cursor: pointer;
 
   &::after {
     position: absolute;
@@ -111,6 +112,10 @@
     height: 12px;
     background: url("../img/arrow-down.svg") no-repeat;
     content: "";
+  }
+
+  &:hover {
+    border-color: #959bb2;
   }
 
   @media (min-width: $tablet-width) {
@@ -135,14 +140,32 @@
 }
 
 .country__button--active {
+  display: flex;
+  align-items: center;
   padding-left: 22px;
   color: $white-color;
-  background: $basic-blue-dark url("../../img/icon_close--white.svg") no-repeat 195px center;
   border-radius: 5px 5px 0 0;
   letter-spacing: 0.1em;
+  background-color: $basic-blue-dark;
 
   &::after {
-    display: none;
+    top: auto;
+    width: 9px;
+    height: 1px;
+    background-color: $white-color;
+    transform: rotate(45deg);
+    opacity: 0.3;
+  }
+
+  &::before {
+    position: absolute;
+    width: 9px;
+    height: 1px;
+    right: 15px;
+    background-color: $white-color;
+    transform: rotate(-45deg);
+    content: "";
+    opacity: 0.3;
   }
 
   & ~ .country__flag::before {
@@ -158,12 +181,42 @@
     flex-direction: column;
   }
 
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.1;
+    }
+
+    &::before {
+      opacity: 0.1;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     background-size: 17px 21px;
     background-position: 95% 50%;
 
     & + .country__alphabet {
       flex-direction: row;
+    }
+
+    &::after {
+      width: 22px;
+      height: 1px;
+    }
+
+    &::before {
+      width: 22px;
+      height: 1px;
     }
   }
 
@@ -185,6 +238,7 @@
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -217,6 +271,7 @@
     width: 22px;
     height: 24px;
     opacity: 0.1;
+    transition: $basic-animation;
 
     &::before {
       width: 22px;
@@ -226,6 +281,14 @@
     &::after {
       width: 22px;
       background-color: $black-color;
+    }
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.05;
     }
   }
 }
@@ -273,10 +336,10 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 36px;
-    min-width: 167px;
+    min-width: 223px;
 
     &::before {
-      right: 151px;
+      right: 206px;
     }
 
     &::after {
@@ -324,6 +387,7 @@
   margin-bottom: 25px;
   background-color: $basic-blue-light;
   border: none;
+  transition: $basic-animation;
 
   &::after {
     top: 14px;
@@ -337,10 +401,20 @@
     width: 8px;
     height: 8px;
     border: 1px solid $border-color;
-    background-color: transparent;
+    background-color: $basic-blue-light;
     border-radius: 50%;
     content: "";
     z-index: 1;
+  }
+
+  &:hover {
+    background-color: #dfe3f0;
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -352,7 +426,7 @@
       width: 14px;
       height: 14px;
       right: -37px;
-      background-color: $white-color;
+      background-color: $basic-blue-light;
     }
 
     &::after {

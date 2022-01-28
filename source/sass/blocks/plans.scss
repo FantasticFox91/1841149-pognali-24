@@ -137,6 +137,15 @@
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.03em;
+  transition: $basic-animation;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

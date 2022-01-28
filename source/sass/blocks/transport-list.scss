@@ -4,11 +4,19 @@
 }
 
 .transport-list__item {
+  position: relative;
   display: flex;
   width: 24px;
   height: 25px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    .transport-list__tooltip {
+      display: block;
+    }
+  }
 }
 
 .transport-list__item:not(:last-child) {

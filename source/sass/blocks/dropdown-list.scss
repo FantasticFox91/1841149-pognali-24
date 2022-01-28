@@ -21,6 +21,18 @@
   border: none;
   border-radius: 25px;
   background-color: #d6daed;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &:hover {
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    .dropdown-list__opened-text {
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -33,6 +45,7 @@
 .dropdown-list__opened-text {
   position: relative;
   padding-left: 24px;
+  transition: $basic-animation;
 
   &::after {
     position: absolute;

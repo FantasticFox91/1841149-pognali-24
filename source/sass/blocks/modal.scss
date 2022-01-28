@@ -68,6 +68,16 @@
   background-color: $modal-button-color;
   border: none;
   border-radius: 0 0 20px 20px;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &:hover {
+    background-color: $basic-blue-light;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 40px 0 43px;

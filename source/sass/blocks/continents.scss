@@ -40,7 +40,23 @@
   color: inherit;
   opacity: 0.3;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
   &--active {
     opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 }

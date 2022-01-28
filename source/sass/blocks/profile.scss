@@ -151,6 +151,16 @@
   text-transform: uppercase;
   background-color: $special-blue-light;
   border-radius: 25px;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &:hover {
+    background-color: $special-blue-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
@@ -180,9 +190,15 @@
   grid-column: span 2;
   border-radius: 10px;
   border: 1px solid $range-input-border-color;
+  transition: $basic-animation;
+  cursor: pointer;
 
   &--hashtags {
     margin-top: 6px;
+
+    &:hover {
+      border-color: #aeb4cb;
+    }
   }
 
   &--transport {
@@ -254,6 +270,15 @@
   border: none;
   color: $special-grey;
   opacity: 0.6;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:not(:placeholder-shown) {
+    opacity: 1;
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -271,6 +296,7 @@
   height: 32px;
   background-color: $white-color;
   border-radius: 50%;
+  transition: $basic-animation;
 
   @media (min-width: $tablet-width) {
     width: 43px;
@@ -279,6 +305,8 @@
 }
 
 .profile__icon {
+  transition: $basic-animation;
+
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 22px;
@@ -287,16 +315,35 @@
 
 .profile__list {
   display: flex;
+}
 
-  &--transport {
-    padding-top: 8px;
-    padding-bottom: 12px;
+.profile__list--transport {
+  padding-top: 8px;
+  padding-bottom: 12px;
+
+  .profile__label {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .profile__label:hover path {
+    fill: #9199af;
+  }
+
+  .profile__control {
+    &:hover {
+      filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
+    }
+
+    &:active {
+      background-color: $country-filter-color;
+      filter: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    &--transport {
-      padding-top: 26px;
-    }
+    padding-top: 26px;
   }
 }
 
@@ -313,6 +360,10 @@
 
 .profile__input:not(:checked) + .profile__label--checkbox {
   opacity: 0.15;
+}
+
+.profile__input:not(:checked) + .profile__label--checkbox:hover {
+  opacity: 1;
 }
 
 .profile__hidedesktop {

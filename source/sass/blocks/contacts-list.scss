@@ -29,6 +29,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-yellow;
+  transition: $basic-animation;
 
   &--header {
     text-align: left;
@@ -56,6 +57,14 @@
   &--mail::after {
     background-image: url("../img/icon-mail.svg");
     background-position: 50% 50%;
+  }
+
+  &:hover {
+    color: $special-yellow-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

@@ -62,3 +62,16 @@
     }
   }
 }
+
+.countries-list__label {
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &:hover {
+    color: $basic-blue-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

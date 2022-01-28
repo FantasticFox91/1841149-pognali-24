@@ -29,9 +29,11 @@
 .links-list__item {
   transition: $basic-animation;
 
-  &:hover {
-    color: $basic-yellow;
-    transform: translateY(-147%);
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: $basic-yellow;
+      transform: translateY(-147%);
+    }
   }
 }
 

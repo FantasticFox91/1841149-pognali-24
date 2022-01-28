@@ -8,6 +8,15 @@
   color: $basic-blue;
   background-color: $basic-yellow;
   border-radius: 25px;
+  transition: $basic-animation;
+
+  &:hover {
+    background-color: $special-orange;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -17,22 +26,26 @@
 }
 
 .link-button--showall {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   max-width: 270px;
   margin: 0 auto;
-  padding: 20px 36px 20px 23px;
+  padding: 20px 36px 20px 0;
   text-align: left;
   border-radius: 10px;
   text-transform: none;
   color: $basic-blue-dark;
 
   &::after {
-    position: absolute;
-    top: calc(50% - 7px);
-    right: 21px;
-    width: 13px;
-    height: 13px;
-    background: url("../img/arrow-right.svg") no-repeat center;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right-width: 0;
+    border-bottom: 6px solid transparent;
+    border-left: 12px solid #1d2e5b;
     content: "";
   }
 

@@ -6,6 +6,16 @@
   grid-template-rows: 13px 40px 30px 65px min-content 96px 40px 23px;
   background-color: $white-color;
   border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+
+    .catalog-card__avatar {
+      transform: scale(1.1);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 688px;
@@ -25,6 +35,17 @@
   margin-left: -7px;
   grid-row: 2/4;
   grid-column: 2/3;
+  text-decoration: none;
+  color: inherit;
+  transition: $basic-animation;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     grid-row: 2/6;
@@ -42,6 +63,7 @@
   display: block;
   margin-top: 2px;
   border-radius: 50%;
+  transition: $basic-animation;
 
   @media (min-width: $tablet-width) {
     width: 190px;
@@ -541,6 +563,8 @@
   position: relative;
   padding-top: 10px;
   padding-left: 37px;
+  cursor: pointer;
+  transition: $basic-animation;
 
   &::before {
     position: absolute;
@@ -548,10 +572,11 @@
     left: 0;
     width: 31px;
     height: 31px;
-    background-color: #e2e5f2;
+    background-color: transparent;
     border-radius: 50%;
     z-index: 1;
     content: "";
+    transition: $basic-animation;
   }
 
   &::after {
@@ -562,8 +587,25 @@
     height: 11px;
     background: url("../img/icon-heart.svg") no-repeat;
     z-index: 2;
-    opacity: 0.5;
+    opacity: 0.3;
     content: "";
+    transition: $basic-animation;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0.5;
+    }
+
+    &::before {
+      background-color: #e2e5f2;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.1;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -594,6 +636,18 @@
   &::after {
     background: url("../img/icon-heaat-filled.svg") no-repeat 50% 50%;
     opacity: 1;
+  }
+
+  &:hover {
+    &::before {
+      background-color: #f9d8d8;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {

@@ -29,10 +29,18 @@
   text-decoration: none;
   color: $basic-blue-dark;
   border-radius: 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .pagination__link--active {
   background-color: $basic-yellow;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .pagination__controls {
@@ -75,6 +83,14 @@
 
   &--prev {
     transform: rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

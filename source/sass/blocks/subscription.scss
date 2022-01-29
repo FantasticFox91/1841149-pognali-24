@@ -109,9 +109,14 @@
   margin-bottom: 0;
   transition: $basic-animation;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: center;
+    padding-left: 0;
   }
 }
 
@@ -167,9 +172,10 @@
   &--error {
     color: #ff0000;
 
-    &:not(:placeholder-shown) {
+    &::placeholder {
       color: #ff0000;
       background-color: $white-color;
+      opacity: 1;
     }
   }
 
@@ -217,6 +223,8 @@
 
   @media (min-width: $desktop-width) {
     width: 324px;
+    min-height: 80px;
+    height: auto;
     background-position: 279px 50%;
   }
 }

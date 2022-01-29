@@ -7,7 +7,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding-bottom: 108px;
+    padding-bottom: 110px;
   }
 }
 
@@ -72,7 +72,7 @@
     right: 50px;
     width: 7px;
     height: 10px;
-    background: url("../../img/arrow-long-down.svg");
+    background: url("../img/arrow-long-down.svg");
     content: "";
   }
 
@@ -485,20 +485,30 @@
 }
 
 .country__button--choosed + .country__flag--bih {
-  background: url("../img/bah.svg") no-repeat 32% 50%;
+  background: url("../img/bah.svg") no-repeat 50% 50%;
   background-size: 35px 24px;
 
   @media (min-width: $tablet-width) {
     background-size: 70px 47px;
+    background-position: 50% 49%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 32% 50%;
   }
 }
 
 .country__button--choosed + .country__flag--chech {
-  background: url("../img/chech.svg") no-repeat 32% 50%;
+  background: url("../img/chech.svg") no-repeat 50% 50%;
   background-size: 35px 24px;
 
   @media (min-width: $tablet-width) {
     background-size: 70px 47px;
+    background-position: 50% 49%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 32% 50%;
   }
 }
 

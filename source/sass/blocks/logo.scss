@@ -1,20 +1,6 @@
-.logo__link {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 166px;
-    height: 42px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    width: 200px;
-    height: 50px;
-  }
-}
-
 .logo__icon {
+  fill: #ffffff;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: 1;
@@ -29,6 +15,22 @@
     right: -7px;
     width: 129px;
     height: 20px;
+  }
+}
+
+.logo__link {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 166px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 200px;
+    height: 50px;
   }
 }
 

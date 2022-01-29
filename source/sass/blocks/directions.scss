@@ -34,7 +34,15 @@
       height: 574px;
       background: url("../img/directions-bg.jpg");
       border-radius: 20px;
+      z-index: -1;
       content: "";
+    }
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    &::after {
+      background: url("../img/directions-bg@2x.png");
+      background-size: cover;
     }
   }
 

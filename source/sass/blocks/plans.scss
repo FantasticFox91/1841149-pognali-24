@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 51px;
-    padding-bottom: 95px;
+    padding-bottom: 99px;
     border-radius: 56px 56px 0 0;
   }
 }
@@ -150,5 +150,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 9px;
   }
 }

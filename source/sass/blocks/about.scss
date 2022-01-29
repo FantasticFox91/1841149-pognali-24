@@ -9,6 +9,13 @@
   background-repeat: no-repeat;
   background-position-x: 20px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-mobile@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 95px;
     padding-bottom: 89px;
@@ -37,6 +44,7 @@
       width: 376px;
       height: 548px;
       background: url("../img/about-tablet.png");
+      background-size: cover;
       content: "";
     }
 
@@ -53,6 +61,13 @@
     }
   }
 
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    &::after {
+      background-image: url("../img/about-tablet@2x.png");
+      background-size: cover;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &::after {
       top: -43px;
@@ -60,6 +75,7 @@
       width: 630px;
       height: 665px;
       background: url("../img/about-desktop.png");
+      background-size: cover;
     }
 
     &::before {
@@ -67,6 +83,13 @@
       height: 212px;
       top: -57px;
       left: 4px;
+    }
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    &::after {
+      background-image: url("../img/about-desktop@2x.png");
+      background-size: cover;
     }
   }
 }
@@ -95,4 +118,8 @@
   @media (min-width: $desktop-width) {
     max-width: 690px;
   }
+}
+
+.about__heading {
+  max-width: 430px;
 }

@@ -15,7 +15,7 @@
 
 .countries-list__item {
   display: none;
-  padding: 20px 50px 20px 19px;
+  padding: 17px 50px 15px 19px;
   font-size: 16px;
   font-weight: 400;
   color: $special-grey;
@@ -45,11 +45,19 @@
   }
 }
 
+.countries-list__subitem:not(:last-child) {
+  margin-bottom: 4px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .countries-list--catalog {
   .countries-list__item {
     background-color: transparent;
     border: none;
-    padding: 32px 50px 29px 0;
+    padding: 13px 50px 29px 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -57,9 +65,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+
     .countries-list__item {
       display: block;
-      padding-top: 50px;
+      padding: 0;
     }
   }
 }

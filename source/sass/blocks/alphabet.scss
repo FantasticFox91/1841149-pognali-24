@@ -260,7 +260,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding-left: 22px;
+    padding-left: 23px;
 
     .alphabet__letters {
       display: none;
@@ -268,9 +268,10 @@
 
     .alphabet__countries {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(5, min-content);
+      grid-template-rows: repeat(5, min-content);
       background-color: transparent;
+      gap: 60px 46px;
     }
   }
 }

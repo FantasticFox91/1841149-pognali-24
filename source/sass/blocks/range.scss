@@ -86,9 +86,7 @@
     }
 
     &:hover {
-      top: -9px;
-      width: 19px;
-      height: 19px;
+      transform: scale(1.2);
     }
 
     &:active {

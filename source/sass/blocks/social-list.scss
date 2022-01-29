@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   min-width: 135px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     padding-left: 59px;
@@ -38,6 +39,14 @@
     background: url("../img/icon_instagram.svg") 50% 50% no-repeat;
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--footer {
     width: 45px;
     height: 45px;
@@ -51,14 +60,6 @@
     &:active {
       opacity: 0.3;
     }
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

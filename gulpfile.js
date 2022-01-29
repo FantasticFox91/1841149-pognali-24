@@ -151,10 +151,6 @@ export const build = gulp.series(
 
 // Default
 
-// svg,
-// sprite,
-// createWebp
-
 export default gulp.series(
   clean,
   copy,
@@ -164,6 +160,8 @@ export default gulp.series(
     html,
     scripts,
     svg,
+    sprite,
+    createWebp,
   ),
   gulp.series(
     server,

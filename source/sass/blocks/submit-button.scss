@@ -10,18 +10,43 @@
   background-color: $basic-yellow;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 286px;
-    padding: 27px 51px 29px 37px;
+    padding: 27px 34px 29px 37px;
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
     text-transform: none;
     text-align: left;
-    background-image: url("../img/arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: 242px 50%;
+
+    &::after {
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 6px solid transparent;
+      border-right-width: 0;
+      border-bottom: 6px solid transparent;
+      border-left: 12px solid #1d2e5b;
+      content: "";
+    }
   }
 }

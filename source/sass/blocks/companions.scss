@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 137px;
-    padding-bottom: 87px;
+    padding-bottom: 27px;
     background-color: #182044;
     border-radius: 0 0 60px 60px;
   }
@@ -44,12 +44,20 @@
     right: 0;
     width: 143px;
     height: 143px;
-    background: url("../img/companions-text-back.jpg");
+    background: url("../img/smolov-back.png");
     border-radius: 10px;
     z-index: -1;
     content: "";
     transition: $basic-animation;
   }
+
+  @media (min-resolution: 2dppx) {
+    &::before {
+      background: url("../img/smolov-back@2x.png");
+      background-size: cover;
+    }
+  }
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
@@ -67,6 +75,13 @@
       left: -1px;
       width: 212px;
       height: 212px;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    &::before {
+      background: url("../img/rogovaya-back-desktop@2x.png");
+      background-size: cover;
     }
   }
 
@@ -130,16 +145,26 @@
     left: -25px;
     width: 64px;
     height: 71px;
-    background: url("../img/companions-card-back.png");
+    background: url("../img/rogovaya-back-desktop.png");
+    background-size: cover;
     border-radius: 10px;
     content: "";
     transition: $basic-animation;
   }
 
+  @media (min-resolution: 2dppx) {
+    &::before {
+      background: url("../img/rogovaya-back-desktop@2x.png");
+      background-size: cover;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 34px;
     margin-bottom: 72px;
-    max-width: 620px;
+    max-width: 640px;
     gap: 50px;
 
     &::before {
@@ -147,7 +172,14 @@
       left: -34px;
       width: 143px;
       height: 143px;
-      background: url("../img/smolov-back-desktop.png");
+      background: url("../img/smolov-back.png");
+    }
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    &::before {
+      background: url("../img/smolov-back@2x.png");
+      background-size: cover;
     }
   }
 
@@ -185,9 +217,13 @@
 }
 
 .companions__container {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 311px 1fr;
+    grid-template-rows: 100px 1fr 80px;
   }
 }

@@ -17,6 +17,13 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/promo-bg-desktop@2x.png");
+    background-position-y: -122px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .promo__container {
@@ -29,6 +36,12 @@
   @media (min-width: $tablet-width) {
     padding: 0 40px;
     background-image: url("../img/promo-bg-tablet.png");
+    background-position-y: 223px;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/promo-bg-tablet@2x.png");
+    background-size: cover;
     background-position-y: 223px;
   }
 
@@ -121,7 +134,7 @@
       position: relative;
       display: grid;
       grid-template-columns: minmax(344px, 1fr) minmax(344px, 1fr);
-      grid-template-rows: repeat(2, 140px);
+      grid-template-rows: repeat(2, minmax(140px, 1fr));
 
       &::after {
         position: absolute;
@@ -151,6 +164,11 @@
         background: url("../img/traveller-illustration-desktop.png");
         z-index: 0;
       }
+    }
+
+    @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+      background: url("../img/traveller-illustration-desktop@2x.png");
+      background-size: cover;
     }
   }
 }
@@ -291,5 +309,12 @@
 
   & :last-child {
     flex-grow: 1;
+  }
+
+  @media (min-resolution: 2dppx) {
+    &::after {
+      background: url("../img/promo-list-pseudo@2x.png");
+      background-size: cover;
+    }
   }
 }

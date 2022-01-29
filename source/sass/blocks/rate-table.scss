@@ -17,10 +17,17 @@
     transition: $basic-animation;
   }
 
+  @media (min-resolution: 2dppx) {
+    &::after {
+      background: url("../img/rates@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 87px;
     padding-right: 32px;
-    margin-bottom: 49px;
+    margin-bottom: 29px;
 
     &::before {
       position: absolute;
@@ -56,7 +63,14 @@
       right: 73px;
       width: 198px;
       height: 198px;
-      background-size: 198px 198px;
+      background-image: url("../img/rates-desktop.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    &::after {
+      background-image: url("../img/rates-desktop@2x.png");
+      background-size: cover;
     }
   }
 }

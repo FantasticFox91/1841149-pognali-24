@@ -41,6 +41,16 @@
   }
 }
 
+.footer__htmlacademylogo {
+  fill: #192144;
+  width: 27px;
+  height: 34px;
+}
+
+.footer__logo .logo__icon {
+  fill: #000000;
+}
+
 .footer__logo {
   margin-bottom: 34px;
   cursor: pointer;
@@ -79,12 +89,13 @@
   transition: $basic-animation;
 
   &:hover {
-    background-color: $special-orange;
+    background-color: $special-yellow-dark;
   }
 }
 
 .footer__link {
   display: flex;
+  max-width: 400px;
   padding-top: 11px;
   padding-bottom: 18px;
   align-items: center;

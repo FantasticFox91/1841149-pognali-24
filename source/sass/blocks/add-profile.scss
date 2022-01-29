@@ -10,13 +10,13 @@
   @media (min-width: $tablet-width) {
     margin-top: -55px;
     padding-top: 125px;
-    padding-bottom: 87px;
+    padding-bottom: 66px;
     border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 158px;
-    padding-bottom: 189px;
+    padding-bottom: 168px;
   }
 }
 
@@ -55,6 +55,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: block;
+    max-width: 550px;
     position: relative;
     font-size: 20px;
     line-height: 20px;

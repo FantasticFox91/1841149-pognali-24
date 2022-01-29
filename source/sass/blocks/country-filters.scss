@@ -17,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 104px;
-    margin-bottom: 91px;
+    margin-bottom: 118px;
     background-color: $basic-blue-light;
   }
 }
@@ -235,6 +235,7 @@
     .country-filters__dropdown {
       top: 77px;
       left: 0;
+      padding-bottom: 78px;
       font-size: 20px;
       line-height: 20px;
       border-radius: 0 0 60px 60px;
@@ -287,6 +288,10 @@
 .country-filters__closebutton {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 

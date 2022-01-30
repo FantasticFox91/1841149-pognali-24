@@ -43,13 +43,13 @@ modalBtn !== null ? modalBtn.addEventListener("click", (event) => {
 
 modalCloseBtn !== null ? modalCloseBtn.onclick = () => modal.classList.toggle("modal--open") : null;
 
-// window.onscroll = () => {
-//   if(window.pageYOffset > sticky) {
-//     topMenu.classList.add("top-menu--scroll");
-//   } else {
-//     topMenu.classList.remove("top-menu--scroll");
-//   }
-// }
+window.onscroll = () => {
+  if(window.pageYOffset > sticky) {
+    document.querySelector(".top-menu__container").classList.add("top-menu--scroll");
+  } else {
+    document.querySelector(".top-menu__container").classList.remove("top-menu--scroll");
+  }
+}
 
 if (mapContainer != null) {
   document.querySelector(".map__img").remove();

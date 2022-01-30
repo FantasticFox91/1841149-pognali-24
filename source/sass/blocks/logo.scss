@@ -34,6 +34,10 @@
   }
 }
 
+.logo__icon--footer {
+  fill: #000000;
+}
+
 .logo__icon--showtablet {
   @media (max-width: 767px) {
     display: none;
@@ -42,5 +46,11 @@
   @media (min-width: $desktop-width) {
     width: 200px;
     height: 50px;
+  }
+}
+
+.logo--visible-tablet {
+  @media (max-width: 767px) {
+    display: none;
   }
 }

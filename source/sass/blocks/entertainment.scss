@@ -114,10 +114,6 @@
     border: 2px solid $basic-blue-dark;
     border-right: none;
     content: "";
-
-    @media (min-resolution: 2dppx) {
-      height: 317px;
-    }
   }
 
   @media (min-width: $tablet-width) {

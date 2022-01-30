@@ -1,5 +1,6 @@
 .link-button {
   display: block;
+  max-width: 300px;
   padding: 9px 40px;
   font-size: 18px;
   text-decoration: none;
@@ -16,6 +17,10 @@
 
   &:active {
     color: rgba(29, 46, 91, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -92,6 +97,10 @@
 }
 
 .link-button--tablet-show {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 12px 28px 14px 29px;
     font-size: 20px;

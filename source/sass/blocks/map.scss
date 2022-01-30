@@ -1,5 +1,7 @@
 .map {
   position: relative;
+  display: block;
+  max-width: 1440px;
   margin-top: -52px;
 
   @media (min-width: $tablet-width) {
@@ -7,6 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 100%;
     margin-top: -122px;
   }
 }
@@ -21,7 +24,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
     height: 584px;
   }
 }

@@ -1,26 +1,26 @@
 .promo {
-  padding-top: 27px;
+  padding-top: 18px;
   padding-bottom: 39px;
   background-color: $basic-blue;
   transition: $basic-animation;
 
   @media (min-width: $tablet-width) {
-    padding-top: 44px;
+    padding-top: 26px;
     background-color: #182044;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 83px;
+    padding-top: 73px;
     padding-bottom: 124px;
     background-image: url("../img/promo-bg-desktop.png");
-    background-position-y: -122px;
+    background-position-y: -132px;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
     background-image: url("../img/promo-bg-desktop@2x.png");
-    background-position-y: -122px;
+    background-position-y: -132px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -41,8 +41,7 @@
 
   @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
     background-image: url("../img/promo-bg-tablet@2x.png");
-    background-size: cover;
-    background-position-y: 223px;
+    background-size: 100% 612px;
   }
 
   @media (min-width: $desktop-width) {
@@ -294,7 +293,9 @@
 .promo__list--user {
   position: relative;
   padding-top: 246px;
+  margin-right: -1px;
   z-index: 0;
+  flex-wrap: wrap;
 
   &::after {
     position: absolute;

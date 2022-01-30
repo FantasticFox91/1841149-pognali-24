@@ -1,16 +1,32 @@
 .top-menu__container {
-  background-color: $white-color;
+  background-color: $basic-blue;
   color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: #192144;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-blue;
+  }
+}
+
+.top-menu {
+  min-height: 73px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 132px;
+  }
 }
 
 .top-menu--open {
   background-color: $white-color;
 
-  .logo__icon {
-    fill: $black-color;
+  .top-menu__container {
+    background-color: $white-color;
   }
 
-  .main-nav {
+  .top-menu__nav {
     padding-top: 25px;
     padding-bottom: 17px;
     justify-content: space-between;
@@ -23,7 +39,7 @@
     }
   }
 
-  .main-nav__wrapper {
+  .top-menu__wrapper {
     top: 64px;
     display: flex;
     position: absolute;
@@ -40,15 +56,11 @@
     }
   }
 
-  .logo__icon path {
+  .top-menu__icon {
     fill: $special-blue;
-
-    @media (min-width: $desktop-width) {
-      fill: $white-color;
-    }
   }
 
-  .main-nav__toggle {
+  .top-menu__toggle {
     display: block;
 
     &::after {
@@ -68,15 +80,17 @@
     }
   }
 
-  .top-menu__container {
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    background-color: $basic-blue;
+
+    .top-menu__container {
       background-color: #182044;
       padding: 0;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    background-color: $basic-blue;
+    .top-menu__icon {
+      fill: $white-color;
+    }
   }
 }
 
@@ -85,19 +99,7 @@
     background-color: $basic-blue;
   }
 
-  .top-menu__container {
-    background-color: $basic-blue;
-
-    @media (min-width: $tablet-width) {
-      background-color: #182044;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0;
-    }
-  }
-
-  .main-nav {
+  .top-menu__nav {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -111,13 +113,13 @@
     @media (min-width: $desktop-width) {
       justify-content: flex-start;
       padding-top: 48px;
-      padding-left: 5px;
-      padding-right: 5px;
+      padding-left: 0;
+      padding-right: 0;
       background-color: $basic-blue;
     }
   }
 
-  .main-nav__wrapper {
+  .top-menu__wrapper {
     top: -805px;
     display: flex;
     position: absolute;
@@ -130,14 +132,7 @@
     }
   }
 
-  .main-nav_container {
-    @media (min-width: $desktop-width) {
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  .main-nav__toggle {
+  .top-menu__toggle {
     display: block;
 
     &::after {
@@ -168,21 +163,18 @@
   position: fixed;
   z-index: 20;
   width: 100%;
+  background-color: $white-color;
 
-  .logo__icon {
-    fill: $black-color;
+  .top-menu__icon {
+    fill: $special-blue;
   }
 
-  .top-menu__container {
-    background-color: $white-color;
-  }
-
-  .main-nav {
+  .top-menu__nav {
     padding-top: 24px;
     padding-bottom: 27px;
   }
 
-  .main-nav__toggle {
+  .top-menu__toggle {
     &::after {
       background-color: $border-color;
     }
@@ -192,33 +184,40 @@
     }
   }
 
-  .logo__icon path {
-    fill: $special-blue;
-  }
 
   @media (min-width: $tablet-width) {
-    .main-nav {
-      padding-bottom: 33px;
+    .top-menu__nav {
+      padding-top: 40px;
+      padding-bottom: 42px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
+    background-color: $white-color;
+    max-width: none;
 
-    .logo__icon path {
-      fill: $white-color;
+    .top-menu__nav {
+      background-color: $white-color;
+      padding-top: 21px;
+      padding-bottom: 19px;
+      max-width: 1340px;
+      margin: 0 auto;
     }
-  }
-}
 
-.logo--visible-tablet {
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
+    .top-menu__container {
+      background-color: transparent;
+    }
 
-.link-button--tablet-show {
-  @media (max-width: 767px) {
-    display: none;
+    .top-menu__list::before {
+      background-color: $black-color;
+    }
+
+    .top-menu__link {
+      color: $black-color;
+    }
+
+    .top-menu__icon {
+      fill: $basic-blue;
+    }
   }
 }

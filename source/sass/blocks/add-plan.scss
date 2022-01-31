@@ -1,0 +1,25 @@
+.add-plan {
+  padding-top: 44px;
+  margin-top: -20px;
+  background-color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 88px;
+  }
+}
+
+.add-plan__container {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

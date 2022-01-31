@@ -1,0 +1,135 @@
+.counter__input {
+  width: 100%;
+  padding: 13px 40px;
+  text-align: center;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  font-family: $main-font;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &:hover {
+    border-color: #959bb2;
+
+    & ~ .counter__sign::before,
+    & ~ .counter__sign::after {
+      background-color: #959bb2;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $basic-blue-dark;
+
+    & ~ .counter__sign::before,
+    & ~ .counter__sign::after {
+      background-color: $basic-blue-dark;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.counter__input::-webkit-outer-spin-button,
+.counter__input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.counter__sign {
+  position: absolute;
+  padding: 0;
+  width: 24px;
+  height: 43px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #959bb2;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $basic-blue-dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 70px;
+  }
+
+  &--plus {
+    top: 0;
+    right: 10px;
+
+    &::after {
+      position: absolute;
+      top: calc(50% - 7px);
+      width: 2px;
+      height: 14px;
+      background-color: $border-color;
+      transition: $basic-animation;
+      content: "";
+    }
+
+    &::before {
+      position: absolute;
+      top: calc(50% - 7px);
+      width: 2px;
+      height: 14px;
+      background-color: $border-color;
+      transform: rotate(90deg);
+      transition: $basic-animation;
+      content: "";
+    }
+
+    @media (min-width: $tablet-width) {
+      right: 1px;
+
+      &::after {
+        top: calc(50% - 10px);
+        left: 17px;
+        height: 20px;
+      }
+
+      &::before {
+        top: calc(50% - 10px);
+        left: 17px;
+        height: 20px;
+      }
+    }
+  }
+
+  &--minus {
+    top: 0;
+    left: 7px;
+
+    &::after {
+      position: absolute;
+      top: calc(50% - 7px);
+      width: 2px;
+      height: 14px;
+      background-color: $border-color;
+      transform: rotate(90deg);
+      content: "";
+      transition: $basic-animation;
+    }
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+
+      &::after {
+        top: calc(50% - 10px);
+        left: 30px;
+        height: 20px;
+      }
+    }
+  }
+}

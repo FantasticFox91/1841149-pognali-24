@@ -1,0 +1,116 @@
+.contacts-list {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 62px;
+    margin-bottom: 111px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+
+  &--header {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.contacts-list__link {
+  position: relative;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 61px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-yellow;
+  transition: $basic-animation;
+
+  &--header {
+    text-align: left;
+    color: $special-blue;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-color: $basic-blue-darkest;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--tel::after {
+    background-image: url("../img/icon-telephone.svg");
+    background-position: 50% 50%;
+  }
+
+  &--mail::after {
+    background-image: url("../img/icon-mail.svg");
+    background-position: 50% 50%;
+  }
+
+  &:hover {
+    color: $special-yellow-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    padding: 20px 0 20px 86px;
+
+    &::after {
+      width: 68px;
+      height: 68px;
+      top: -2px;
+      left: -5px;
+    }
+
+    &--tel::after {
+      background-size: 27px 26px;
+    }
+
+    &--mail::after {
+      background-size: 28px 19px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 31px 0 31px 121px;
+    padding-left: 121px;
+
+    &::after {
+      top: -1px;
+      left: 0;
+      width: 90px;
+      height: 90px;
+    }
+
+    &--tel::after {
+      background-size: 38px 34px;
+    }
+
+    &--mail::after {
+      background-size: 37px 25px;
+    }
+  }
+}
+
+.contacts-list__item:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    margin-right: 110px;
+  }
+}

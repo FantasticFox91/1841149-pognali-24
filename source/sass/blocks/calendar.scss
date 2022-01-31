@@ -1,0 +1,136 @@
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.calendar__weekday {
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.calendar__workdays {
+  padding: 8px 6px;
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 16px 16px;
+  }
+}
+
+.calendar__weekend {
+  font-weight: 400;
+  color: $special-red;
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 16px 16px;
+  }
+}
+
+.calendar__button {
+  padding: 6px 4px;
+  font-family: $main-font;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:not(:disabled):hover {
+    outline: 4px solid $special-red;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 72px;
+    height: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-top: 11px;
+    padding-left: 14px;
+    width: 140px;
+    height: 68px;
+  }
+}
+
+.calendar__tablet-text {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.calendar__month {
+  text-transform: lowercase;
+
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.calendar__check-in {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $white-color;
+
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.calendar__check-out {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $white-color;
+
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.calendar__body {
+  border: 1px solid $border-color;
+}
+
+.calendar__days:not(:last-child) {
+  border-bottom: 1px solid $border-color;
+}
+
+.calendar__days .calendar__day {
+  border-left: 1px solid $border-color;
+}
+
+.calendar__day--active {
+  background-color: $basic-blue-dark;
+
+  .calendar__button {
+    color: $white-color;
+    font-weight: 500;
+  }
+
+  @media (min-width: $desktop-width) {
+    .calendar__button {
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+    }
+  }
+}
+
+.calendar__day--avaliable {
+  background-color: $basic-blue-light;
+
+  .calendar__button {
+    color: $basic-blue-dark;
+    font-weight: 500;
+  }
+}

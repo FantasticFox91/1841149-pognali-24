@@ -1,0 +1,111 @@
+.page-title {
+  position: relative;
+  padding: 26px 25px 22px;
+  background-color: #161c35;
+  border-radius: 0 0 20px 20px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 87px;
+    padding-bottom: 71px;
+    border-radius: 0 0 60px 60px;
+    background-color: #182044;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 88px 74px 71px;
+    border-radius: 0 0 56px 56px;
+    background-color: #161c35;
+  }
+}
+
+.page-title__heading {
+  position: relative;
+  margin: 0;
+  margin-left: -25px;
+  font-size: 36px;
+  color: $white-color;
+
+  &::after {
+    position: absolute;
+    width: 214px;
+    height: 5px;
+    bottom: -24px;
+    left: 0;
+    background-color: $special-orange;
+    border-radius: 4px;
+    content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-left: 10px;
+    font-size: 60px;
+    line-height: 60px;
+
+    &::after {
+      left: 10px;
+      bottom: -75px;
+      width: 358px;
+      height: 8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 500px;
+    padding-left: 50px;
+
+    &::after {
+      left: 52px;
+      bottom: -75px;
+    }
+  }
+}
+
+.page-title__heading--catalog {
+  &::after {
+    width: 172px;
+  }
+}
+
+.page-title__link {
+  position: relative;
+  padding-top: 5px;
+  padding-right: 60px;
+  font-size: 20px;
+  line-height: 20px;
+  color: $white-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: auto;
+
+  &::after {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 32px;
+    height: 16px;
+    background: url("../img/icon_arrow_bend.svg");
+    content: "";
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 49px;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

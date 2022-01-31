@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include fonts();
+
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  min-width: 320px;
+  background-color: $basic-blue;
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    font-size: $main-tablet-font-size;
+    line-height: $main-tablet-line-height;
+    background-color: #182044;
+  }
+}
+
+.page-form {
+  color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-blue-light;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,266 @@
+.transport-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.transport-list__item {
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 7px;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: $white-color;
+  border-radius: 50%;
+
+  &:hover {
+    filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
+  }
+
+  &:active {
+    filter: none;
+    background-color: $country-filter-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 22px;
+    margin-bottom: 37px;
+  }
+}
+
+.transport-list--catalog {
+  justify-content: center;
+
+  .transport-list__item {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    background-color: $basic-blue-light;
+
+    &::after {
+      position: absolute;
+      width: 17px;
+      height: 16px;
+      opacity: 0.15;
+      content: "";
+    }
+
+    &--airplane::after {
+      width: 14px;
+      height: 16px;
+      background: url("../img/icon-plane.svg") no-repeat 50% 50%;
+      background-size: 14px 16px;
+    }
+
+    &--bus::after {
+      width: 13px;
+      height: 16px;
+      background: url("../img/icon-bus.svg") no-repeat 50% 50%;
+      background-size: 13px 16px;
+    }
+
+    &--bicycle::after {
+      width: 14px;
+      height: 17px;
+      background: url("../img/icon-bicycle.svg") no-repeat 50% 50%;
+      background-size: 14px 17px;
+    }
+
+    &--walk::after {
+      width: 21px;
+      height: 23px;
+      background: url("../img/icon-run.svg") no-repeat 50% 50%;
+      background-size: 13px 17px;
+    }
+
+    &--active::after {
+      opacity: 1;
+    }
+
+    &:hover {
+      filter: none;
+    }
+
+    &:active {
+      filter: none;
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    .transport-list__item {
+      background-color: transparent;
+      margin: 0;
+
+      &::after {
+        width: 23px;
+        height: 22px;
+        background-size: 23px 22px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.transport-list__item:hover .transport-list__input:checked + .transport-list__label::after {
+  opacity: 0.7;
+}
+
+.transport-list__item:hover .transport-list__input:not(:checked) + .transport-list__label::after {
+  opacity: 0.5;
+}
+
+.transport-list__item:active .transport-list__input:checked + .transport-list__label::after {
+  opacity: 0.3;
+}
+
+.transport-list__item:active .transport-list__input:not(:checked) + .transport-list__label::after {
+  opacity: 0.1;
+}
+
+.transport-list__label {
+  position: relative;
+  display: flex;
+  width: 17px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    width: 17px;
+    height: 16px;
+    opacity: 0.15;
+    content: "";
+  }
+
+  &--airplane {
+    &::after {
+      background: url("../img/icon-plane.svg") no-repeat 50% 50%;
+      background-size: 17px 16px;
+    }
+  }
+
+  &--bus {
+    &::after {
+      background: url("../img/icon-bus.svg") no-repeat 50% 50%;
+      background-size: 17px 16px;
+    }
+  }
+
+  &--bicycle {
+    &::after {
+      background: url("../img/icon-bicycle.svg") no-repeat 50% 50%;
+      background-size: 17px 16px;
+    }
+  }
+
+  &--walk {
+    &::after {
+      background: url("../img/icon-run.svg") no-repeat 50% 50%;
+      background-size: 17px 16px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 23px;
+      height: 22px;
+      background-size: 23px 22px;
+    }
+  }
+}
+
+.transport-list__item--active {
+  &::after {
+    opacity: 1;
+  }
+}
+
+.transport-list__input:checked + .transport-list__label::after {
+  opacity: 1;
+}
+
+.transport-list--card {
+  justify-content: center;
+
+  .transport-list__item {
+    position: relative;
+    width: 33px;
+    height: 20px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+
+    &::after {
+      position: absolute;
+      width: 17px;
+      height: 16px;
+      opacity: 0.15;
+      content: "";
+    }
+
+    &--airplane::after {
+      width: 21px;
+      height: 21px;
+      background: url("../img/icon-plane.svg") no-repeat 50% 50%;
+      background-size: 21px 21px;
+    }
+
+    &--bus::after {
+      width: 17px;
+      height: 19px;
+      background: url("../img/icon-bus.svg") no-repeat 50% 50%;
+      background-size: 17px 19px;
+    }
+
+    &--bicycle::after {
+      width: 24px;
+      height: 24px;
+      background: url("../img/icon-bicycle.svg") no-repeat 50% 50%;
+      background-size: 24px 24px;
+    }
+
+    &--walk::after {
+      width: 21px;
+      height: 23px;
+      background: url("../img/icon-run.svg") no-repeat 50% 50%;
+      background-size: 21px 23px;
+    }
+
+    &:hover {
+      filter: none;
+    }
+
+    &:active {
+      filter: none;
+      background-color: transparent;
+    }
+  }
+
+  .transport-list__item--active::after {
+    opacity: 1;
+  }
+}
+
+.transport-list__item:hover .transport-list__tooltip {
+  display: block;
+}

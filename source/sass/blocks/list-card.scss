@@ -1,0 +1,44 @@
+.list-card {
+  max-width: 270px;
+  margin: 0 auto;
+  padding: 20px 25px 24px 23px;
+  background-color: $white-color;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 618px;
+    padding: 38px 40px 12px;
+    border-radius: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1258px;
+    display: grid;
+    grid-template-columns: minmax(200px, 587px) 1fr;
+    padding-top: 36px;
+    padding-bottom: 35px;
+    border-radius: 9px;
+  }
+}
+
+.list-card__heading {
+  margin: 2px 0 17px 2px;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    margin: 7px 0 36px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    align-self: start;
+
+    br {
+      display: none;
+    }
+  }
+}

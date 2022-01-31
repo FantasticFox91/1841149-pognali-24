@@ -1,0 +1,82 @@
+.slider {
+  margin-top: 24px;
+  padding-bottom: 26px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    padding-bottom: 51px;
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 32px;
+    padding-bottom: 58px;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  display: block;
+  top: 13px;
+  width: 14px;
+  height: 21px;
+  border: none;
+  background: transparent url("../img/arrow-back.svg") no-repeat 50% 50%;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 88px;
+    height: 88px;
+    top: 0;
+    background-size: 30px 36px;
+    background-position-x: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position-x: -5px;
+  }
+}
+
+.slider__heading {
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 11px 20px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 27px;
+    padding-bottom: 23px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,321 @@
+.promo {
+  padding-top: 18px;
+  padding-bottom: 39px;
+  background-color: $basic-blue;
+  transition: $basic-animation;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    background-color: #182044;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+    padding-bottom: 124px;
+    background-image: url("../img/promo-bg-desktop.png");
+    background-position-y: -132px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/promo-bg-desktop@2x.png");
+    background-position-y: -132px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.promo__container {
+  padding: 0 25px;
+  background-image: url("../img/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 138px;
+  transition: $basic-animation;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    background-image: url("../img/promo-bg-tablet.png");
+    background-position-y: 223px;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/promo-bg-tablet@2x.png");
+    background-size: 100% 612px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    background-image: none;
+  }
+}
+
+.promo__heading {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 120px;
+    margin-bottom: 88px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 418px;
+    margin-left: 72px;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.promo__quote {
+  margin-left: 25px;
+  max-width: 156px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 264px;
+    margin-bottom: 212px;
+    margin-left: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -287px 27px 0 auto;
+  }
+}
+
+.promo__review {
+  margin: 0;
+  margin-bottom: 17px;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.promo__author {
+  display: block;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.promo__description {
+  display: block;
+  margin-bottom: 30px;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 117px;
+  }
+}
+
+.promo__list {
+  counter-reset: numbers;
+  transition: $basic-animation;
+
+  &--steps {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(344px, 1fr) minmax(344px, 1fr);
+      grid-template-rows: repeat(2, minmax(140px, 1fr));
+
+      &::after {
+        position: absolute;
+        top: -451px;
+        right: 71px;
+        width: 372px;
+        height: 451px;
+        background: url("../img/traveller-illustration-tablet.png");
+        transition: $basic-animation;
+        content: "";
+      }
+
+      @media (min-width: $desktop-width) {
+        margin: 0 5px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      max-width: 1320px;
+
+      &::after {
+        top: -410px;
+        right: 345px;
+        width: 431px;
+        height: 640px;
+        background: url("../img/traveller-illustration-desktop.png");
+        z-index: 0;
+      }
+    }
+
+    @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+      background: url("../img/traveller-illustration-desktop@2x.png");
+      background-size: cover;
+    }
+  }
+}
+
+.promo__item {
+  position: relative;
+  padding: 21px 140px 35px 24px;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic-blue;
+  background-color: $special-orange;
+  border-radius: 10px 10px 0 0;
+  margin-top: -12px;
+
+  &::after {
+    position: absolute;
+    right: 21px;
+    top: 20px;
+    color: $white-color;
+    counter-increment: numbers;
+    content: counter(numbers);
+  }
+
+  &:nth-child(4n + 1) {
+    margin-top: 0;
+  }
+
+  &:nth-child(4n + 2) {
+    background-color: #ffa530;
+    padding-right: 96px;
+  }
+
+  &:nth-child(4n + 3) {
+    background-color: $special-yellow-dark;
+    padding-right: 105px;
+  }
+
+  &:nth-child(4n) {
+    background-color: $basic-yellow;
+    padding-right: 121px;
+    padding-bottom: 23px;
+    border-radius: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding: 29px 150px 37px 33px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px 20px 0 0;
+    min-width: 369px;
+
+    &::after {
+      left: 35px;
+      top: 88px;
+    }
+
+    &:nth-child(2n) {
+      min-width: 344px;
+    }
+
+    &:nth-child(4n + 1) {
+      border-top-right-radius: 0;
+    }
+
+    &:nth-child(4n + 3) {
+      padding-right: 150px;
+      border-radius: 0 0 0 20px;
+    }
+
+    &:nth-child(4n) {
+      border-radius: 0 0 20px 20px;
+    }
+  }
+
+  @media (min-width: 780px) {
+    &:nth-child(2n) {
+      margin-left: -14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px;
+    padding-bottom: 30px;
+    z-index: 2;
+
+    &::after {
+      top: 25px;
+      left: 79%;
+    }
+
+    &:nth-child(4n + 1) {
+      min-width: 345px;
+      max-width: 345px;
+    }
+
+    &:nth-child(2n) {
+      min-width: 375px;
+      width: 375px;
+      flex-grow: 1;
+    }
+
+    &:nth-child(4n + 3) {
+      border-radius: 20px 0 0 20px;
+      padding-right: 155px;
+      flex-grow: 1;
+    }
+
+    &:nth-child(4n) {
+      min-width: 315px;
+      max-width: 315px;
+      border-radius: 20px;
+    }
+  }
+}
+
+.promo__item:not(:first-child) {
+  @media (min-width: $desktop-width) {
+    margin-left: -30px;
+  }
+}
+
+.promo__list--user {
+  position: relative;
+  padding-top: 246px;
+  margin-right: -1px;
+  z-index: 0;
+  flex-wrap: wrap;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 11px;
+    right: 23px;
+    width: 192px;
+    height: 255px;
+    background: url("../img/promo-list-pseudo.png");
+    content: "";
+  }
+
+  & :last-child {
+    flex-grow: 1;
+  }
+
+  @media (min-resolution: 2dppx) {
+    &::after {
+      background: url("../img/promo-list-pseudo@2x.png");
+      background-size: cover;
+    }
+  }
+}

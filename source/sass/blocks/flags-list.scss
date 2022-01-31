@@ -1,0 +1,25 @@
+.flags-list {
+  position: absolute;
+  top: -11px;
+  width: 142px;
+  left: calc(50% - 71px);
+}
+
+.flags-list__item {
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .flags-list__tooltip {
+      display: block;
+      top: 35px;
+      left: -52px;
+      min-width: 140px;
+      text-align: center;
+    }
+  }
+}
+
+.flags-list__item:not(:last-child) {
+  margin-right: 18px;
+}

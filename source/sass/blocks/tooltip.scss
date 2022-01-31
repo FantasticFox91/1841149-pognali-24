@@ -1,0 +1,30 @@
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 40px;
+  font-family: $main-font;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $white-color;
+  z-index: 10;
+}
+
+.tooltip__text {
+  position: relative;
+  margin: 0;
+  padding: 18px 21px;
+  background-color: #101d41;
+  border-radius: 4px;
+
+  &::after {
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 14px;
+    background-color: #101d41;
+    transform: rotate(45deg);
+    content: "";
+  }
+}

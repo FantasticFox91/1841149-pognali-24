@@ -1,0 +1,695 @@
+.catalog-card {
+  display: grid;
+  max-width: 270px;
+  margin: 0 auto;
+  grid-template-columns: 25px 70px repeat(2, max-content) 25px;
+  grid-template-rows: 13px repeat(6, min-content) 23px;
+  background-color: $white-color;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+
+    .catalog-card__avatar {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 688px;
+    grid-template-columns: 35px max-content max-content 1fr max-content 25px;
+    grid-template-rows: 31px repeat(4, min-content);
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    grid-template-columns: min-content 62px min-content 105px 79px 1fr 34px;
+    grid-template-rows: 44px repeat(3, min-content);
+  }
+}
+
+.catalog-card__link {
+  display: block;
+  margin-left: -7px;
+  grid-row: 2/4;
+  grid-column: 2/3;
+  text-decoration: none;
+  color: inherit;
+  transition: $basic-animation;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2/6;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/6;
+    margin-left: 0;
+  }
+}
+
+.catalog-card__avatar {
+  display: block;
+  margin-top: 2px;
+  border-radius: 50%;
+  transition: $basic-animation;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    height: 190px;
+    margin-top: 4px;
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    height: 100%;
+    margin: 0;
+    border-radius: 20px 0 0 20px;
+  }
+}
+
+.catalog-card__fullname {
+  position: relative;
+  max-width: 100px;
+  margin: 0;
+  padding-left: 15px;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-blue-dark;
+  grid-row: 2/3;
+  grid-column: 3/5;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    right: -53px;
+    width: 6px;
+    height: 6px;
+    background-color: $special-green;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--offline::before {
+    background-color: $special-red;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+    width: max-content;
+    padding-left: 33px;
+    padding-right: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+
+    &::before {
+      width: 8px;
+      height: 8px;
+      top: calc(50% - 2px);
+      right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+    grid-column: 3/5;
+
+    &::before {
+      right: auto;
+      left: -27px;
+    }
+  }
+}
+
+.catalog-card__interactive-elements {
+  margin-left: -28px;
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-blue;
+  grid-row: 3/4;
+  grid-column: 3/4;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-top: 33px;
+    padding: 0;
+    grid-row: 4/5;
+    grid-column: 4/5;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    grid-column: 4/5;
+  }
+}
+
+.catalog-card__hashtags {
+  display: flex;
+  margin-bottom: 14px;
+  align-items: center;
+  grid-row: 4/5;
+  grid-column: 2/5;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+    padding-top: 20px;
+    padding-left: 36px;
+    grid-row: 3/4;
+    grid-column: 3/5;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    grid-column: 3/5;
+  }
+}
+
+.catalog-card__hashtags-list {
+  display: flex;
+  max-width: 200px;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.catalog-card__hashtags-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.catalog-card__fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &::after {
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    width: 270px;
+    height: 1px;
+    background-color: $basic-blue-light;
+    content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 100%;
+      left: 0;
+      top: -26px;
+    }
+  }
+}
+
+.catalog-card__fieldset--visit {
+  grid-row: 5/6;
+  grid-column: 2/5;
+
+  .catalog-card__legend {
+    width: 117px;
+    margin-left: -11px;
+    padding-left: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -4px;
+    margin-bottom: 13px;
+    grid-column: 1/7;
+    flex-direction: column;
+
+    .catalog-card__legend {
+      margin-left: 73px;
+    }
+
+    .catalog-card__list {
+      display: flex;
+      flex-direction: row;
+      padding-left: 37px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2/4;
+    grid-column: 6/7;
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+
+    .catalog-card__legend {
+      display: none;
+    }
+
+    .catalog-card__list {
+      flex-direction: column;
+      margin: 0;
+      margin-top: 8px;
+      padding: 0;
+    }
+  }
+}
+
+.catalog-card__legend {
+  position: relative;
+  width: 50px;
+  margin-bottom: 19px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $special-grey;
+  background-color: $white-color;
+  z-index: 1;
+}
+
+.catalog-card__list {
+  font-size: 15px;
+  padding-bottom: 2px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 4px;
+  }
+}
+
+.catalog-card__item {
+  position: relative;
+  padding-left: 40px;
+
+  &::after {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 26px;
+    height: 18px;
+    background-size: 26px 18px;
+    content: "";
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &--srilanka {
+    &::after {
+      background-image: url("../img/shrilanka-catalog.svg");
+    }
+  }
+
+  &--tailand {
+    &::after {
+      background-image: url("../img/thailand.svg");
+    }
+  }
+
+  &--seychelles {
+    &::after {
+      background-image: url("../img/seychelles.svg");
+    }
+  }
+
+  &--belgium {
+    &::after {
+      background-image: url("../img/belgium.svg");
+    }
+  }
+
+  &--chech {
+    &::after {
+      background-image: url("../img/chech.svg");
+    }
+  }
+
+  &--usa {
+    &::after {
+      background-image: url("../img/usa.svg");
+    }
+  }
+
+  &--australia {
+    &::after {
+      background-image: url("../img/australia.svg");
+    }
+  }
+
+  &--dominican {
+    &::after {
+      background-image: url("../img/dominica.svg");
+    }
+  }
+
+  &--uk {
+    &::after {
+      background-image: url("../img/uk.svg");
+    }
+  }
+
+  &--germany {
+    &::after {
+      background-image: url("../img/germany.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-left: 45px;
+
+    &::after {
+      width: 35px;
+      height: 24px;
+      background-size: 35px 24px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 54px;
+
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+.catalog-card__fieldset--transport {
+  .catalog-card__legend {
+    margin-left: -10px;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    width: 87px;
+  }
+
+  .catalog-card__list {
+    display: flex;
+    margin-left: -5px;
+  }
+
+  .catalog-card__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background-color: $basic-blue-light;
+    border-radius: 50%;
+  }
+
+  .catalog-card__item:not(:last-child) {
+    margin-right: 1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+
+    &::after {
+      display: none;
+    }
+
+    .catalog-card__list {
+      align-items: center;
+      flex-direction: column;
+      margin-top: 0;
+    }
+
+    .catalog-card__legend {
+      display: none;
+    }
+
+    .catalog-card__item {
+      margin-bottom: 0;
+      background-color: transparent;
+
+      &::after {
+        display: none;
+      }
+
+      &--airplane .catalog-card__icon {
+        width: 23px;
+        height: 22px;
+      }
+
+      &--bus .catalog-card__icon {
+        width: 19px;
+        height: 20px;
+      }
+
+      &--bicycle .catalog-card__icon {
+        width: 26px;
+        height: 25px;
+      }
+
+      &--walk .catalog-card__icon {
+        width: 23px;
+        height: 24px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .catalog-card__list {
+      flex-direction: row;
+    }
+  }
+}
+
+.catalog-card__icon {
+  opacity: 0.3;
+}
+
+.catalog-card__icon--active {
+  opacity: 1;
+}
+
+.catalog-card__columns {
+  display: flex;
+  min-width: 231px;
+  margin-bottom: 14px;
+  padding-top: 10px;
+  justify-content: space-between;
+  grid-row: 6/7;
+  grid-column: 2/5;
+
+
+  @media (min-width: $tablet-width) {
+    min-width: auto;
+    padding-top: 3px;
+    grid-row: 2/5;
+    grid-column: 5/6;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+    grid-row: 4/5;
+    grid-column: 6/7;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.catalog-card__link-button {
+  width: 230px;
+  grid-row: 7/8;
+  grid-column: 2/5;
+  margin-left: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    margin: 33px 0 26px 29px;
+    padding: 15px 0;
+    font-size: 20px;
+    line-height: 20px;
+    grid-row: 4/5;
+    grid-column: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -8px;
+    margin-top: 33px;
+    margin-bottom: 13px;
+    grid-column: 3/4;
+  }
+}
+
+.catalog-card__fieldset--level {
+  &::after {
+    display: none;
+  }
+
+  .catalog-card__legend {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .catalog-card__legend {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 9px;
+  }
+}
+
+.catalog-card__list--second {
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.catalog-card__list--third {
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.catalog-card__list--fourth {
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.catalog-card__heart-counter {
+  position: relative;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 37px;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31px;
+    height: 31px;
+    background-color: #e2e5f2;
+    border-radius: 50%;
+    z-index: 1;
+    content: "";
+    transition: $basic-animation;
+  }
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 13px;
+    height: 11px;
+    background: url("../img/icon-heart.svg") no-repeat;
+    z-index: 2;
+    opacity: 0.3;
+    content: "";
+    transition: $basic-animation;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0.5;
+    }
+
+    &::before {
+      background-color: #e2e5f2;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 56px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+      background-color: #e2e5f2;
+    }
+
+    &::after {
+      top: 15px;
+      left: 16px;
+      width: 20px;
+      height: 17px;
+      background-size: 20px 18px;
+    }
+  }
+}
+
+.catalog-card__input:checked + .catalog-card__heart-counter {
+  &::before {
+    background-color: #f9eaea;
+  }
+
+  &::after {
+    background: url("../img/icon-heaat-filled.svg") no-repeat 50% 50%;
+    opacity: 1;
+  }
+
+  &:hover {
+    &::before {
+      background-color: #f9d8d8;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 20px;
+      height: 18px;
+      background-size: 20px 18px;
+    }
+  }
+}

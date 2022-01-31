@@ -1,0 +1,132 @@
+.companions-card {
+  max-width: 270px;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+
+    .companions-card__image--scale {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 285px;
+  }
+}
+
+.companions-card picture {
+  display: block;
+}
+
+.companions-card__image {
+  position: relative;
+  display: block;
+  border-radius: 10px 10px 0 0;
+  transition: $basic-animation;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.companions-card__description {
+  position: relative;
+  display: flex;
+  padding: 26px 40px 20px;
+  flex-direction: column;
+  background-color: $white-color;
+  border-radius: 0 0 10px 10px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding: 30px 30px 27px;
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+.companions-card__list {
+  display: flex;
+  margin-bottom: 14px;
+  max-width: 188px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-grey;
+}
+
+.companions-card__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.companions-card__link {
+  text-decoration: none;
+  color: inherit;
+  transition: $basic-animation;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.companions-card__name {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $basic-blue-dark;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 3px);
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    background-color: $special-green;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--offline::before {
+    background-color: $special-red;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 22px;
+    margin-bottom: 24px;
+
+    &::before {
+      left: -22px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.companions-card__hashtags {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $special-grey;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}

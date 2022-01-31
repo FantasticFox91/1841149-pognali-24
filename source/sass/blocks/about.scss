@@ -1,0 +1,125 @@
+.about {
+  position: relative;
+  padding-top: 33px;
+  padding-bottom: 83px;
+  margin-top: -1px;
+  background-color: $basic-blue;
+  border-radius: 0 0 30px 30px;
+  background-image: url("../img/about-mobile.png");
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-mobile@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 89px;
+    background-image: none;
+    background-color: #182044;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 128px;
+    padding-bottom: 163px;
+    border-radius: 0 0 56px 56px;
+  }
+}
+
+.about__container {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background: none;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      top: 11px;
+      right: 8px;
+      width: 376px;
+      height: 548px;
+      background: url("../img/about-tablet.png");
+      background-size: cover;
+      content: "";
+    }
+
+    &::before {
+      position: absolute;
+      top: -37px;
+      right: 40px;
+      width: 688px;
+      height: 212px;
+      background-color: #141b3b;
+      content: "";
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    &::after {
+      background-image: url("../img/about-tablet@2x.png");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: -43px;
+      right: 5px;
+      width: 630px;
+      height: 665px;
+      background: url("../img/about-desktop.png");
+      background-size: cover;
+    }
+
+    &::before {
+      width: 212px;
+      height: 212px;
+      top: -57px;
+      left: 4px;
+    }
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    &::after {
+      background-image: url("../img/about-desktop@2x.png");
+      background-size: cover;
+    }
+  }
+}
+
+.about__button {
+  max-width: 276px;
+  margin-left: 34px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-radius: 20px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 71px;
+  }
+}
+
+.about__description {
+  @media (min-width: $tablet-width) {
+    max-width: 360px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 690px;
+  }
+}
+
+.about__heading {
+  max-width: 430px;
+}

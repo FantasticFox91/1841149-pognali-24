@@ -1,0 +1,91 @@
+.modal {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 16px;
+  left: calc(50% - 134px);
+  padding: 0;
+  padding-top: 33px;
+  background-color: $white-color;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  z-index: 1;
+
+  &--open {
+    display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 55px;
+    left: 40px;
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 154px;
+    left: calc(50% - 357px);
+    border-radius: 30px;
+    box-shadow: 0 4px 22px rgba(29, 46, 91, 0.18);
+  }
+}
+
+.modal__container {
+  padding-left: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 89px;
+    padding-right: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 58px;
+    padding-right: 60px;
+  }
+}
+
+.modal__heading {
+  margin: 0;
+  margin-bottom: 30px;
+  color: $special-orange;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.modal__button {
+  padding: 21px 0;
+  padding-bottom: 14px;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $basic-blue-dark;
+  background-color: $modal-button-color;
+  border: none;
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+  transition: $basic-animation;
+
+  &:hover {
+    background-color: $basic-blue-light;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 43px;
+    font-size: 24px;
+    text-transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0 0 30px 30px;
+  }
+}

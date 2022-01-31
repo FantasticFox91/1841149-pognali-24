@@ -1,0 +1,35 @@
+.page-catalog {
+  color: $basic-blue-dark;
+  background-color: $background-color;
+}
+
+.page-catalog__columns {
+  padding: 0 25px;
+  padding-bottom: 156px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px 132px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    padding-bottom: 145px;
+  }
+}
+
+.page-catalog__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    .page-title__heading {
+      margin-right: 156px;
+
+      &::after {
+        width: 288px;
+      }
+    }
+  }
+}

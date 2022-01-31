@@ -1,0 +1,41 @@
+.heading {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 25px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-orange;
+
+  &--inner {
+    margin-bottom: 31px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $basic-blue-dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+    padding-left: 34px;
+    font-size: 45px;
+    line-height: 45px;
+
+    &--inner {
+      padding-left: 0;
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 51px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    margin-bottom: 59px;
+
+    &--inner {
+      padding-left: 71px;
+      margin-bottom: 52px;
+    }
+  }
+}

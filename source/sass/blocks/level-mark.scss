@@ -13,6 +13,7 @@
   font-weight: 400;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     top: 20px;
@@ -33,7 +34,6 @@
 
 //Признаюсь что не знаю как это работает
 .level-mark__circle {
-  stroke-dashoffset: 4;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
 }
@@ -53,19 +53,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 60px;
+    width: 62px;
+    height: 62px;
     margin-top: 2px;
 
     .level-mark__ring {
-      width: 65px;
-      height: 70px;
+      width: 62px;
+      height: 62px;
     }
 
     .level-mark__circle {
-      cx: 30px;
-      cy: 33px;
-      r: 30px;
+      stroke-width: 3px;
     }
   }
 
@@ -79,17 +77,11 @@
     }
 
     .level-mark__ring {
-      width: 60px;
-      height: 60px;
+      width: 62px;
+      height: 62px;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    .level-mark__circle {
-      cx: 30px;
-      cy: 30px;
-      r: 27px;
     }
   }
 }

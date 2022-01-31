@@ -19,6 +19,12 @@
   }
 }
 
+.top-menu__list {
+  @media (min-width: $desktop-width) {
+    margin-left: -5px;
+  }
+}
+
 .top-menu--open {
   background-color: $white-color;
 
@@ -120,7 +126,7 @@
   }
 
   .top-menu__wrapper {
-    top: -805px;
+    top: -2000px;
     display: flex;
     position: absolute;
 

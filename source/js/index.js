@@ -60,7 +60,7 @@ if (mapContainer != null) {
     map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 59.93872031587833, lng: 30.32304628352043},
       mapID: "symmetric-ray-334813",
-      zoom: 16.6,
+      zoom: 15.7,
     });
 
     const image = "data:image/svg+xml,%3Csvg width='41' height='41' viewBox='0 0 41 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20.5' cy='20.4998' r='19.7679' fill='white'/%3E%3Ccircle cx='20.5' cy='19.7676' r='8.78572' fill='%23182044'/%3E%3C/svg%3E%0A";

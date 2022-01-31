@@ -2,8 +2,8 @@
   display: grid;
   max-width: 270px;
   margin: 0 auto;
-  grid-template-columns: 25px 70px 90px 60px 25px;
-  grid-template-rows: 13px 40px 30px 65px min-content 96px 40px 23px;
+  grid-template-columns: 25px 70px repeat(2, max-content) 25px;
+  grid-template-rows: 13px repeat(6, min-content) 23px;
   background-color: $white-color;
   border-radius: 20px;
   cursor: pointer;
@@ -19,14 +19,14 @@
 
   @media (min-width: $tablet-width) {
     max-width: 688px;
-    grid-template-columns: 35px 224px 147px 199px 60px 25px;
-    grid-template-rows: 31px 30px 108px 60px 103px;
+    grid-template-columns: 35px max-content max-content 1fr max-content 25px;
+    grid-template-rows: 31px repeat(4, min-content);
   }
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
-    grid-template-columns: 285px 62px 150px 110px 66px 1fr 34px;
-    grid-template-rows: 44px 30px 108px 60px 43px;
+    grid-template-columns: min-content 62px min-content 105px 79px 1fr 34px;
+    grid-template-rows: 44px repeat(3, min-content);
   }
 }
 
@@ -107,9 +107,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: none;
+    max-width: 300px;
     width: max-content;
-    padding-left: 0;
+    padding-left: 33px;
     padding-right: 30px;
     font-size: 30px;
     line-height: 30px;
@@ -125,6 +125,8 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    padding-left: 0;
+    grid-column: 3/5;
 
     &::before {
       right: auto;
@@ -134,8 +136,8 @@
 }
 
 .catalog-card__interactive-elements {
-  padding-top: 7px;
   margin-left: -28px;
+  margin-bottom: 13px;
   font-size: 14px;
   line-height: 16px;
   color: $basic-blue;
@@ -144,7 +146,8 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
-    padding: 20px 0;
+    margin-top: 33px;
+    padding: 0;
     grid-row: 4/5;
     grid-column: 4/5;
     font-size: 20px;
@@ -152,12 +155,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -8px;
+    margin-left: 0;
+    grid-column: 4/5;
   }
 }
 
 .catalog-card__hashtags {
   display: flex;
+  margin-bottom: 14px;
   align-items: center;
   grid-row: 4/5;
   grid-column: 2/5;
@@ -165,8 +170,13 @@
   @media (min-width: $tablet-width) {
     align-items: start;
     padding-top: 20px;
-    padding-left: 2px;
+    padding-left: 36px;
     grid-row: 3/4;
+    grid-column: 3/5;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
     grid-column: 3/5;
   }
 }
@@ -199,7 +209,7 @@
 
   &::after {
     position: absolute;
-    top: -26px;
+    top: -20px;
     left: -25px;
     width: 270px;
     height: 1px;
@@ -211,6 +221,7 @@
     &::after {
       width: 100%;
       left: 0;
+      top: -26px;
     }
   }
 }
@@ -226,8 +237,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 17px;
-    margin-bottom: 22px;
+    margin-top: -4px;
+    margin-bottom: 13px;
     grid-column: 1/7;
     flex-direction: column;
 
@@ -393,8 +404,6 @@
 }
 
 .catalog-card__fieldset--transport {
-  margin-right: 42px;
-
   .catalog-card__legend {
     margin-left: -10px;
     margin-bottom: 15px;
@@ -486,8 +495,10 @@
 
 .catalog-card__columns {
   display: flex;
-  min-width: 220px;
+  min-width: 231px;
+  margin-bottom: 14px;
   padding-top: 10px;
+  justify-content: space-between;
   grid-row: 6/7;
   grid-column: 2/5;
 
@@ -498,9 +509,11 @@
     grid-row: 2/5;
     grid-column: 5/6;
     flex-direction: column;
+    justify-content: start;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 21px;
     grid-row: 4/5;
     grid-column: 6/7;
     flex-direction: row;
@@ -517,8 +530,7 @@
 
   @media (min-width: $tablet-width) {
     width: 150px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 33px 0 26px 29px;
     padding: 15px 0;
     font-size: 20px;
     line-height: 20px;
@@ -528,12 +540,19 @@
 
   @media (min-width: $desktop-width) {
     margin-left: -8px;
+    margin-top: 33px;
+    margin-bottom: 13x;
+    grid-column: 3/4;
   }
 }
 
 .catalog-card__fieldset--level {
   &::after {
     display: none;
+  }
+
+  .catalog-card__legend {
+    margin-bottom: 18px;
   }
 
   @media (min-width: $tablet-width) {
@@ -543,32 +562,46 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 10px;
+    margin-right: 9px;
   }
 }
 
 .catalog-card__list--second {
   margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog-card__list--third {
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog-card__list--fourth {
   margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog-card__heart-counter {
   position: relative;
-  padding-top: 10px;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 7px;
   padding-left: 37px;
   cursor: pointer;
   transition: $basic-animation;
 
   &::before {
     position: absolute;
-    top: 4px;
+    top: 0;
     left: 0;
     width: 31px;
     height: 31px;
@@ -581,7 +614,7 @@
 
   &::after {
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 10px;
     width: 13px;
     height: 11px;
@@ -610,8 +643,8 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 56px;
-    padding-top: 16px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     &::before {
       width: 50px;
@@ -620,10 +653,10 @@
     }
 
     &::after {
-      top: 20px;
-      left: 15px;
+      top: 15px;
+      left: 16px;
       width: 20px;
-      height: 18px;
+      height: 17px;
       background-size: 20px 18px;
     }
   }

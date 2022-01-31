@@ -64,6 +64,7 @@
   margin-top: 2px;
   border-radius: 50%;
   transition: $basic-animation;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 190px;
@@ -74,7 +75,7 @@
 
   @media (min-width: $desktop-width) {
     width: 285px;
-    height: 285px;
+    height: 100%;
     margin: 0;
     border-radius: 20px 0 0 20px;
   }
@@ -541,7 +542,7 @@
   @media (min-width: $desktop-width) {
     margin-left: -8px;
     margin-top: 33px;
-    margin-bottom: 13x;
+    margin-bottom: 13px;
     grid-column: 3/4;
   }
 }

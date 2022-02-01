@@ -39,6 +39,10 @@
 }
 
 .logo__icon--showtablet {
+  position: static;
+  width: 155px;
+  height: 42px;
+
   @media (max-width: 767px) {
     display: none;
   }

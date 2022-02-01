@@ -45,9 +45,9 @@ modalCloseBtn !== null ? modalCloseBtn.onclick = () => modal.classList.toggle("m
 
 window.onscroll = () => {
   if(window.pageYOffset > sticky) {
-    document.querySelector(".top-menu__container").classList.add("top-menu--scroll");
+    document.querySelector(".top-menu").classList.add("top-menu--scroll");
   } else {
-    document.querySelector(".top-menu__container").classList.remove("top-menu--scroll");
+    document.querySelector(".top-menu").classList.remove("top-menu--scroll");
   }
 }
 

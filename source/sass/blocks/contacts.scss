@@ -140,20 +140,3 @@
     display: none;
   }
 }
-
-.contacts__map {
-  width: 320px;
-  height: 424px;
-  display: block;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 581px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    height: 584px;
-  }
-}

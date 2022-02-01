@@ -46,6 +46,10 @@
   background-color: transparent;
   color: $special-grey;
 
+  .level-mark__ring {
+    transform: rotate(-87deg);
+  }
+
   @media (min-width: $tablet-width) {
     width: 94px;
     height: 94px;
@@ -53,13 +57,6 @@
     .level-mark__ring {
       width: 94px;
       height: 94px;
-    }
-
-    .level-mark__circle {
-      r: 45;
-      cx: 48px;
-      cy: 47px;
-      stroke-dasharray: 240px;
     }
   }
 
@@ -271,6 +268,7 @@
   color: $special-grey;
   opacity: 0.6;
   cursor: pointer;
+  resize: none;
 
   &:focus {
     outline: none;

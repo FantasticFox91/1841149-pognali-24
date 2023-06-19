@@ -21,7 +21,7 @@ export const styles = () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
-      csso(),
+      // csso(),
     ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
